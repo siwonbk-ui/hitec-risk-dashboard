@@ -1,0 +1,46 @@
+name: Retain seven Bangkok dates
+on:
+  schedule:
+    - cron: '15 17 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: hitec-pages
+  cancel-in-progress: false
+jobs:
+  prune-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Remove expired dates
+        run: node scripts/prune.mjs
+      - name: Commit current seven-day data
+        run: |
+          if ! git diff --quiet -- data/reports.json; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data/reports.json
+            git commit -m "Retain seven Bangkok dates"
+            git push
+          fi
+      - uses: actions/configure-pages@v5
+      - name: Prepare site
+        run: |
+          mkdir _site
+          cp index.html .nojekyll _site/
+          cp -r assets data _site/
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+          retention-days: 1
+      - uses: actions/deploy-pages@v4
+        id: deployment
