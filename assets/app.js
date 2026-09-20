@@ -29,5 +29,54 @@ function renderArticles(){const q=$('search').value.toLowerCase(),group=GROUPS.f
     if(a.status==='relevant'){const details=el('details'),summary=el('summary','✨ ดูผลกระทบ เหตุผลการให้คะแนน และข้อเสนอ');details.append(summary);const fields=el('dl',undefined,'fields');for(const [label,value] of [['🎯 ความเกี่ยวข้องกับ HITEC',a.relevance_reason],['⚠️ สาเหตุความเสี่ยง',a.risk_cause],['📉 ผลกระทบที่อาจเกิดขึ้น',a.consequence],['🔎 ด้านผลกระทบ',a.impact_name],['📈 โอกาสเกิด L = '+(a.likelihood_score??'ยังประเมินไม่ได้'),a.likelihood_reason],['💥 ผลกระทบ I = '+(a.impact_score??'ยังประเมินไม่ได้'),a.impact_reason],['🧭 เกณฑ์ L ที่ใช้',a.likelihood_definition],['📚 เกณฑ์ I ที่ใช้',a.impact_definition],['✅ ข้อเสนอปฏิบัติ',a.proposed_action],['🛡️ บริบทมาตรการตาม Profile',a.known_controls],['📝 สมมติฐาน/ข้อมูลที่ต้องตรวจ',a.assumptions],['🌱 โอกาสทางธุรกิจ',a.opportunity]]){if(!value)continue;const field=el('div');field.append(el('dt',label),el('dd',value));fields.append(field);}details.append(fields);card.append(details);}$('articles').append(card);}}
 function renderCriteria(c){$('criteria').replaceChildren();if(!c)return;$('criteria').append(el('p',c.note||'ใช้เกณฑ์ตามเอกสารอ้างอิง'));const wrap=el('div',undefined,'table-scroll'),table=el('table',undefined,'criteria-table'),head=el('tr');for(const label of ['เกณฑ์',1,2,3,4,5])head.append(el('th',label));table.append(head);for(const [name,levels] of [['🎲 โอกาสเกิด (L)',c.likelihood],...(c.impacts||[]).map(i=>[i.name,i.levels])]){const row=el('tr');row.append(el('th',name));for(const l of levels||[])row.append(el('td',l.definition+(l.additional?' / '+l.additional:'')));table.append(row);}wrap.append(table);$('criteria').append(wrap,el('p',`อ้างอิง: ${c.source} · ${c.sheet} (L: B4:F4)`));if(c.matrix){$('criteria').append(el('h3','🧮 Risk Matrix 5×5'));const m=el('table',undefined,'criteria-table matrix'),h=el('tr');for(const label of ['L / I',1,2,3,4,5])h.append(el('th',label));m.append(h);for(let l=5;l>=1;l--){const row=el('tr');row.append(el('th',l));c.matrix.rows_likelihood_1_to_5[l-1].forEach((level,i)=>row.append(el('td',`${l*(i+1)} · ${level}`,level.toLowerCase())));m.append(row);}const box=el('div',undefined,'table-scroll');box.append(m);$('criteria').append(box);}}
 function initReference(){document.querySelectorAll('.ref-tab').forEach(b=>b.onclick=()=>{for(const item of document.querySelectorAll('.ref-tab'))item.classList.toggle('active',item===b);$('criteria').hidden=b.dataset.ref!=='criteria';$('sources').hidden=b.dataset.ref!=='sources';});}
+
+function openBriefArticle(id){
+  let card=document.getElementById('article-'+id);
+  if(!card){activeGroup='all';renderTabs();renderArticles();card=document.getElementById('article-'+id);}
+  if(!card)return;
+  const details=card.querySelector('details');
+  if(details)details.open=true;
+  card.scrollIntoView({behavior:'smooth',block:'start'});
+  card.focus({preventScroll:true});
+}
+function renderBrief(r){
+  const holder=$('summary');holder.replaceChildren();
+  const articles=(r.articles||[]).filter(a=>a.status==='relevant').slice(0,5);
+  if(!articles.length){holder.textContent='ยังไม่มีข่าวที่ผ่านการวิเคราะห์ในรายงานนี้';return;}
+  holder.append(el('p','คลิกหัวข้อเพื่อเปิดผลการวิเคราะห์ของข่าวนั้น'));
+  for(const [i,a] of articles.entries()){
+    const b=el('button',`${i+1}. ${a.news_title||a.title}`,'brief-link');
+    b.type='button';b.onclick=()=>openBriefArticle(a.id);holder.append(b);
+  }
+}
+function renderTabs(){
+  const articles=(selected.articles||[]).filter(a=>a.status==='relevant');$('business-tabs').replaceChildren();
+  for(const group of GROUPS){const n=articles.filter(group.matches).length,b=el('button',undefined,group.id===activeGroup?'active':'');b.type='button';b.setAttribute('role','tab');b.setAttribute('aria-selected',String(group.id===activeGroup));b.append(document.createTextNode(group.label+' '),el('b',n));b.onclick=()=>{activeGroup=group.id;renderTabs();renderArticles();};$('business-tabs').append(b);}
+}
+function renderReport(){
+  const r=selected;$('report').hidden=false;$('report-date').textContent=pretty(r.date);
+  $('generated').textContent='รวบรวมถึง '+time(r.generated_at)+' น. · เวลาไทย';$('date-number').textContent=compact(r.date);
+  const warn=[];if(r.status==='partial')warn.push('⚠️ รายงานนี้มีข้อมูลบางส่วน: โปรดตรวจแหล่งข่าวด้านล่าง');if(r.date!==day(new Date()))warn.push('🕘 กำลังดูรายงานย้อนหลัง');
+  $('notice').textContent=warn.join('\n');$('notice').className='notice'+(warn.length?' warning':'');
+  renderBrief(r);$('search').value='';renderTabs();renderArticles();renderCriteria(r.criteria);$('matrix-note')?.remove();$('sources').replaceChildren();
+  $('sources').append(el('p',(r.coverage_note||'')+` | อ่านทั้งหมด ${r.stats?.fetched??0} รายการ | วันที่ไม่ชัดเจน ${r.stats?.invalidDate??0} | เกินเพดานวิเคราะห์ ${r.stats?.omittedByLimit??0}`));
+  for(const s of r.sources||[]){const row=el('div',undefined,'source '+s.status);row.append(el('span','📰 '+s.name),el('span',({ok:'พร้อมใช้งาน',empty:'ไม่มีข่าว',error:'อ่านไม่สำเร็จ'})[s.status]||s.status));$('sources').append(row);}
+}
+function renderArticles(){
+  const q=$('search').value.toLowerCase(),group=GROUPS.find(x=>x.id===activeGroup)||GROUPS[0];
+  const items=(selected.articles||[]).filter(a=>a.status==='relevant').filter(group.matches).filter(a=>!q||[a.news_title,a.title,a.summary,a.source,a.risk_cause,a.business_area].join(' ').toLowerCase().includes(q));
+  $('articles').replaceChildren();$('result-count').textContent=`แสดง ${items.length} รายการ`;
+  if(!items.length){$('articles').append(el('p',q?'ไม่พบข่าวที่ตรงกับคำค้นหา':'ยังไม่มีข่าวในกลุ่มธุรกิจนี้','empty'));return;}
+  for(const a of items){
+    const card=el('article',undefined,'article');card.id='article-'+a.id;card.tabIndex=-1;
+    const top=el('div',undefined,'article-top'),heading=el('div');heading.append(el('span',a.business_area,'tag'));
+    const h=el('h3'),link=safeLink(a.link);if(link){const anchor=el('a',a.news_title||a.title);anchor.href=link;anchor.target='_blank';anchor.rel='noopener noreferrer';h.append(anchor);}else h.textContent=a.news_title||a.title;heading.append(h);
+    const score=el('div',undefined,'score');score.append(el('strong',a.score??'—'),el('small','คะแนนเบื้องต้น L × I / 25'));if(a.risk_level)score.append(el('span',a.risk_level,'level '+a.risk_level.toLowerCase()));top.append(heading,score);
+    card.append(top,el('div',`${a.source||'ไม่ระบุแหล่งข่าว'} · เผยแพร่ ${a.published_at?time(a.published_at):'ไม่ระบุ'} น.`,'meta'),el('p',a.summary||'ยังไม่มีบทสรุป'));
+    const details=el('details'),summary=el('summary','✨ ดูผลกระทบ เหตุผลการให้คะแนน และข้อเสนอ');details.append(summary);const fields=el('dl',undefined,'fields');
+    const labels=[['⚠️ สถานะคะแนน','ประเมินเบื้องต้นจากสัญญาณข่าว ต้องทบทวนโดยผู้รับผิดชอบ'],['🎯 ความเกี่ยวข้องกับ HITEC',a.relevance_reason],['⚠️ สาเหตุความเสี่ยง',a.risk_cause],['📉 ผลกระทบที่อาจเกิดขึ้น',a.consequence],['🔎 ด้านผลกระทบ',a.impact_name],['📈 โอกาสเกิด L = '+(a.likelihood_score??'ยังประเมินไม่ได้'),a.likelihood_reason],['💥 ผลกระทบ I = '+(a.impact_score??'ยังประเมินไม่ได้'),a.impact_reason],['🧭 เกณฑ์ L ที่ใช้',a.likelihood_definition],['📚 เกณฑ์ I ที่ใช้',a.impact_definition],['✅ ข้อเสนอปฏิบัติ',a.proposed_action],['🛡️ บริบทมาตรการตาม Profile',a.known_controls],['📝 สมมติฐาน/ข้อมูลที่ต้องตรวจ',a.assumptions],['🌱 โอกาสทางธุรกิจ',a.opportunity]];
+    for(const [label,value] of labels){if(!value)continue;const field=el('div');field.append(el('dt',label),el('dd',value));fields.append(field);}details.append(fields);card.append(details);$('articles').append(card);
+  }
+}
 async function load(){try{$('notice').textContent='กำลังโหลดรายงาน…';const response=await fetch('data/reports.json?t='+Date.now(),{cache:'no-store'});if(!response.ok)throw new Error('HTTP '+response.status);const data=await response.json();if(data.schema_version!==1||!Array.isArray(data.reports))throw new Error('รูปแบบรายงานไม่ถูกต้อง');const today=day(new Date()),cut=new Date(today+'T00:00:00+07:00');cut.setUTCDate(cut.getUTCDate()-6);const first=day(cut);reports=data.reports.filter(r=>r.date>=first&&r.date<=today).sort((a,b)=>b.date.localeCompare(a.date));if(!reports.length){$('report').hidden=true;$('dates').replaceChildren();$('notice').textContent='📭 ยังไม่มีรายงานในช่วง 7 วันที่ผ่านมา เมื่อ Flow รายวันส่งข้อมูลแล้ว รายงานจะแสดงที่นี่';$('notice').className='notice';return;}const requested=new URLSearchParams(location.search).get('date');select(requested);}catch(e){$('report').hidden=true;$('notice').textContent='⚠️ โหลดข้อมูลไม่สำเร็จ: '+e.message+' — ตรวจไฟล์ data/reports.json และการตั้งค่า GitHub Pages';$('notice').className='notice warning';}}
 initNav();initReference();$('search').oninput=renderArticles;$('refresh').onclick=load;load();
