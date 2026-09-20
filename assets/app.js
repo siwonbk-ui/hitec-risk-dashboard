@@ -42,16 +42,17 @@ function openBriefArticle(id){
 function renderBrief(r){
   const holder=$('summary');holder.replaceChildren();
   const articles=(r.articles||[]).filter(a=>a.status==='relevant').slice(0,5);
-  if(!articles.length){holder.textContent='ยังไม่มีข่าวที่ผ่านการวิเคราะห์ในรายงานนี้';return;}
-  holder.append(el('p','คลิกหัวข้อเพื่อเปิดผลการวิเคราะห์ของข่าวนั้น'));
+  if(!articles.length){holder.textContent=language==='en'?'No analysed news in this report':'ยังไม่มีข่าวที่ผ่านการวิเคราะห์ในรายงานนี้';return;}
+  holder.append(el('p',language==='en'?'Click a headline to open its analysis':'คลิกหัวข้อเพื่อเปิดผลการวิเคราะห์ของข่าวนั้น'));
   for(const [i,a] of articles.entries()){
     const b=el('button',`${i+1}. ${a.news_title||a.title}`,'brief-link');
     b.type='button';b.onclick=()=>openBriefArticle(a.id);holder.append(b);
   }
 }
 function renderTabs(){
-  const articles=(selected.articles||[]).filter(a=>a.status==='relevant');$('business-tabs').replaceChildren();
-  for(const group of GROUPS){const n=articles.filter(group.matches).length,b=el('button',undefined,group.id===activeGroup?'active':'');b.type='button';b.setAttribute('role','tab');b.setAttribute('aria-selected',String(group.id===activeGroup));b.append(document.createTextNode(group.label+' '),el('b',n));b.onclick=()=>{activeGroup=group.id;renderTabs();renderArticles();};$('business-tabs').append(b);}
+  const articles=(selected?.articles||[]).filter(a=>a.status==='relevant');$('business-tabs').replaceChildren();
+  const labels={all:'🌐 Overview',machine:'⚙️ Machinery',turnkey:'🏗️ Turnkey',service:'🛠️ Service & parts',packaging:'📦 Packaging',market:'🍽️ Food market',import:'🚢 Import & economy'};
+  for(const group of GROUPS){const n=articles.filter(group.matches).length,b=el('button',undefined,group.id===activeGroup?'active':'');b.type='button';b.setAttribute('role','tab');b.setAttribute('aria-selected',String(group.id===activeGroup));b.append(document.createTextNode((language==='en'?labels[group.id]:group.label)+' '),el('b',n));b.onclick=()=>{activeGroup=group.id;renderTabs();renderArticles();};$('business-tabs').append(b);}
 }
 function renderReport(){
   const r=selected;$('report').hidden=false;$('report-date').textContent=pretty(r.date);
@@ -79,4 +80,23 @@ function renderArticles(){
   }
 }
 async function load(){try{$('notice').textContent='กำลังโหลดรายงาน…';const response=await fetch('data/reports.json?t='+Date.now(),{cache:'no-store'});if(!response.ok)throw new Error('HTTP '+response.status);const data=await response.json();if(data.schema_version!==1||!Array.isArray(data.reports))throw new Error('รูปแบบรายงานไม่ถูกต้อง');const today=day(new Date()),cut=new Date(today+'T00:00:00+07:00');cut.setUTCDate(cut.getUTCDate()-6);const first=day(cut);reports=data.reports.filter(r=>r.date>=first&&r.date<=today).sort((a,b)=>b.date.localeCompare(a.date));if(!reports.length){$('report').hidden=true;$('dates').replaceChildren();$('notice').textContent='📭 ยังไม่มีรายงานในช่วง 7 วันที่ผ่านมา เมื่อ Flow รายวันส่งข้อมูลแล้ว รายงานจะแสดงที่นี่';$('notice').className='notice';return;}const requested=new URLSearchParams(location.search).get('date');select(requested);}catch(e){$('report').hidden=true;$('notice').textContent='⚠️ โหลดข้อมูลไม่สำเร็จ: '+e.message+' — ตรวจไฟล์ data/reports.json และการตั้งค่า GitHub Pages';$('notice').className='notice warning';}}
-initNav();initReference();$('search').oninput=renderArticles;$('refresh').onclick=load;load();
+let language=localStorage.getItem('hitec-language')||'th';
+function applyLanguage(){
+  const en=language==='en';document.documentElement.lang=en?'en':'th';$('lang-toggle').textContent=en?'TH':'EN';
+  document.querySelector('.menu-label').textContent=en?'( Archive )':'( รายงานย้อนหลัง )';
+  document.querySelector('.hero-eyebrow').textContent=en?'⚡ INTELLIGENCE CENTER · DAILY BRIEF':'⚡ ศูนย์ข่าวกรอง · สรุปรายวัน';
+  document.querySelector('.hero-content p').textContent=en?'News and risk signals for food-processing machinery and solutions':'ติดตามข่าวและสัญญาณความเสี่ยงสำหรับธุรกิจเครื่องจักรแปรรูปอาหาร';
+  document.querySelector('.side-eyebrow').textContent=en?'📅 DAILY ARCHIVE':'📅 รายงานประจำวัน';
+  document.querySelector('.archive-head strong').textContent=en?'Past reports':'รายงานย้อนหลัง';
+  document.querySelector('.brief h2').textContent=en?'Key points to watch today':'ประเด็นที่ควรติดตามวันนี้';
+  document.querySelector('.brief .eyebrow').textContent=en?'DAILY BRIEF':'สรุปรายวัน';
+  document.querySelector('.search').firstChild.textContent=en?'🔍 Search news':'🔍 ค้นหาข่าว';
+  $('search').placeholder=en?'Type a title, source, or risk topic':'พิมพ์หัวข้อ แหล่งข่าว หรือประเด็นความเสี่ยง';
+  $('refresh').textContent=en?'↻ Refresh data':'↻ อัปเดตข้อมูล';
+  document.querySelector('.ref-head h2').textContent=en?'Criteria and sources':'เกณฑ์และแหล่งข้อมูล';
+  document.querySelector('[data-ref="criteria"]').textContent=en?'📚 Risk criteria':'📚 เกณฑ์ความเสี่ยง';
+  document.querySelector('[data-ref="sources"]').textContent=en?'📰 News sources':'📰 แหล่งข่าว';
+  renderTabs();if(selected){renderDates();renderBrief(selected);renderArticles();}
+}
+$('lang-toggle').onclick=()=>{language=language==='th'?'en':'th';localStorage.setItem('hitec-language',language);applyLanguage();};
+initNav();initReference();$('search').oninput=renderArticles;$('refresh').onclick=load;applyLanguage();load();
