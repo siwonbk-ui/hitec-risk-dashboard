@@ -1,18 +1,18 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-20T17:40:15.263Z",
+  "updated_at": "2026-09-20T17:57:47.306Z",
   "reports": [
     {
       "schema_version": 1,
       "date": "2026-09-21",
-      "generated_at": "2026-09-21T00:40:13.498+07:00",
+      "generated_at": "2026-09-21T00:57:42.811+07:00",
       "company": "บริษัท ไฮเทค ฟู๊ด อีควิปเมนท์ จำกัด",
       "timezone": "Asia/Bangkok",
       "status": "complete",
       "summary": "ไม่พบข่าวที่มีวันที่เผยแพร่ตรงกับวันดึงก่อนเวลารัน",
       "stats": {
-        "fetched": 196,
-        "excludedDate": 196,
+        "fetched": 197,
+        "excludedDate": 197,
         "invalidDate": 0,
         "invalidLink": 0,
         "duplicates": 0,
@@ -140,7 +140,7 @@
           "id": "standards",
           "name": "มาตรฐานเครื่องจักรอาหาร",
           "url": "https://news.google.com/rss/search?q=%22food%20contact%20materials%22%20OR%20%22hygienic%20design%22%20OR%20%22food%20machinery%20safety%22%20when%3A1d&hl=en-US&gl=US&ceid=US:en",
-          "status": "empty",
+          "status": "ok",
           "error": null
         },
         {
