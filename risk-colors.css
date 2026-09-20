@@ -1,0 +1,2 @@
+.level{display:block;font-size:10px;padding:3px 5px;margin-top:6px;border-radius:3px}.low{background:#e5f2d6;color:#30581a}.medium{background:#fff7cd;color:#6d5300}.high{background:#ffe8bf;color:#884b00}.critical{background:#fbe1e2;color:#9b202b}.matrix{max-width:700px}.matrix td{font-weight:600;text-align:center;white-space:nowrap}
+.criteria-table:not(.matrix){min-width:1050px}.matrix{min-width:570px}.table-scroll{max-width:100%;overscroll-behavior-x:contain}

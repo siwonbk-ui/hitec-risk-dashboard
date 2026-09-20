@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light"><meta name="robots" content="noindex,nofollow">
+  <title>HITEC · Daily Risk Monitor</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/risk-colors.css">
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+  <aside>
+    <a class="brand" href="./"><span class="brand-symbol">H</span><span>HITEC<small>FOOD EQUIPMENT</small></span></a>
+    <div class="sidebar-label">DAILY RISK MONITOR</div>
+    <p class="nav-title">รายงานย้อนหลัง <span>7 วัน</span></p>
+    <nav id="dates" aria-label="เลือกวันที่รายงาน"></nav>
+    <div class="sidebar-foot">Food processing & engineering<br>เวลาอ้างอิง Asia/Bangkok<br><span>ข้อมูลประเมินเบื้องต้นโดย AI</span></div>
+  </aside>
+  <main>
+    <header><div class="eyebrow">INTELLIGENCE / DAILY BRIEF</div><div class="title-row"><h1>ติดตามข่าวและความเสี่ยง</h1><button id="refresh" type="button">↻ อัปเดต</button></div><p class="subheading">บริษัท ไฮเทค ฟู๊ด อีควิปเมนท์ จำกัด</p></header>
+    <div id="notice" role="status" class="notice">กำลังโหลดรายงาน…</div>
+    <section id="report" hidden>
+      <div class="report-meta"><h2 id="report-date"></h2><span id="generated"></span></div>
+      <div class="metrics" id="metrics"></div>
+      <section class="brief"><div><span class="eyebrow">DAILY BRIEF</span><h2>ประเด็นที่ควรติดตาม</h2></div><p id="summary"></p></section>
+      <div class="toolbar"><label>กลุ่มธุรกิจ<select id="category"><option value="">ทั้งหมด</option></select></label><label class="search">ค้นหาข่าว<input id="search" type="search" placeholder="หัวข้อ ประเด็น หรือแหล่งข่าว"></label><span id="result-count"></span></div>
+      <div id="articles"></div>
+      <details class="panel"><summary>เกณฑ์การประเมินโอกาสและผลกระทบ</summary><p id="matrix-note"></p><div id="criteria"></div></details>
+      <details class="panel"><summary>แหล่งข่าวและขอบเขตการเก็บข้อมูล</summary><p id="coverage"></p><div id="sources"></div></details>
+    </section>
+    <footer>HITEC Food Equipment · Daily Risk Monitor <span>ข่าวภายนอกเป็นสัญญาณให้ตรวจสอบ ไม่ใช่การยืนยันเหตุการณ์ภายในบริษัท</span></footer>
+  </main>
+</body>
+</html>
