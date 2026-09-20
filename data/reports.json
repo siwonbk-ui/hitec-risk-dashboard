@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-20T17:26:49.779Z",
+  "updated_at": "2026-09-20T17:27:06.851Z",
   "reports": [
     {
       "schema_version": 1,
       "date": "2026-09-21",
-      "generated_at": "2026-09-21T00:26:45.308+07:00",
+      "generated_at": "2026-09-21T00:27:04.796+07:00",
       "company": "บริษัท ไฮเทค ฟู๊ด อีควิปเมนท์ จำกัด",
       "timezone": "Asia/Bangkok",
       "status": "complete",
