@@ -1,18 +1,18 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-20T17:00:31.247Z",
+  "updated_at": "2026-09-20T17:26:49.779Z",
   "reports": [
     {
       "schema_version": 1,
       "date": "2026-09-21",
-      "generated_at": "2026-09-21T00:00:26.619+07:00",
+      "generated_at": "2026-09-21T00:26:45.308+07:00",
       "company": "บริษัท ไฮเทค ฟู๊ด อีควิปเมนท์ จำกัด",
       "timezone": "Asia/Bangkok",
       "status": "complete",
       "summary": "ไม่พบข่าวที่มีวันที่เผยแพร่ตรงกับวันดึงก่อนเวลารัน",
       "stats": {
-        "fetched": 197,
-        "excludedDate": 197,
+        "fetched": 196,
+        "excludedDate": 196,
         "invalidDate": 0,
         "invalidLink": 0,
         "duplicates": 0,
