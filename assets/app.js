@@ -79,7 +79,7 @@ function renderArticles(){
       [language==='en'?'Likelihood criterion':'เกณฑ์โอกาสเกิด',c?.likelihood?.[a.likelihood_score-1]?.definition],
       [language==='en'?'Impact criterion':'เกณฑ์ผลกระทบ',impact?.levels?.[a.impact_score-1]?.definition],
       [language==='en'?'Controls in the company profile':'มาตรการตาม Profile',langText(a,'known_controls')]);
-    fields.append((()=>{const d=el('div');d.append(el('dt',language==='en'?'⚠️ Preliminary assessment':'⚠️ สถานะคะแนน'),el('dd',language==='en'?'Signal-based estimate; review required':'ประเมินเบื้องต้นจากสัญญาณข่าว ต้องทบทวนโดยผู้รับผิดชอบ'));return d;})());for(const [label,value] of vals){if(!value)continue;const field=el('div');field.append(el('dt',label),el('dd',value));fields.append(field);}details.append(fields);card.append(details);$('articles').append(card);
+    for(const [label,value] of vals){if(!value)continue;const field=el('div');field.append(el('dt',label),el('dd',value));fields.append(field);}details.append(fields);card.append(details);$('articles').append(card);
   }
 }
 const CRITERIA_EN={
@@ -89,7 +89,41 @@ const CRITERIA_EN={
 };
 function criteriaLocalized(c){if(language!=='en')return c;const out=JSON.parse(JSON.stringify(c));out.note='L/I definitions translated from the source criteria; Risk Matrix uses the confirmed original matrix.';out.likelihood.forEach((x,i)=>x.definition=CRITERIA_EN.likelihood[i]);out.impacts.forEach(x=>{if(CRITERIA_EN.names[x.id])x.name=CRITERIA_EN.names[x.id];const defs=CRITERIA_EN.defs[x.id];if(defs)x.levels.forEach((l,i)=>{l.definition=defs[i];if(CRITERIA_EN.additional[x.id]?.[i])l.additional=CRITERIA_EN.additional[x.id][i];});});out.source='Risk impact criteria';out.sheet='Compare Risk';return out;}
 function renderCriteria(c){
-  $('criteria').replaceChildren();if(!c)return;const data=criteriaLocalized(c);$('criteria').append(el('p',data.note||'Use the source risk criteria'));const wrap=el('div',undefined,'table-scroll'),table=el('table',undefined,'criteria-table'),head=el('tr');for(const label of [language==='en'?'Criteria':'เกณฑ์',1,2,3,4,5])head.append(el('th',label));table.append(head);for(const [name,levels] of [[language==='en'?'🎲 Likelihood (L)':'🎲 โอกาสเกิด (L)',data.likelihood],...(data.impacts||[]).map(i=>[i.name,i.levels])]){const row=el('tr');row.append(el('th',name));for(const l of levels||[])row.append(el('td',l.definition+(l.additional?' / '+l.additional:'')));table.append(row);}wrap.append(table);$('criteria').append(wrap,el('p',(language==='en'?'Source: ':'อ้างอิง: ')+data.source+' · '+data.sheet));if(data.matrix){$('criteria').append(el('h3','🧮 Risk Matrix 5×5'));const m=el('table',undefined,'criteria-table matrix'),h=el('tr');for(const label of ['L / I',1,2,3,4,5])h.append(el('th',label));m.append(h);for(let l=5;l>=1;l--){const row=el('tr');row.append(el('th',l));data.matrix.rows_likelihood_1_to_5[l-1].forEach((level,i)=>row.append(el('td',`${l*(i+1)} · ${level}`,level.toLowerCase())));m.append(row);}const box=el('div',undefined,'table-scroll');box.append(m);$('criteria').append(box);}}
+  $('criteria').replaceChildren();if(!c)return;const data=criteriaLocalized(c);
+  if(data.matrix)renderRiskMatrix(data.matrix);
+  $('criteria').append(el('p',data.note||'Use the source risk criteria'));
+  const wrap=el('div',undefined,'table-scroll'),table=el('table',undefined,'criteria-table'),head=el('tr');
+  for(const label of [language==='en'?'Criteria':'เกณฑ์',1,2,3,4,5])head.append(el('th',label));table.append(head);
+  for(const [name,levels] of [[language==='en'?'🎲 Likelihood (L)':'🎲 โอกาสเกิด (L)',data.likelihood],...(data.impacts||[]).map(i=>[i.name,i.levels])]){const row=el('tr');row.append(el('th',name));for(const l of levels||[])row.append(el('td',l.definition+(l.additional?' / '+l.additional:'')));table.append(row);}
+  wrap.append(table);$('criteria').append(wrap,el('p',(language==='en'?'Source: ':'อ้างอิง: ')+data.source+' · '+data.sheet));
+}
+function renderRiskMatrix(matrix){
+  const en=language==='en',layout=el('div',undefined,'risk-guide'),chart=el('section',undefined,'risk-chart'),guide=el('section',undefined,'risk-treatment');
+  chart.append(el('h3','🧮 Risk Matrix'),el('p',en?'Impact (I) ↑':'ผลกระทบ (I) ↑','axis-label'));
+  const scroll=el('div',undefined,'table-scroll'),table=el('table',undefined,'criteria-table matrix');
+  table.setAttribute('aria-label',en?'Risk matrix: impact rows, likelihood columns':'ตารางความเสี่ยง: แถวคือผลกระทบ คอลัมน์คือโอกาสเกิด');
+  for(let impact=5;impact>=1;impact--){
+    const row=el('tr'),header=el('th',impact);header.scope='row';row.append(header);
+    for(let likelihood=1;likelihood<=5;likelihood++){
+      const level=matrix.rows_likelihood_1_to_5[likelihood-1][impact-1],cell=el('td',likelihood*impact,level.toLowerCase());
+      cell.append(el('small',level));cell.title=`L=${likelihood}, I=${impact} · ${level}`;row.append(cell);
+    }table.append(row);
+  }
+  const foot=el('tr');foot.append(el('th','I / L'));for(let l=1;l<=5;l++){const th=el('th',l);th.scope='col';foot.append(th);}table.append(foot);
+  scroll.append(table);chart.append(scroll,el('p',en?'Likelihood / Occurrence (L) →':'โอกาสเกิด (L) →','axis-label'));
+  guide.append(el('h3',en?'🚦 Risk Level & Treatment':'🚦 ระดับความเสี่ยงและแนวปฏิบัติ'));
+  const treatments=[
+    ['1–3','Low Risk','low','เป็นความเสี่ยงที่ยอมรับได้ ไม่ต้องมีการดำเนินการเพิ่มเติม แต่ควรติดตามอย่างสม่ำเสมอ','Acceptable risk. No additional action is required; monitor regularly.'],
+    ['4 (2×2)','Low Risk*','low','เป็นความเสี่ยงที่ยอมรับได้ ไม่ต้องมีการดำเนินการเพิ่มเติม แต่ควรติดตามอย่างสม่ำเสมอ','Acceptable risk. No additional action is required; monitor regularly.'],
+    ['4 (1×4 / 4×1)','Medium Risk**','medium','เป็นความเสี่ยงที่ยอมรับได้ แต่ต้องให้ความสำคัญในการบริหารความเสี่ยงอย่างจริงจัง และพิจารณาจัดทำแผนจัดการเพิ่มเติมหากจำเป็น','Acceptable risk requiring active management. Consider an additional treatment plan if needed.'],
+    ['5–9','Medium Risk','medium','เป็นความเสี่ยงที่ยอมรับได้ แต่ต้องให้ความสำคัญในการบริหารความเสี่ยงอย่างจริงจัง และพิจารณาจัดทำแผนจัดการเพิ่มเติมหากจำเป็น','Acceptable risk requiring active management. Consider an additional treatment plan if needed.'],
+    ['10–19','High Risk','high','เป็นความเสี่ยงที่ยอมรับไม่ได้ ต้องจัดทำแผนจัดการความเสี่ยงเพิ่มเติม พร้อมกำหนดกิจกรรมที่ต้องดำเนินการในระยะสั้นถึงปานกลาง','Unacceptable risk. Prepare an additional risk treatment plan with specific short- to medium-term actions.'],
+    ['20–25','Critical Risk','critical','เป็นความเสี่ยงที่ยอมรับไม่ได้อย่างยิ่ง ต้องเร่งลดระดับความเสี่ยง จัดทำแผนเพิ่มเติมและดำเนินการทันที โดยผู้บริหารสูงสุดต้องให้ความสำคัญ','Highly unacceptable risk. Urgently reduce exposure, establish an additional treatment plan and act immediately, with top-management priority.']
+  ];
+  for(const [score,name,color,th,eng] of treatments){const item=el('div',undefined,'treatment-row'),badge=el('div',undefined,'treatment-badge '+color);badge.append(el('strong',name),el('small',score));item.append(badge,el('p',en?eng:th));guide.append(item);}
+  guide.append(el('p',en?'* L=2, I=2 is Low. ** L=1, I=4 or L=4, I=1 is Medium, although all have a score of 4.':'* L=2, I=2 เป็น Low  ** L=1, I=4 หรือ L=4, I=1 เป็น Medium แม้คะแนนรวมเท่ากับ 4','risk-footnote'));
+  layout.append(chart,guide);$('criteria').append(layout);
+}
 function renderDates(){
   $('dates').replaceChildren();for(const r of reports){const b=el('button',language==='en'?new Intl.DateTimeFormat('en-GB',{timeZone:'Asia/Bangkok',day:'numeric',month:'short',year:'numeric'}).format(new Date(r.date+'T12:00:00+07:00')):pretty(r.date));b.type='button';b.className=r.date===selected?.date?'active':'';b.setAttribute('aria-pressed',String(r.date===selected?.date));b.append(el('small',`${r.stats?.relevant??0} ${language==='en'?'relevant news · '+(r.status==='partial'?'partial':'complete'):'ข่าวที่เกี่ยวข้อง · '+(r.status==='partial'?'ข้อมูลบางส่วน':'ครบถ้วน')}`));b.onclick=()=>select(r.date);$('dates').append(b);}
 }
