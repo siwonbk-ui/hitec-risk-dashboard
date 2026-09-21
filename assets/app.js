@@ -10,6 +10,9 @@ const GROUPS=[
   {id:'import',label:'🚢 นำเข้า & เศรษฐกิจ',matches:a=>a.business_area==='นำเข้าและเศรษฐกิจ'},
 ];
 let reports=[],selected=null,activeGroup='all';
+let activeType='all';
+function newsType(a){return a.news_type||'risk';}
+function typeLabel(type){return (language==='en'?{all:'All news',risk:'⚠️ Risk',opportunity:'🌱 Opportunity',monitor:'👀 Monitor'}:{all:'ข่าวทั้งหมด',risk:'⚠️ ความเสี่ยง',opportunity:'🌱 โอกาสทางธุรกิจ',monitor:'👀 ข้อมูลติดตาม'})[type];}
 const day=v=>new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Bangkok',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date(v));
 const pretty=v=>new Intl.DateTimeFormat('th-TH',{timeZone:'Asia/Bangkok',day:'numeric',month:'long',year:'numeric'}).format(new Date(v+'T12:00:00+07:00'));
 const compact=v=>new Intl.DateTimeFormat(language==='en'?'en-GB':'th-TH',{timeZone:'Asia/Bangkok',day:'2-digit',month:'short'}).format(new Date(v+'T12:00:00+07:00'));
@@ -24,7 +27,7 @@ function initReference(){document.querySelectorAll('.ref-tab').forEach(b=>b.oncl
 function openBriefArticle(id){
   $('search').value='';
   let card=document.getElementById('article-'+id);
-  if(!card){activeGroup='all';renderTabs();renderArticles();card=document.getElementById('article-'+id);}
+  if(!card){activeGroup='all';activeType='all';renderTabs();renderArticles();card=document.getElementById('article-'+id);}
   if(!card)return;
   const details=card.querySelector('details');
   if(details)details.open=true;
@@ -63,13 +66,18 @@ function renderReport(){
 }
 function renderArticles(){
   const q=$('search').value.toLowerCase(),group=GROUPS.find(x=>x.id===activeGroup)||GROUPS[0];
-  const items=(selected?.articles||[]).filter(a=>a.status==='relevant').filter(group.matches).filter(a=>!q||[langText(a,'news_title'),langText(a,'summary'),a.source,a.business_area].join(' ').toLowerCase().includes(q));
+  let filters=$('news-types');if(!filters){filters=el('div',undefined,'news-types');filters.id='news-types';$('articles').before(filters);}filters.replaceChildren();
+  const matching=(selected?.articles||[]).filter(a=>a.status==='relevant').filter(group.matches).filter(a=>!q||[langText(a,'news_title'),langText(a,'summary'),a.source,a.business_area].join(' ').toLowerCase().includes(q));
+  for(const type of ['all','risk','opportunity','monitor']){const count=matching.filter(a=>type==='all'||newsType(a)===type).length,b=el('button',typeLabel(type)+' · '+count,type===activeType?'active':'');b.type='button';b.setAttribute('aria-pressed',String(type===activeType));b.onclick=()=>{activeType=type;renderArticles();};filters.append(b);}
+  const items=matching.filter(a=>activeType==='all'||newsType(a)===activeType);
   $('articles').replaceChildren();$('result-count').textContent=(language==='en'?'Showing ':'แสดง ')+items.length+(language==='en'?' items':' รายการ');
   if(!items.length){$('articles').append(el('p',language==='en'?'No news in this business group':'ยังไม่มีข่าวในกลุ่มธุรกิจนี้','empty'));return;}
   for(const a of items){
     const card=el('article',undefined,'article');card.id='article-'+a.id;card.tabIndex=-1;const top=el('div',undefined,'article-top'),heading=el('div');heading.append(el('span',language==='en'?({ 'เครื่องจักรและระบบอัตโนมัติ':'Machinery and automation','โครงการ Turnkey':'Turnkey projects','บริการและอะไหล่':'Service and parts','บรรจุภัณฑ์และการตรวจสอบ':'Packaging and inspection','ตลาดอุตสาหกรรมอาหาร':'Food industry market','นำเข้าและเศรษฐกิจ':'Import and economy'}[a.business_area]||a.business_area):a.business_area,'tag'));const h=el('h3'),link=safeLink(a.link);
     if(link){const anchor=el('a',langText(a,'news_title')||a.title);anchor.href=link;anchor.target='_blank';anchor.rel='noopener noreferrer';h.append(anchor);}else h.textContent=langText(a,'news_title')||a.title;heading.append(h);
-    const score=el('div',undefined,'score');score.append(el('strong',a.score??'—'),el('small',language==='en'?'Preliminary L × I / 25':'คะแนนเบื้องต้น L × I / 25'));if(a.risk_level)score.append(el('span',a.risk_level,'level '+a.risk_level.toLowerCase()));top.append(heading,score);
+    const isRisk=newsType(a)==='risk',score=el('div',undefined,'score');heading.prepend(el('span',typeLabel(newsType(a)),'tag news-kind'));
+    if(isRisk){score.append(el('strong',a.score??'—'),el('small',language==='en'?'Preliminary L × I / 25':'คะแนนเบื้องต้น L × I / 25'));if(a.risk_level)score.append(el('span',a.risk_level,'level '+a.risk_level.toLowerCase()));}
+    else{score.append(el('strong',newsType(a)==='opportunity'?'🌱':'👀'),el('small',typeLabel(newsType(a))));}top.append(heading,score);
     card.append(top,el('div',`${sourceLabel(a.source)||'Unknown source'} · ${language==='en'?'Published':'เผยแพร่'} ${a.published_at?time(a.published_at):'—'} ${language==='en'?'ICT':'น.'}`,'meta'),el('p',langText(a,'summary')||'—'));
     const details=el('details'),summary=el('summary',language==='en'?'✨ View impact, scoring rationale and action':'✨ ดูผลกระทบ เหตุผลการให้คะแนน และข้อเสนอ');details.append(summary);const fields=el('dl',undefined,'fields');
     const vals=language==='en'?[["🎯 HITEC relevance",a.relevance_reason_en||a.relevance_reason],["⚠️ Risk cause",a.risk_cause_en||a.risk_cause],["📉 Potential consequence",a.consequence_en||a.consequence],["📈 Likelihood L = "+(a.likelihood_score??'Not assessed'),a.likelihood_reason_en||a.likelihood_reason],["💥 Impact I = "+(a.impact_score??'Not assessed'),a.impact_reason_en||a.impact_reason],["✅ Proposed action",a.proposed_action_en||a.proposed_action],["📝 Assumptions",a.assumptions_en||a.assumptions],["🌱 Business opportunity",a.opportunity_en||a.opportunity]]:[["🎯 ความเกี่ยวข้องกับ HITEC",a.relevance_reason],["⚠️ สาเหตุความเสี่ยง",a.risk_cause],["📉 ผลกระทบที่อาจเกิดขึ้น",a.consequence],["📈 โอกาสเกิด L = "+(a.likelihood_score??'ยังประเมินไม่ได้'),a.likelihood_reason],["💥 ผลกระทบ I = "+(a.impact_score??'ยังประเมินไม่ได้'),a.impact_reason],["✅ ข้อเสนอปฏิบัติ",a.proposed_action],["📝 สมมติฐาน/ข้อมูลที่ต้องตรวจ",a.assumptions],["🌱 โอกาสทางธุรกิจ",a.opportunity]];
@@ -79,6 +87,8 @@ function renderArticles(){
       [language==='en'?'Likelihood criterion':'เกณฑ์โอกาสเกิด',c?.likelihood?.[a.likelihood_score-1]?.definition],
       [language==='en'?'Impact criterion':'เกณฑ์ผลกระทบ',impact?.levels?.[a.impact_score-1]?.definition],
       [language==='en'?'Controls in the company profile':'มาตรการตาม Profile',langText(a,'known_controls')]);
+    if(!isRisk){vals.splice(1,4,[language==='en'?'📌 Business implications':'📌 ประเด็นต่อธุรกิจ',langText(a,'consequence')]);}
+    if(a.review_passed)vals.push([language==='en'?'🔎 Assessment review':'🔎 ผลทบทวนการประเมิน',langText(a,'review_reason')]);
     for(const [label,value] of vals){if(!value)continue;const field=el('div');field.append(el('dt',label),el('dd',value));fields.append(field);}details.append(fields);card.append(details);$('articles').append(card);
   }
 }
