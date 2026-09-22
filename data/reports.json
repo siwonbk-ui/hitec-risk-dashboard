@@ -1,7 +1,711 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-21T16:26:42.497Z",
+  "updated_at": "2026-09-22T11:15:11.385Z",
   "reports": [
+    {
+      "schema_version": 1,
+      "date": "2026-09-22",
+      "generated_at": "2026-09-22T18:00:00.074+07:00",
+      "company": "บริษัท ไฮเทค ฟู๊ด อีควิปเมนท์ จำกัด",
+      "timezone": "Asia/Bangkok",
+      "status": "partial",
+      "summary": "1. ญี่ปุ่น: มีผู้เสียชีวิต 4 รายจากพายุไต้ฝุ่นดูเจวียนพัดถล่มโตเกียวและพื้นที่โดยรอบ — พายุไต้ฝุ่นดูเจวียนพัดถล่มกรุงโตเกียวและพื้นที่โดยรอบในประเทศญี่ปุ่น ส่งผลให้มีผู้เสียชีวิต 4 ราย และสร้างความเสียหายต่อพื้นที่ดังกล่าว\n2. ภาคธุรกิจเผชิญแรงกดดันด้านผลกำไรจากราคาเชื้อเพลิงที่พุ่งสูงขึ้นอย่างรุนแรง — รายงานข่าวจากบีบีซีระบุว่า ภาคธุรกิจกำลังเผชิญความยากลำบากในการสร้างผลกำไรจากการดำเนินงาน เนื่องจากราคาเชื้อเพลิงที่ปรับตัวพุ่งสูงขึ้นอย่างรวดเร็ว ส่งผลกระทบต่อต้นทุนการประกอบการในภาพรวม\n3. การเรียกคืนผลไม้เนื่องจากความเป็นไปได้ของการปนเปื้อนเชื้อลิสทีเรีย — รายงานข่าวจากสื่อระบุว่ามีการประกาศเรียกคืนผลิตภัณฑ์ผลไม้เนื่องจากความเป็นไปได้ของการปนเปื้อนเชื้อแบคทีเรียลิสทีเรีย",
+      "stats": {
+        "fetched": 157,
+        "excludedDate": 68,
+        "invalidDate": 0,
+        "invalidLink": 0,
+        "duplicates": 0,
+        "eligible": 89,
+        "analyzed": 60,
+        "omittedByLimit": 29,
+        "relevant": 3,
+        "analysisFailed": 0,
+        "irrelevant": 57,
+        "linkChecked": 60,
+        "linkUnavailable": 0,
+        "linkUnverified": 0
+      },
+      "sources": [
+        {
+          "id": "fsn",
+          "name": "Food Safety News",
+          "url": "https://www.foodsafetynews.com/feed/",
+          "status": "ok",
+          "error": null
+        },
+        {
+          "id": "prachachat",
+          "name": "ประชาชาติธุรกิจ",
+          "url": "https://news.google.com/rss/search?q=site%3Aprachachat.net%20(%E0%B9%82%E0%B8%A3%E0%B8%87%E0%B8%87%E0%B8%B2%E0%B8%99%20OR%20%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%88%E0%B8%B1%E0%B8%81%E0%B8%A3%20OR%20%E0%B8%AD%E0%B8%B2%E0%B8%AB%E0%B8%B2%E0%B8%A3%20OR%20%E0%B8%99%E0%B8%B3%E0%B9%80%E0%B8%82%E0%B9%89%E0%B8%B2)%20(%E0%B8%AB%E0%B8%A2%E0%B8%B8%E0%B8%94%E0%B8%9C%E0%B8%A5%E0%B8%B4%E0%B8%95%20OR%20%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B9%82%E0%B8%A3%E0%B8%87%E0%B8%87%E0%B8%B2%E0%B8%99%20OR%20%E0%B8%82%E0%B8%B2%E0%B8%94%E0%B9%81%E0%B8%84%E0%B8%A5%E0%B8%99%20OR%20%E0%B8%A0%E0%B8%B2%E0%B8%A9%E0%B8%B5%20OR%20%E0%B8%95%E0%B9%89%E0%B8%99%E0%B8%97%E0%B8%B8%E0%B8%99%20OR%20%E0%B8%A5%E0%B9%88%E0%B8%B2%E0%B8%8A%E0%B9%89%E0%B8%B2)%20when%3A1d&hl=th&gl=TH&ceid=TH:th",
+          "status": "ok",
+          "error": null
+        },
+        {
+          "id": "bbc",
+          "name": "BBC Business",
+          "url": "https://news.google.com/rss/search?q=site%3Abbc.com%20(shipping%20OR%20machinery%20OR%20food%20OR%20ports)%20(disruption%20OR%20shortage%20OR%20tariffs%20OR%20strike%20OR%20closure)%20when%3A1d&hl=en-US&gl=US&ceid=US:en",
+          "status": "ok",
+          "error": null
+        },
+        {
+          "id": "foodmanufacture",
+          "name": "Food Manufacture ผ่าน Google News",
+          "url": "https://news.google.com/rss/search?q=site%3Afoodmanufacture.co.uk%20(recall%20OR%20contamination%20OR%20shutdown%20OR%20shortage%20OR%20disruption%20OR%20safety)%20when%3A1d&hl=en-US&gl=US&ceid=US:en",
+          "status": "ok",
+          "error": null
+        },
+        {
+          "id": "foodnavigator",
+          "name": "FoodNavigator Asia ผ่าน Google News",
+          "url": "https://news.google.com/rss/search?q=site%3Afoodnavigator-asia.com%20(ban%20OR%20recall%20OR%20regulation%20OR%20tariff%20OR%20shortage)%20when%3A1d&hl=en-US&gl=US&ceid=US:en",
+          "status": "empty",
+          "error": null
+        },
+        {
+          "id": "foodprocessing",
+          "name": "Food Processing ผ่าน Google News",
+          "url": "https://news.google.com/rss/search?q=site%3Afoodprocessing.com%20(recall%20OR%20shutdown%20OR%20safety%20OR%20shortage%20OR%20cybersecurity%20OR%20disruption)%20when%3A1d&hl=en-US&gl=US&ceid=US:en",
+          "status": "ok",
+          "error": null
+        },
+        {
+          "id": "packaging",
+          "name": "Packaging Europe ผ่าน Google News",
+          "url": "https://news.google.com/rss/search?q=site%3Apackagingeurope.com%20(food%20OR%20machinery)%20(regulation%20OR%20ban%20OR%20contamination%20OR%20shortage%20OR%20safety)%20when%3A1d&hl=en-US&gl=US&ceid=US:en",
+          "status": "ok",
+          "error": null
+        },
+        {
+          "id": "petfood",
+          "name": "Petfood Industry ผ่าน Google News",
+          "url": "https://news.google.com/rss/search?q=site%3Apetfoodindustry.com%20(recall%20OR%20plant%20closure%20OR%20contamination%20OR%20shortage%20OR%20tariff)%20when%3A1d&hl=en-US&gl=US&ceid=US:en",
+          "status": "empty",
+          "error": null
+        },
+        {
+          "id": "seafood",
+          "name": "SeafoodSource ผ่าน Google News",
+          "url": "https://news.google.com/rss/search?q=site%3Aseafoodsource.com%20(processing%20OR%20exports)%20(ban%20OR%20closure%20OR%20shortage%20OR%20tariff%20OR%20disruption)%20when%3A1d&hl=en-US&gl=US&ceid=US:en",
+          "status": "ok",
+          "error": null
+        },
+        {
+          "id": "bakery",
+          "name": "BakeryAndSnacks ผ่าน Google News",
+          "url": "https://news.google.com/rss/search?q=site%3Abakeryandsnacks.com%20(recall%20OR%20closure%20OR%20shortage%20OR%20contamination%20OR%20costs)%20when%3A1d&hl=en-US&gl=US&ceid=US:en",
+          "status": "empty",
+          "error": null
+        },
+        {
+          "id": "thai-factory",
+          "name": "โรงงานอาหารไทย",
+          "url": "https://news.google.com/rss/search?q=(%22%E0%B9%82%E0%B8%A3%E0%B8%87%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%AD%E0%B8%B2%E0%B8%AB%E0%B8%B2%E0%B8%A3%22%20OR%20%22%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%88%E0%B8%B1%E0%B8%81%E0%B8%A3%E0%B9%81%E0%B8%9B%E0%B8%A3%E0%B8%A3%E0%B8%B9%E0%B8%9B%E0%B8%AD%E0%B8%B2%E0%B8%AB%E0%B8%B2%E0%B8%A3%22%20OR%20%22%E0%B8%AD%E0%B8%B8%E0%B8%95%E0%B8%AA%E0%B8%B2%E0%B8%AB%E0%B8%81%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%AD%E0%B8%B2%E0%B8%AB%E0%B8%B2%E0%B8%A3%22)%20(%E0%B8%AB%E0%B8%A2%E0%B8%B8%E0%B8%94%E0%B8%9C%E0%B8%A5%E0%B8%B4%E0%B8%95%20OR%20%E0%B9%84%E0%B8%9F%E0%B9%84%E0%B8%AB%E0%B8%A1%E0%B9%89%20OR%20%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%97%E0%B9%88%E0%B8%A7%E0%B8%A1%20OR%20%E0%B8%82%E0%B8%B2%E0%B8%94%E0%B9%81%E0%B8%84%E0%B8%A5%E0%B8%99%20OR%20%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%81%E0%B8%84%E0%B8%B7%E0%B8%99%20OR%20%E0%B8%AA%E0%B9%88%E0%B8%87%E0%B8%AD%E0%B8%AD%E0%B8%81)%20when%3A1d&hl=th&gl=TH&ceid=TH:th",
+          "status": "ok",
+          "error": null
+        },
+        {
+          "id": "thai-machinery",
+          "name": "เครื่องจักรและบรรจุภัณฑ์ไทย",
+          "url": "https://news.google.com/rss/search?q=(%22%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%88%E0%B8%B1%E0%B8%81%E0%B8%A3%E0%B8%AD%E0%B8%B2%E0%B8%AB%E0%B8%B2%E0%B8%A3%22%20OR%20%22%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%9A%E0%B8%A3%E0%B8%A3%E0%B8%88%E0%B8%B8%22%20OR%20%22%E0%B8%AD%E0%B8%B0%E0%B9%84%E0%B8%AB%E0%B8%A5%E0%B9%88%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%88%E0%B8%B1%E0%B8%81%E0%B8%A3%22)%20(%E0%B8%AD%E0%B8%B8%E0%B8%9A%E0%B8%B1%E0%B8%95%E0%B8%B4%E0%B9%80%E0%B8%AB%E0%B8%95%E0%B8%B8%20OR%20%E0%B8%82%E0%B8%B1%E0%B8%94%E0%B8%82%E0%B9%89%E0%B8%AD%E0%B8%87%20OR%20%E0%B8%82%E0%B8%B2%E0%B8%94%E0%B9%81%E0%B8%84%E0%B8%A5%E0%B8%99%20OR%20%E0%B8%A5%E0%B9%88%E0%B8%B2%E0%B8%8A%E0%B9%89%E0%B8%B2%20OR%20%E0%B8%A1%E0%B8%B2%E0%B8%95%E0%B8%A3%E0%B8%90%E0%B8%B2%E0%B8%99%20OR%20%E0%B8%95%E0%B9%89%E0%B8%99%E0%B8%97%E0%B8%B8%E0%B8%99)%20when%3A1d&hl=th&gl=TH&ceid=TH:th",
+          "status": "empty",
+          "error": null
+        },
+        {
+          "id": "thai-authority",
+          "name": "หน่วยงานไทย ผ่าน Google News",
+          "url": "https://news.google.com/rss/search?q=(site%3Afda.moph.go.th%20OR%20site%3Adiw.go.th%20OR%20site%3Acustoms.go.th)%20(%E0%B8%AD%E0%B8%B2%E0%B8%AB%E0%B8%B2%E0%B8%A3%20OR%20%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%88%E0%B8%B1%E0%B8%81%E0%B8%A3)%20(%E0%B8%AB%E0%B9%89%E0%B8%B2%E0%B8%A1%20OR%20%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%81%E0%B8%84%E0%B8%B7%E0%B8%99%20OR%20%E0%B8%9A%E0%B8%B1%E0%B8%87%E0%B8%84%E0%B8%B1%E0%B8%9A%20OR%20%E0%B8%99%E0%B8%B3%E0%B9%80%E0%B8%82%E0%B9%89%E0%B8%B2%20OR%20%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B8%9B%E0%B8%A5%E0%B8%AD%E0%B8%94%E0%B8%A0%E0%B8%B1%E0%B8%A2)%20when%3A1d&hl=th&gl=TH&ceid=TH:th",
+          "status": "ok",
+          "error": null
+        },
+        {
+          "id": "meat-rte",
+          "name": "เนื้อสัตว์และอาหารพร้อมรับประทาน",
+          "url": "https://news.google.com/rss/search?q=(%22meat%20processing%22%20OR%20%22ready-to-eat%22%20OR%20%22poultry%20processing%22)%20(recall%20OR%20closure%20OR%20contamination%20OR%20disruption%20OR%20shortage)%20when%3A1d&hl=en-US&gl=US&ceid=US:en",
+          "status": "ok",
+          "error": null
+        },
+        {
+          "id": "automation",
+          "name": "ระบบอัตโนมัติและอะไหล่",
+          "url": "https://news.google.com/rss/search?q=(%22food%20machinery%22%20OR%20%22food%20factory%20automation%22%20OR%20%22food%20equipment%22%20OR%20%22spare%20parts%22)%20(failure%20OR%20shortage%20OR%20recall%20OR%20safety%20OR%20cyberattack)%20when%3A1d&hl=en-US&gl=US&ceid=US:en",
+          "status": "ok",
+          "error": null
+        },
+        {
+          "id": "logistics",
+          "name": "ความเสี่ยงนำเข้าและโลจิสติกส์",
+          "url": "https://news.google.com/rss/search?q=(%22%E0%B8%99%E0%B8%B3%E0%B9%80%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%88%E0%B8%B1%E0%B8%81%E0%B8%A3%22%20OR%20%22%E0%B8%84%E0%B9%88%E0%B8%B2%E0%B8%A3%E0%B8%B0%E0%B8%A7%E0%B8%B2%E0%B8%87%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B8%AD%22%20OR%20%22%E0%B8%84%E0%B9%88%E0%B8%B2%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%80%E0%B8%A2%E0%B8%99%22%20OR%20%22%E0%B8%84%E0%B9%88%E0%B8%B2%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B8%A2%E0%B8%B9%E0%B9%82%E0%B8%A3%22)%20(%E0%B8%9E%E0%B8%B8%E0%B9%88%E0%B8%87%20OR%20%E0%B8%9C%E0%B8%B1%E0%B8%99%E0%B8%9C%E0%B8%A7%E0%B8%99%20OR%20%E0%B8%82%E0%B8%B2%E0%B8%94%E0%B9%81%E0%B8%84%E0%B8%A5%E0%B8%99%20OR%20%E0%B8%A5%E0%B9%88%E0%B8%B2%E0%B8%8A%E0%B9%89%E0%B8%B2%20OR%20%E0%B8%A0%E0%B8%B2%E0%B8%A9%E0%B8%B5%20OR%20%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B9%80%E0%B8%AA%E0%B9%89%E0%B8%99%E0%B8%97%E0%B8%B2%E0%B8%87)%20when%3A1d&hl=th&gl=TH&ceid=TH:th",
+          "status": "ok",
+          "error": null
+        },
+        {
+          "id": "standards",
+          "name": "มาตรฐานเครื่องจักรอาหาร",
+          "url": "https://news.google.com/rss/search?q=(%22food%20contact%20materials%22%20OR%20%22hygienic%20design%22%20OR%20%22food%20machinery%20safety%22)%20(regulation%20OR%20ban%20OR%20recall%20OR%20compliance%20OR%20deadline)%20when%3A1d&hl=en-US&gl=US&ceid=US:en",
+          "status": "ok",
+          "error": null
+        },
+        {
+          "id": "hitec-market",
+          "name": "HITEC และงานแสดงเทคโนโลยี",
+          "url": "https://news.google.com/rss/search?q=(%22HITEC%20FOOD%20EQUIPMENT%22%20OR%20%22HITEC%20food%20machinery%22%20OR%20%22TOSEI%22)%20(recall%20OR%20disruption%20OR%20safety%20OR%20shortage%20OR%20closure)%20when%3A1d&hl=en-US&gl=US&ceid=US:en",
+          "status": "empty",
+          "error": null
+        }
+      ],
+      "articles": [
+        {
+          "id": "news-42",
+          "title": "Japan: Four dead as Typhoon Dujuan lashes Tokyo and surrounding areas - BBC",
+          "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5ubFp5Ym5LZlJnZXUzWng1X2dCbDA1c1gxT2c0QXBTcFhPSkV1YnozNEZtS2hkeDV4SnQ2aGVUODZRVTl6YW9NYko2dVYzQzBWQmJ5dy1uN29zOGM?oc=5",
+          "published_at": "2026-09-22T05:58:35.000Z",
+          "source": "BBC Business",
+          "content": "Japan: Four dead as Typhoon Dujuan lashes Tokyo and surrounding areas BBC",
+          "evidence_scope": "RSS headline / excerpt; full article not fetched",
+          "link_check": {
+            "state": "verified",
+            "status_code": 200,
+            "checked_at": "2026-09-22T18:12:05.929+07:00"
+          },
+          "status": "relevant",
+          "news_type": "risk",
+          "news_title": "ญี่ปุ่น: มีผู้เสียชีวิต 4 รายจากพายุไต้ฝุ่นดูเจวียนพัดถล่มโตเกียวและพื้นที่โดยรอบ",
+          "news_title_en": "Japan: Four Dead as Typhoon Dujuan Lashes Tokyo and Surrounding Areas",
+          "summary": "พายุไต้ฝุ่นดูเจวียนพัดถล่มกรุงโตเกียวและพื้นที่โดยรอบในประเทศญี่ปุ่น ส่งผลให้มีผู้เสียชีวิต 4 ราย และสร้างความเสียหายต่อพื้นที่ดังกล่าว",
+          "summary_en": "Typhoon Dujuan lashed Tokyo and surrounding areas in Japan, resulting in four fatalities and causing damage across the impacted region.",
+          "business_area": "นำเข้าและเศรษฐกิจ",
+          "relevance_reason": "HITEC มีสำนักงานใหญ่และพันธมิตรผู้ผลิตเครื่องจักรตั้งอยู่ในประเทศญี่ปุ่น พายุไต้ฝุ่นรุนแรงในเขตโตเกียวและปริมณฑลอาจกระทบระบบคมนาคม ขนส่ง ท่าเรือ หรือโรงงานผลิตของคู่ค้า ซึ่งอาจทำให้การนำเข้าเครื่องจักรแปรรูปอาหารและอะไหล่มายังไทยล่าช้า",
+          "relevance_reason_en": "HITEC has its headquarters and key machinery manufacturing partners in Japan. A severe typhoon impacting Tokyo and surrounding regions may disrupt transport, ports, or factory operations, potentially delaying shipments of food processing equipment and spare parts to Thailand.",
+          "risk_cause": "ภัยธรรมชาติจากพายุไต้ฝุ่นดูเจวียนพัดถล่มพื้นที่โตเกียวและปริมณฑลในญี่ปุ่น",
+          "risk_cause_en": "Natural disaster caused by Typhoon Dujuan striking Tokyo and surrounding areas in Japan.",
+          "consequence": "อาจเกิดความล่าช้าในการจัดส่งเครื่องจักรและอะไหล่จากญี่ปุ่น ส่งผลกระทบต่อกำหนดการติดตั้ง Commissioning หรือการซ่อมบำรุงรักษาของลูกค้าในไทย",
+          "consequence_en": "Potential delays in shipments of machinery and spare parts from Japan, which may impact commissioning schedules or maintenance services for customers in Thailand.",
+          "impact_area": "operations",
+          "impact_name": "10. ผลกระทบต่อกระบวนการดำเนินงาน",
+          "likelihood_score": 2,
+          "impact_score": 3,
+          "score": 6,
+          "likelihood_reason": "ประเมินเบื้องต้นจากสัญญาณข่าว: พายุไต้ฝุ่นรุนแรงที่พัดขึ้นฝั่งกระทบเขตโตเกียวจนส่งผลต่อระบบคมนาคมและโครงสร้างพื้นฐานมีโอกาสเกิดขึ้นประมาณ 1 ครั้งในช่วง 1 ปี จนถึง 3 ปี ข้อจำกัดคือข่าวสั้นไม่ได้ระบุระยะเวลาที่ระบบโลจิสติกส์หยุดชะงัก",
+          "likelihood_reason_en": "Preliminary signal-based assessment: Severe typhoons directly striking the Tokyo area and disrupting transport or infrastructure typically occur at least once every 1 to 3 years. Limitation: The news excerpt does not specify the duration of logistical disruptions.",
+          "impact_reason": "ประเมินเบื้องต้นจากสัญญาณข่าว: การหยุดชะงักของระบบขนส่งหรือโรงงานในญี่ปุ่นอาจทำให้กระบวนการส่งมอบเครื่องจักรหรืออะไหล่สำคัญล่าช้าบางส่วน แต่คาดว่าสามารถบริหารจัดการและกู้คืนได้ตามรอบจัดส่งถัดไปภายในเวลาที่ยอมรับได้ ข้อจำกัดคือยังไม่ทราบความเสียหายเฉพาะเจาะจงของคู่ค้าในพื้นที่",
+          "impact_reason_en": "Preliminary signal-based assessment: Temporary disruptions to transport or partner factories in Japan could cause delays to critical machinery or spare parts shipments, but operations are expected to recover within manageable schedules. Limitation: Specific supplier damage remains unconfirmed.",
+          "likelihood_definition": "เกิดขึ้น หรือมีโอกาสเกิดขึ้นอย่างน้อย 1 ครั้งในช่วงระหว่าง 1 ปี จนถึง 3 ปี",
+          "impact_definition": "กระบวนการดำเนินงานหรือระบบ อาจล่าช้าหรือมีคุณภาพลดลงในบางส่วน เนื่องจาก 1. เกิดความเสียหายต่อการดำเนินงาน หรือระบบที่ไม่มีนัยสำคัญ ซึ่งไม่สามารถกลับมาดำเนินงาน หรือกู้คืนได้ภายในระยะเวลาที่กำหนดขององค์กร หรือ 2. เกิดความเสียหายต่อการดำเนินงาน หรือระบบที่สำคัญแต่สามารถกลับมาดำเนินงาน หรือกู้คืนได้ภายในระยะเวลาที่กำหนดขององค์กร",
+          "risk_level": "Medium",
+          "assessment_status": "AI preliminary assessment",
+          "proposed_action": "ประสานงานกับสำนักงานใหญ่และคู่ค้าผู้ผลิตในญี่ปุ่นเพื่อตรวจสอบสถานะโรงงานและเส้นทางขนส่งสินค้า พร้อมแจ้งเตือนลูกค้าล่วงหน้าหากมีรายการที่อาจได้รับผลกระทบ",
+          "proposed_action_en": "Coordinate with the Japan headquarters and manufacturers to assess facility and freight status, and proactively inform customers if any delivery schedules are affected.",
+          "known_controls": "บริษัทมีระบบคลังจัดเก็บอะไหล่สำรอง (Spare Parts Center) ในประเทศเพื่อลดเวลาหยุดทำงานของเครื่องจักร (บริบทตาม Profile ไม่ยืนยันประสิทธิผลปัจจุบัน)",
+          "known_controls_en": "The company maintains a domestic Spare Parts Center to minimize machine downtime (context from Profile, current effectiveness unverified).",
+          "assumptions": "สมมติฐาน: HITEC มีคำสั่งซื้อหรือรอบการจัดส่งเครื่องจักรและอะไหล่จากพื้นที่โตเกียวหรือปริมณฑลในช่วงเวลาดังกล่าว และผลกระทบต่อระบบโลจิสติกส์เกิดขึ้นเพียงชั่วคราว",
+          "assumptions_en": "Assumptions: HITEC has active machinery or parts shipments originating from or routed through Tokyo and surrounding areas, and logistics disruptions are temporary.",
+          "opportunity": "ใช้จุดแข็งของคลังอะไหล่สำรองในประเทศเพื่อสร้างความมั่นใจให้ลูกค้าด้านความต่อเนื่องในการให้บริการแม้เกิดภัยธรรมชาติในต่างประเทศ",
+          "opportunity_en": "Leverage the domestic Spare Parts Center to reassure clients of service continuity despite overseas natural disasters.",
+          "review_passed": true,
+          "review_reason": "ร่างเดิมวิเคราะห์เส้นทางผลกระทบเชื่อมโยงสำนักงานใหญ่และซัพพลายเออร์เครื่องจักรในญี่ปุ่นกับสายโซ่อุปทานของ HITEC ได้ถูกต้อง การให้คะแนน L=2 และ I=3 (operations) สอดคล้องกับนิยามในเกณฑ์ ไม่มีการแต่งตัวเลขทางการเงิน และแยกแยะสมมติฐานกับข้อจำกัดของข่าวไว้อย่างเหมาะสม",
+          "review_reason_en": "The draft accurately established the impact pathway linking Japan headquarters and machinery suppliers to HITEC's supply chain. The scores L=2 and I=3 (operations) align with the criteria definitions, avoid fabricated financial metrics, and properly distinguish assumptions from news limitations."
+        },
+        {
+          "id": "news-59",
+          "title": "Businesses struggle to profit as fuel prices soar - BBC",
+          "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5qdlVoYng0bVRTdUdSeXg5VVF4OHpTOFZtUm9GbktNODdMOGprUnZ0M0Y4Q0t3bExSeGhZY2lENlIzN2VkbXJyQmFiTlNOMlZMSVhrSnR5MmF1SU0?oc=5",
+          "published_at": "2026-09-22T08:33:49.000Z",
+          "source": "BBC Business",
+          "content": "Businesses struggle to profit as fuel prices soar BBC",
+          "evidence_scope": "RSS headline / excerpt; full article not fetched",
+          "link_check": {
+            "state": "verified",
+            "status_code": 200,
+            "checked_at": "2026-09-22T18:09:01.216+07:00"
+          },
+          "status": "relevant",
+          "news_type": "risk",
+          "news_title": "ภาคธุรกิจเผชิญแรงกดดันด้านผลกำไรจากราคาเชื้อเพลิงที่พุ่งสูงขึ้นอย่างรุนแรง",
+          "news_title_en": "Businesses Struggle to Profit as Fuel Prices Soar",
+          "summary": "รายงานข่าวจากบีบีซีระบุว่า ภาคธุรกิจกำลังเผชิญความยากลำบากในการสร้างผลกำไรจากการดำเนินงาน เนื่องจากราคาเชื้อเพลิงที่ปรับตัวพุ่งสูงขึ้นอย่างรวดเร็ว ส่งผลกระทบต่อต้นทุนการประกอบการในภาพรวม",
+          "summary_en": "BBC reports that businesses are struggling to maintain profitability amid soaring fuel prices, which are driving up overall operating expenses across sectors.",
+          "business_area": "นำเข้าและเศรษฐกิจ",
+          "relevance_reason": "ราคาเชื้อเพลิงที่พุ่งสูงส่งผลกระทบต่อ HITEC ผ่านต้นทุนค่าระวางขนส่งทางเรือและทางอากาศสำหรับการนำเข้าเครื่องจักรและอะไหล่จากต่างประเทศ รวมถึงต้นทุนค่ายานพาหนะของทีมวิศวกรบริการ นอกจากนี้ยังอาจกระทบต่อกำไรของโรงงานแปรรูปอาหารที่เป็นลูกค้า ซึ่งอาจชะลอการลงทุนในโครงการเครื่องจักรใหม่",
+          "relevance_reason_en": "Soaring fuel prices impact HITEC by increasing freight costs for importing machinery and spare parts, as well as travel expenses for service engineers. Furthermore, it squeezes margins of food manufacturing clients, potentially leading to postponed capital investments in new machinery.",
+          "risk_cause": "ราคาน้ำมันและพลังงานในตลาดโลกปรับตัวสูงขึ้นอย่างมาก ส่งผลให้ค่าธรรมเนียมเชื้อเพลิงและการขนส่งในห่วงโซ่อุปทานปรับตัวสูงขึ้นตามกลไกตลาด",
+          "risk_cause_en": "Substantial escalation of global fuel and energy prices, increasing fuel surcharges and transportation expenses across the supply chain.",
+          "consequence": "ต้นทุนการขนส่งนำเข้าเครื่องจักร อะไหล่ และค่าใช้จ่ายการเดินทางของทีมบริการหลังการขายของ HITEC ปรับตัวสูงขึ้น ซึ่งอาจกดดันอัตรากำไร และลูกค้าใน 7 กลุ่มอุตสาหกรรมอาหารอาจพิจารณาชะลอหรือทบทวนงบลงทุนเครื่องจักรใหม่",
+          "consequence_en": "Logistics costs for importing machinery, spare parts, and service engineer travel expenses may increase, potentially pressuring profit margins and prompting clients across 7 food segments to delay or review new machinery investments.",
+          "impact_area": "operations",
+          "impact_name": "10. ผลกระทบต่อกระบวนการดำเนินงาน",
+          "likelihood_score": 3,
+          "impact_score": 1,
+          "score": 3,
+          "likelihood_reason": "ประเมินเบื้องต้นจากสัญญาณข่าว: ความผันผวนของราคาน้ำมันและการปรับขึ้นค่าธรรมเนียมเชื้อเพลิง (Fuel Surcharge) ของระบบขนส่งระหว่างประเทศและในประเทศเกิดขึ้นเป็นระลอกตามรอบตลาด โดยประเมินตามสมมติฐานว่ามีโอกาสกระทบต่อต้นทุนการขนส่งและการเดินทางอย่างน้อย 1 ครั้งในช่วงระหว่าง 6 เดือน ถึง 1 ปี (คะแนน 3) ข้อจำกัดคือข่าวไม่ได้ระบุระดับราคาหรือระยะเวลาที่ราคาจะทรงตัว",
+          "likelihood_reason_en": "Preliminary signal-based assessment: Energy price fluctuations and logistics fuel surcharge revisions occur periodically in the market, assumed to affect freight and travel costs at least once every 6 months to 1 year (Score 3). Limitation is that the news does not specify exact price levels or duration.",
+          "impact_reason": "ประเมินเบื้องต้นจากสัญญาณข่าว: ต้นทุนเชื้อเพลิงที่เพิ่มขึ้นส่งผลกระทบเชิงลบเล็กน้อยต่อขั้นตอนการจัดส่งสินค้า การกระจายอะไหล่ และการเดินทางหน้างานของทีมช่าง ซึ่งเป็นขั้นตอนสนับสนุนการดำเนินงาน ไม่ได้ทำให้ระบบหลักเสียหายหรือหยุดชะงัก จึงสอดคล้องกับระดับ 1 ของผลกระทบต่อกระบวนการดำเนินงาน ข้อจำกัดคือไม่มีข้อมูลสัดส่วนต้นทุนเชื้อเพลิงภายในบริษัท",
+          "impact_reason_en": "Preliminary signal-based assessment: Higher fuel costs cause a minor negative impact on logistics, parts distribution, and field service travel routines without disrupting core operational systems, matching Level 1 of operational impact. Limitation is the lack of internal cost breakdown data.",
+          "likelihood_definition": "เกิดขึ้น หรือมีโอกาสเกิดขึ้นอย่างน้อย 1 ครั้งในช่วงระหว่าง 6 เดือน จนถึง 1 ปี",
+          "impact_definition": "ผลกระทบเชิงลบเล็กน้อยต่อบางขั้นตอนของกระบวนการดำเนินงาน หรือบางฟังก์ชั่นของระบบที่ไม่มีนัยสำคัญ",
+          "risk_level": "Low",
+          "assessment_status": "AI preliminary assessment",
+          "proposed_action": "ควรทบทวนข้อตกลงค่าขนส่งกับผู้ให้บริการโลจิสติกส์เพื่อพิจารณาตรึงราคาล่วงหน้า วางแผนเส้นทางและตารางการออกบริการซ่อมบำรุงเชิงป้องกัน (PM) ผ่าน Service App ให้มีประสิทธิภาพสูงสุดเพื่อลดการใช้น้ำมัน และระบุเงื่อนไขความผันผวนของค่าระวางขนส่งในใบเสนอราคาเครื่องจักร",
+          "proposed_action_en": "Review freight agreements with logistics partners to secure forward rates, optimize preventive maintenance travel routes via the Service App to minimize fuel consumption, and include freight surcharge clauses in machinery price quotations.",
+          "known_controls": "จาก Profile: มีศูนย์บริการ HITEC Service Center, คลังอะไหล่สำรองในประเทศ และแอปพลิเคชัน Service App ในการบริหารจัดการงานบริการ แต่ไม่มีข้อมูลมาตรการด้านสัญญาค่าขนส่งหรือการบริหารความเสี่ยงราคาน้ำมันระบุไว้ (บริบทตาม Profile ไม่ยืนยันประสิทธิผลปัจจุบัน)",
+          "known_controls_en": "From Profile: Maintains HITEC Service Center, a local spare parts warehouse, and a Service App for tracking engineer service work, but no explicit controls regarding fuel price hedging or logistics contracts are mentioned (Profile context only; does not confirm current effectiveness).",
+          "assumptions": "สมมติฐาน: ราคาเชื้อเพลิงที่พุ่งสูงส่งผลให้ค่าระวางขนส่งสินค้านำเข้าและค่าเดินทางบริการเพิ่มขึ้นจริง และคาดว่าความผันผวนของราคาน้ำมันจะกระทบต่อรอบสัญญาบริการทุก 6-12 เดือน",
+          "assumptions_en": "Assumptions: Soaring fuel prices translate to higher international freight rates and service travel expenses, with energy price volatility impacting service cycles every 6-12 months.",
+          "opportunity": "โอกาสในการนำเสนอเครื่องจักรแปรรูปอาหารและระบบอัตโนมัติรุ่นใหม่ที่เน้นการประหยัดพลังงานสูง (Energy-Efficient Machinery) เพื่อช่วยลูกค้าโรงงานลดต้นทุนการผลิตและค่าพลังงานในระยะยาว",
+          "opportunity_en": "Opportunity to promote energy-efficient food processing machinery and automation systems that help client factories decrease overall utility and production expenses over the long term.",
+          "review_passed": true,
+          "review_reason": "ร่างเดิมระบุเส้นทางผลกระทบเชื่อมโยงกับต้นทุนนำเข้าและบริการของ HITEC รวมถึงงบลงทุนของลูกค้ากลุ่มอาหารได้อย่างสมเหตุสมผล การให้คะแนน Likelihood 3 อิงความถี่การผันผวนของต้นทุนพลังงานตามรอบ 6-12 เดือน และการเลือกหมวด operations ระดับ 1 มีความเหมาะสมเนื่องจากเลี่ยงการแต่งตัวเลข % ทางการเงินและสะท้อนผลกระทบเชิงลบเล็กน้อยต่อขั้นตอนการขนส่ง/บริการ",
+          "review_reason_en": "The draft reasonably identified the impact pathway connecting fuel costs to HITEC's import logistics, field service travel, and food client capex. Likelihood 3 appropriately reflects energy cost fluctuation cycles every 6-12 months, and operations Level 1 is sound as it avoids fabricating financial percentages while reflecting minor negative impacts on transport and service operations."
+        },
+        {
+          "id": "news-78",
+          "title": "Fruit recalled due to possible listeria contamination - MundoNOW",
+          "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBuR1BPVDZSLWVQdGN1aFdXeFNTY0tjeW9kNzBTeGxXN25TOW1FUTI0eUxLSUhaU0FzR3JvUktzM0FLNF8xY3hkSTR6M2R1UjJPNHNVNk96cW4yVjlkSFFPYXlNOGEyc2tWYWlr?oc=5",
+          "published_at": "2026-09-22T04:11:03.000Z",
+          "source": "เนื้อสัตว์และอาหารพร้อมรับประทาน",
+          "content": "Fruit recalled due to possible listeria contamination MundoNOW",
+          "evidence_scope": "RSS headline / excerpt; full article not fetched",
+          "link_check": {
+            "state": "verified",
+            "status_code": 200,
+            "checked_at": "2026-09-22T18:00:56.105+07:00"
+          },
+          "status": "relevant",
+          "news_type": "risk",
+          "news_title": "การเรียกคืนผลไม้เนื่องจากความเป็นไปได้ของการปนเปื้อนเชื้อลิสทีเรีย",
+          "news_title_en": "Fruit Recalled Due to Possible Listeria Contamination",
+          "summary": "รายงานข่าวจากสื่อระบุว่ามีการประกาศเรียกคืนผลิตภัณฑ์ผลไม้เนื่องจากความเป็นไปได้ของการปนเปื้อนเชื้อแบคทีเรียลิสทีเรีย",
+          "summary_en": "News reports indicate a recall of fruit products due to possible Listeria contamination.",
+          "business_area": "ตลาดอุตสาหกรรมอาหาร",
+          "relevance_reason": "กลุ่มลูกค้าอุตสาหกรรมผักและผลไม้ของ HITEC ซึ่งใช้งานเครื่องจักรแปรรูป เช่น เครื่องล้าง ปอก หั่น และซอย อาจเผชิญแรงกดดันด้านการตรวจสอบมาตรฐานสุขอนามัยเมื่อเกิดเหตุการณ์ปนเปื้อนเชื้อลิสทีเรียในห่วงโซ่อุปทานผลไม้ ส่งผลกระทบทางอ้อมต่อการชะลอการตัดสินใจลงทุนเครื่องจักรใหม่ หรือต้องการการทดสอบด้านสุขลักษณะทางวิศวกรรมเพิ่มเติมก่อนส่งมอบ",
+          "relevance_reason_en": "HITEC's fruit and vegetable industry customer segment, utilizing processing machinery such as washing, peeling, and cutting machines, may face heightened sanitary compliance pressure following industry Listeria contamination recalls, indirectly delaying machinery investment decisions or requiring additional hygienic engineering validation prior to delivery.",
+          "risk_cause": "การตรวจพบหรือสงสัยว่ามีเชื้อจุลินทรีย์ก่อโรคลิสทีเรียปนเปื้อนในผลิตภัณฑ์ผลไม้ในสายการผลิตของผู้ประกอบการอาหาร",
+          "risk_cause_en": "Detection or suspicion of pathogenic Listeria contamination in fruit products within a food manufacturer's production line.",
+          "consequence": "HITEC ไม่ใช่ผู้ผลิตอาหารและไม่ได้ถูกเรียกคืนสินค้า แต่เหตุการณ์ดังกล่าวอาจทำให้ลูกค้าในกลุ่มแปรรูปผักและผลไม้ชะลอโครงการจัดซื้อเครื่องจักรชั่วคราวเพื่อทบทวนความปลอดภัย หรือร้องขอให้ HITEC ตรวจสอบและให้คำปรึกษาด้านการออกแบบสุขลักษณะ (Hygienic Design) และขั้นตอนการล้างทำความสะอาดของเครื่องจักรแปรรูปผลไม้เพิ่มเติม",
+          "consequence_en": "HITEC is not a food producer and is not subjected to product recalls, but the incident may cause fruit and vegetable processing customers to temporarily postpone machinery purchase projects for safety reviews, or request HITEC to provide additional hygienic design validation and sanitation consultation for fruit processing equipment.",
+          "impact_area": "operations",
+          "impact_name": "10. ผลกระทบต่อกระบวนการดำเนินงาน",
+          "likelihood_score": 2,
+          "impact_score": 1,
+          "score": 2,
+          "likelihood_reason": "ประเมินเบื้องต้นจากสัญญาณข่าว: ภายใต้สมมติฐานว่าเหตุการณ์การเรียกคืนสินค้าผลไม้ปนเปื้อนเชื้อก่อโรคในระดับสากลส่งผลกระทบต่อเนื่องมายังการตื่นตัวและทบทวนข้อกำหนดทางวิศวกรรมสุขอนามัยของลูกค้าในไทย คาดว่าเกิดขึ้นได้ประมาณ 1 ครั้งในช่วง 1 ถึง 3 ปี (คะแนน 2) โดยมีข้อจำกัดด้านข้อมูลเนื่องจากเป็นเพียงพาดหัวข่าวสั้น ไม่ระบุผู้ผลิตหรือแหล่งที่มาแน่ชัด",
+          "likelihood_reason_en": "Preliminary signal-based assessment: Assuming that international fruit pathogen recall incidents trigger hygiene review requests from Thai processing clients, such impact scenarios are estimated to occur approximately once every 1 to 3 years (Score 2). Information is limited as it is a brief headline lacking specific producer or location details.",
+          "impact_reason": "ประเมินเบื้องต้นจากสัญญาณข่าว: บนสมมติฐานว่าข่าวเป็นเหตุการณ์ภายนอกที่ไม่เกี่ยวข้องกับเครื่องจักรของ HITEC โดยตรง ผลกระทบจึงจำกัดอยู่เพียงการให้คำปรึกษาทางเทคนิคหรือการทดสอบการล้างทำความสะอาดใน Demo Lab เพิ่มเติม ซึ่งส่งผลกระทบเชิงลบเล็กน้อยต่อบางขั้นตอนการดำเนินงานโดยไม่กระทบต่อกระบวนการหลักของบริษัท (คะแนน 1)",
+          "impact_reason_en": "Preliminary signal-based assessment: Assuming this is an external third-party incident not directly involving HITEC machinery, the impact is confined to supplementary technical consultations or cleanability testing in the Demo Lab, representing only minor negative operational impact on non-critical process steps (Score 1).",
+          "likelihood_definition": "เกิดขึ้น หรือมีโอกาสเกิดขึ้นอย่างน้อย 1 ครั้งในช่วงระหว่าง 1 ปี จนถึง 3 ปี",
+          "impact_definition": "ผลกระทบเชิงลบเล็กน้อยต่อบางขั้นตอนของกระบวนการดำเนินงาน หรือบางฟังก์ชั่นของระบบที่ไม่มีนัยสำคัญ",
+          "risk_level": "Low",
+          "assessment_status": "AI preliminary assessment",
+          "proposed_action": "ติดตามข้อกำหนดด้านสุขอนามัยและมาตรฐาน Hygienic Design จากผู้ผลิตเครื่องจักรคู่ค้าในต่างประเทศ พร้อมจัดเตรียมคู่มือขั้นตอนการทำความสะอาด (CIP/Sanitation) ของเครื่องล้าง ปอก หั่นผลไม้ เพื่อสนับสนุนและสร้างความมั่นใจให้แก่ลูกค้ากลุ่มแปรรูปผลไม้",
+          "proposed_action_en": "Monitor hygienic design standards and sanitary requirements from overseas machine manufacturing partners, and prepare sanitation/cleaning procedural documentation for fruit washing, peeling, and cutting machines to reassure fruit processing clients.",
+          "known_controls": "บริบทตาม Profile: บริษัทมีห้องปฏิบัติการและโชว์รูม (Demo Lab) สำหรับให้ลูกค้านำวัตถุดิบทดสอบกับเครื่องจักรจริง และมีทีมวิศวกรโครงการออกแบบไลน์ผลิต (Turnkey) แต่ไม่มีข้อมูลยืนยันประสิทธิผลของการควบคุมความเสี่ยงด้านการปนเปื้อนจุลินทรีย์เฉพาะกรณีนี้",
+          "known_controls_en": "Context from Profile: The company maintains a showroom and Demo Lab for testing real raw materials on machinery and has turnkey project engineering teams, but there is no confirmed evidence regarding the effectiveness of controls specifically addressing this microbiological contamination risk.",
+          "assumptions": "สมมติฐาน: ข่าวนี้เป็นเหตุการณ์ของบุคคลภายนอกในต่างประเทศ ไม่เกี่ยวข้องกับการดำเนินคดีหรือการเรียกคืนผลิตภัณฑ์ของ HITEC โดยผลกระทบถูกจำกัดอยู่เพียงการตื่นตัวด้านสุขอนามัยของลูกค้าในกลุ่มอุตสาหกรรมผักและผลไม้",
+          "assumptions_en": "Assumptions: This news pertains to a third-party overseas incident with no legal or recall actions against HITEC; the impact is assumed to be strictly limited to heightened sanitary awareness among fruit and vegetable processing customers.",
+          "opportunity": "โอกาสนำเสนอเครื่องจักรแปรรูปผักและผลไม้ที่ออกแบบตามหลักสุขลักษณะสากล (Sanitary/Hygienic Design) ทำความสะอาดง่าย ลดจุดสะสมเชื้อ พร้อมทั้งเสนอโซลูชันระบบล้างและฆ่าเชื้ออัตโนมัติแก่ลูกค้า",
+          "opportunity_en": "Opportunity to promote fruit and vegetable processing machinery featuring international sanitary and hygienic design standards that are easy to clean and minimize bacterial harborage, as well as offering automated washing and disinfection solutions to customers.",
+          "review_passed": true,
+          "review_reason": "ตรวจสอบและปรับปรุงความเชื่อมโยงของเส้นทางผลกระทบมายังกลุ่มลูกค้าอุตสาหกรรมผักและผลไม้ของ HITEC ให้ชัดเจน ปรับปรุงเหตุผลของคะแนน Likelihood (คะแนน 2) โดยระบุสมมติฐานและข้อจำกัดข้อมูลเพื่อไม่ให้เป็นการกำหนดค่าเริ่มต้นลอย ๆ ยืนยันคะแนน Impact เท่ากับ 1 ในหมวด operations ตามเกณฑ์ผลกระทบเล็กน้อยต่อการดำเนินงาน และตรวจทานความถูกต้องสอดคล้องกันของข้อความภาษาไทยและภาษาอังกฤษทุกฟิลด์",
+          "review_reason_en": "Reviewed and refined the impact pathway connecting the event to HITEC's fruit and vegetable customer segment. Improved Likelihood reasoning (Score 2) by explicitly stating underlying assumptions and data constraints to avoid arbitrary scoring. Confirmed Impact Score 1 under operations based on minor operational effects according to criteria, ensuring strict consistency across all Thai and English fields."
+        }
+      ],
+      "criteria": {
+        "source": "เกณฑ์การประเมินผลกระทบของความเสี่ยง.xlsx",
+        "sheet": "Compare Risk",
+        "likelihood": [
+          {
+            "score": 1,
+            "definition": "เกิดขึ้น หรือมีโอกาสเกิดขึ้นอย่างน้อย 1 ครั้งในช่วงมากกว่า 3 ปีขึ้นไป",
+            "cell": "B4"
+          },
+          {
+            "score": 2,
+            "definition": "เกิดขึ้น หรือมีโอกาสเกิดขึ้นอย่างน้อย 1 ครั้งในช่วงระหว่าง 1 ปี จนถึง 3 ปี",
+            "cell": "C4"
+          },
+          {
+            "score": 3,
+            "definition": "เกิดขึ้น หรือมีโอกาสเกิดขึ้นอย่างน้อย 1 ครั้งในช่วงระหว่าง 6 เดือน จนถึง 1 ปี",
+            "cell": "D4"
+          },
+          {
+            "score": 4,
+            "definition": "เกิดขึ้น หรือมีโอกาสเกิดขึ้นอย่างน้อย 1 ครั้งในช่วงระหว่าง 1 เดือน จนถึง 6 เดือน",
+            "cell": "E4"
+          },
+          {
+            "score": 5,
+            "definition": "เกิดขึ้น หรือมีโอกาสเกิดขึ้นได้เป็นรายเดือน หรือถี่กว่า",
+            "cell": "F4"
+          }
+        ],
+        "impacts": [
+          {
+            "id": "ebitda",
+            "name": "1. ความสูญเสียทางการเงินที่ส่งผลต่อกำไรจากการดำเนินงานของบริษัทก่อนหักดอกเบี้ยภาษีค่าเสื่อมราคาและค่าตัดจำหน่าย (EBITDA)",
+            "levels": [
+              {
+                "score": 1,
+                "definition": "< 1%",
+                "cell": "B9"
+              },
+              {
+                "score": 2,
+                "definition": "1% - 2%",
+                "cell": "C9"
+              },
+              {
+                "score": 3,
+                "definition": "> 2% - 4%",
+                "cell": "D9"
+              },
+              {
+                "score": 4,
+                "definition": "> 4% - 5%",
+                "cell": "E9"
+              },
+              {
+                "score": 5,
+                "definition": "> 5%",
+                "cell": "F9"
+              }
+            ]
+          },
+          {
+            "id": "cash_flow",
+            "name": "2. ผลกระทบด้านกระแสเงินสด",
+            "levels": [
+              {
+                "score": 1,
+                "definition": "ไม่มีผลกระทบ",
+                "cell": "B14"
+              },
+              {
+                "score": 2,
+                "definition": "ผลกระทบเล็กน้อย",
+                "cell": "C14"
+              },
+              {
+                "score": 3,
+                "definition": "เริ่มมีปัญหาขาดสภาพคล่อง",
+                "cell": "D14"
+              },
+              {
+                "score": 4,
+                "definition": "ต้องจัดหาแหล่งเงินสด ใหม่เพิ่มเติมอย่างเร่งด่วน",
+                "cell": "E14"
+              },
+              {
+                "score": 5,
+                "definition": "มีปัญหากระทบ ต่อการดำเนินงานที่ต่อเนื่อง",
+                "cell": "F14"
+              }
+            ]
+          },
+          {
+            "id": "revenue",
+            "name": "3. ความสูญเสียทางการเงิน ที่ส่งผลต่อรายได้​",
+            "levels": [
+              {
+                "score": 1,
+                "definition": "< 0.5%",
+                "cell": "B19"
+              },
+              {
+                "score": 2,
+                "definition": "0.5% - 1%",
+                "cell": "C19"
+              },
+              {
+                "score": 3,
+                "definition": "> 1% - 2%",
+                "cell": "D19"
+              },
+              {
+                "score": 4,
+                "definition": "> 2% - 2.5%",
+                "cell": "E19"
+              },
+              {
+                "score": 5,
+                "definition": "> 2.5%",
+                "cell": "F19"
+              }
+            ]
+          },
+          {
+            "id": "media_reach",
+            "name": "4. ขอบเขตการกระจายข่าวเชิงลบของสื่อ",
+            "levels": [
+              {
+                "score": 1,
+                "definition": "ไม่ถูกรายงานในสื่อ",
+                "cell": "B24",
+                "additional": "จำนวนผู้ติดตาม < 10,000 คน",
+                "additional_cell": "B25"
+              },
+              {
+                "score": 2,
+                "definition": "ถูกรายงานในสื่อในวงจำกัด หรือ สามารถชี้แจงได้​",
+                "cell": "C24",
+                "additional": "จำนวนผู้ติดตาม 10,000 - 50,000 คน",
+                "additional_cell": "C25"
+              },
+              {
+                "score": 3,
+                "definition": "ถูกรายงานในสื่อระดับจังหวัดหรือภูมิภาค",
+                "cell": "D24",
+                "additional": "จำนวนผู้ติดตาม > 50,000 - 500,000 คน",
+                "additional_cell": "D25"
+              },
+              {
+                "score": 4,
+                "definition": "ถูกรายงานในสื่อระดับประเทศ",
+                "cell": "E24",
+                "additional": "จำนวนผู้ติดตาม > 500,000 - 1,000,000 คน",
+                "additional_cell": "E25"
+              },
+              {
+                "score": 5,
+                "definition": "ถูกรายงานในสื่อทั้งในและต่างประเทศ",
+                "cell": "F24",
+                "additional": "จำนวนผู้ติดตาม > 1,000,000 คน",
+                "additional_cell": "F25"
+              }
+            ]
+          },
+          {
+            "id": "media_duration",
+            "name": "5. ระยะเวลาข่าวเชิงลบที่ออกสื่อ",
+            "levels": [
+              {
+                "score": 1,
+                "definition": "1-2 วัน",
+                "cell": "B29"
+              },
+              {
+                "score": 2,
+                "definition": "3-5 วัน",
+                "cell": "C29"
+              },
+              {
+                "score": 3,
+                "definition": "6-10 วัน",
+                "cell": "D29"
+              },
+              {
+                "score": 4,
+                "definition": "11-30 วัน",
+                "cell": "E29"
+              },
+              {
+                "score": 5,
+                "definition": ">30 วัน",
+                "cell": "F29"
+              }
+            ]
+          },
+          {
+            "id": "legal",
+            "name": "6. ความรับผิดชอบ ตามกฎหมาย",
+            "levels": [
+              {
+                "score": 1,
+                "definition": "ไม่มีการดำเนินทางกฎหมาย",
+                "cell": "B33"
+              },
+              {
+                "score": 2,
+                "definition": "รายงานเหตุการณ์ที่อาจมีความรับผิดทางกฎหมายต่อผู้บริหาร",
+                "cell": "C33"
+              },
+              {
+                "score": 3,
+                "definition": "มีการรายงานต่อหน่วยงานรัฐ",
+                "cell": "D33"
+              },
+              {
+                "score": 4,
+                "definition": "มีความรับผิดทางกฎหมาย หรือ ถูกหน่วยงานของรัฐตรวจสอบ",
+                "cell": "E33"
+              },
+              {
+                "score": 5,
+                "definition": "มีความรับผิดทางกฎหมายอาจส่งผลให้ต้องหยุดประกอบธุรกิจทั้งหมดหรือบางส่วน",
+                "cell": "F33"
+              }
+            ]
+          },
+          {
+            "id": "environment",
+            "name": "7. ผลกระทบด้านสิ่งแวดล้อม Environmental Impact",
+            "levels": [
+              {
+                "score": 1,
+                "definition": "แทบไม่มีผลกระทบต่อสิ่งแวดล้อม",
+                "cell": "B37"
+              },
+              {
+                "score": 2,
+                "definition": "ผลกระทบน้อยในระยะเวลาสั้น",
+                "cell": "C37"
+              },
+              {
+                "score": 3,
+                "definition": "ผลกระทบในพื้นที่จำกัดภายในและควบคุมได้",
+                "cell": "D37"
+              },
+              {
+                "score": 4,
+                "definition": "ผลกระทบออกสู่ภายนอกที่เป็นแหล่งชุมชน",
+                "cell": "E37"
+              },
+              {
+                "score": 5,
+                "definition": "ผลกระทบรุนแรง มีผู้ได้รับผลกระทบหลายกลุ่ม",
+                "cell": "F37"
+              }
+            ]
+          },
+          {
+            "id": "discipline",
+            "name": "8. บทลงโทษภายในองค์กร",
+            "levels": [
+              {
+                "score": 1,
+                "definition": "มีคำเตือนด้วยวาจา",
+                "cell": "B41"
+              },
+              {
+                "score": 2,
+                "definition": "มีการตักเตือนเป็นลายลักษณ์อักษร",
+                "cell": "C41"
+              },
+              {
+                "score": 3,
+                "definition": "ถูกลงโทษไม่จ่ายเงินรางวัลจูงใจ หรือไม่ปรับค่าจ้าง",
+                "cell": "D41"
+              },
+              {
+                "score": 4,
+                "definition": "ลงโทษให้พักงานหรือไม่จ่ายค่าจ้าง",
+                "cell": "E41"
+              },
+              {
+                "score": 5,
+                "definition": "เลิกจ้าง หรือให้ออก",
+                "cell": "F41"
+              }
+            ]
+          },
+          {
+            "id": "safety",
+            "name": "9. อาชีวอนามัยและ ความปลอดภัย",
+            "levels": [
+              {
+                "score": 1,
+                "definition": "การรักษาปฐมพยาบาล",
+                "cell": "B45"
+              },
+              {
+                "score": 2,
+                "definition": "บาดเจ็บที่ต้องเข้ารักษาในโรงพยาบาล",
+                "cell": "C45"
+              },
+              {
+                "score": 3,
+                "definition": "บาดเจ็บขั้นหยุดงานคนเดียว",
+                "cell": "D45"
+              },
+              {
+                "score": 4,
+                "definition": "บาดเจ็บขั้นหยุดงาน 2 คนขึ้นไป",
+                "cell": "E45"
+              },
+              {
+                "score": 5,
+                "definition": "บาดเจ็บขั้นพิการหรือเสียชีวิต",
+                "cell": "F45"
+              }
+            ]
+          },
+          {
+            "id": "operations",
+            "name": "10. ผลกระทบต่อกระบวนการดำเนินงาน",
+            "levels": [
+              {
+                "score": 1,
+                "definition": "ผลกระทบเชิงลบเล็กน้อยต่อบางขั้นตอนของกระบวนการดำเนินงาน หรือบางฟังก์ชั่นของระบบที่ไม่มีนัยสำคัญ",
+                "cell": "B49"
+              },
+              {
+                "score": 2,
+                "definition": "เกิดความเสียหายต่อกระบวนการดำเนินงาน หรือระบบที่ไม่มีนัยสำคัญ แต่สามารถกลับมาดำเนินงาน หรือกู้คืนได้ภายในระยะเวลาที่กำหนดขององค์กร",
+                "cell": "C49"
+              },
+              {
+                "score": 3,
+                "definition": "กระบวนการดำเนินงานหรือระบบ อาจล่าช้าหรือมีคุณภาพลดลงในบางส่วน เนื่องจาก 1. เกิดความเสียหายต่อการดำเนินงาน หรือระบบที่ไม่มีนัยสำคัญ ซึ่งไม่สามารถกลับมาดำเนินงาน หรือกู้คืนได้ภายในระยะเวลาที่กำหนดขององค์กร หรือ 2. เกิดความเสียหายต่อการดำเนินงาน หรือระบบที่สำคัญแต่สามารถกลับมาดำเนินงาน หรือกู้คืนได้ภายในระยะเวลาที่กำหนดขององค์กร",
+                "cell": "D49"
+              },
+              {
+                "score": 4,
+                "definition": "เกิดผลกระทบเชิงลบต่อกระบวนการดำเนินงาน หรือระบบที่สำคัญในวงกว้าง ซึ่งไม่สามารถกลับมาดำเนินงาน หรือกู้คืนได้ภายในระยะเวลาที่กำหนดขององค์กร",
+                "cell": "E49"
+              },
+              {
+                "score": 5,
+                "definition": "1. เกิดผลกระทบเชิงลบต่อกระบวนการดำเนินงาน หรือระบบที่สำคัญทั้งหมด ซึ่งไม่สามารถกลับมาดำเนินงาน หรือกู้คืนได้ภายในระยะเวลาที่กำหนด หรือ 2. สูญเสียความสามารถในการดำเนินการตามกลยุทธ์ และวัตถุประสงค์ในการดำเนินธุรกิจขององค์กร หรือ 3. สูญเสียความสามารถในการดำเนินธุรกิจของหน่วยงานที่จัดเป็นโครงสร้างพื้นฐานทีสำคัญ (Critical Infrastructure Sector)",
+                "cell": "F49"
+              }
+            ]
+          }
+        ],
+        "matrix": {
+          "source": "Weekly Risk Management_Final (1).json / CT_Risk_Criteria_2026",
+          "rows_likelihood_1_to_5": [
+            [
+              "Low",
+              "Low",
+              "Low",
+              "Medium",
+              "Medium"
+            ],
+            [
+              "Low",
+              "Low",
+              "Medium",
+              "Medium",
+              "High"
+            ],
+            [
+              "Low",
+              "Medium",
+              "Medium",
+              "High",
+              "High"
+            ],
+            [
+              "Medium",
+              "Medium",
+              "High",
+              "High",
+              "Critical"
+            ],
+            [
+              "Medium",
+              "High",
+              "High",
+              "Critical",
+              "Critical"
+            ]
+          ]
+        },
+        "note": "คำนิยาม L/I ใช้ Excel ที่ให้มา; ตารางระดับสีใช้ Flow เดิมตามผู้ใช้ยืนยัน โดย 2×2 = Low แต่ 1×4 และ 4×1 = Medium"
+      },
+      "coverage_note": "เฉพาะข่าวเผยแพร่วันนี้ตามเวลาไทยและก่อนเวลารัน; วิเคราะห์จาก RSS headline/excerpt; ไม่ครอบคลุมข่าวหลังเวลารัน",
+      "matrix_note": "คำนิยาม L/I ใช้ Excel ที่ให้มา; ตารางระดับสีใช้ Flow เดิมตามผู้ใช้ยืนยัน โดย 2×2 = Low แต่ 1×4 และ 4×1 = Medium"
+    },
     {
       "schema_version": 1,
       "date": "2026-09-21",
