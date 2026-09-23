@@ -1,7 +1,660 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-22T11:15:11.385Z",
+  "updated_at": "2026-09-23T11:15:16.292Z",
   "reports": [
+    {
+      "schema_version": 1,
+      "date": "2026-09-23",
+      "generated_at": "2026-09-23T18:00:00.074+07:00",
+      "company": "บริษัท ไฮเทค ฟู๊ด อีควิปเมนท์ จำกัด",
+      "timezone": "Asia/Bangkok",
+      "status": "partial",
+      "summary": "1. จากขั้นเตรียมการสู่การบังคับใช้กฎระเบียบ PPWR ของยุโรป — รายงานข่าวระบุถึงความเคลื่อนไหวในอุตสาหกรรมบรรจุภัณฑ์ยุโรปเกี่ยวกับการเปลี่ยนผ่านจากการเตรียมการไปสู่ขั้นตอนการบังคับใช้กฎระเบียบว่าด้วยบรรจุภัณฑ์และขยะบรรจุภัณฑ์ (PPWR)\n2. พายุเศรษฐกิจถล่มไทย ดอกเบี้ย-น้ำมันซ้ำเติม รัฐแจก 1,000 บาท ยื้อวิกฤต — รายงานข่าวระบุถึงภาวะเศรษฐกิจไทยที่เผชิญแรงกดดันจากอัตราดอกเบี้ยและราคาน้ำมันที่เพิ่มขึ้น ขณะที่ภาครัฐมีมาตรการแจกเงิน 1,000 บาทเพื่อบรรเทาวิกฤตเศรษฐกิจ",
+      "stats": {
+        "fetched": 111,
+        "excludedDate": 45,
+        "invalidDate": 0,
+        "invalidLink": 0,
+        "duplicates": 0,
+        "eligible": 66,
+        "analyzed": 60,
+        "omittedByLimit": 6,
+        "relevant": 2,
+        "analysisFailed": 1,
+        "irrelevant": 57,
+        "linkChecked": 60,
+        "linkUnavailable": 0,
+        "linkUnverified": 0
+      },
+      "sources": [
+        {
+          "id": "fsn",
+          "name": "Food Safety News",
+          "url": "https://www.foodsafetynews.com/feed/",
+          "status": "ok",
+          "error": null
+        },
+        {
+          "id": "prachachat",
+          "name": "ประชาชาติธุรกิจ",
+          "url": "https://news.google.com/rss/search?q=site%3Aprachachat.net%20(%E0%B9%82%E0%B8%A3%E0%B8%87%E0%B8%87%E0%B8%B2%E0%B8%99%20OR%20%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%88%E0%B8%B1%E0%B8%81%E0%B8%A3%20OR%20%E0%B8%AD%E0%B8%B2%E0%B8%AB%E0%B8%B2%E0%B8%A3%20OR%20%E0%B8%99%E0%B8%B3%E0%B9%80%E0%B8%82%E0%B9%89%E0%B8%B2)%20(%E0%B8%AB%E0%B8%A2%E0%B8%B8%E0%B8%94%E0%B8%9C%E0%B8%A5%E0%B8%B4%E0%B8%95%20OR%20%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B9%82%E0%B8%A3%E0%B8%87%E0%B8%87%E0%B8%B2%E0%B8%99%20OR%20%E0%B8%82%E0%B8%B2%E0%B8%94%E0%B9%81%E0%B8%84%E0%B8%A5%E0%B8%99%20OR%20%E0%B8%A0%E0%B8%B2%E0%B8%A9%E0%B8%B5%20OR%20%E0%B8%95%E0%B9%89%E0%B8%99%E0%B8%97%E0%B8%B8%E0%B8%99%20OR%20%E0%B8%A5%E0%B9%88%E0%B8%B2%E0%B8%8A%E0%B9%89%E0%B8%B2)%20when%3A1d&hl=th&gl=TH&ceid=TH:th",
+          "status": "ok",
+          "error": null
+        },
+        {
+          "id": "bbc",
+          "name": "BBC Business",
+          "url": "https://news.google.com/rss/search?q=site%3Abbc.com%20(shipping%20OR%20machinery%20OR%20food%20OR%20ports)%20(disruption%20OR%20shortage%20OR%20tariffs%20OR%20strike%20OR%20closure)%20when%3A1d&hl=en-US&gl=US&ceid=US:en",
+          "status": "ok",
+          "error": null
+        },
+        {
+          "id": "foodmanufacture",
+          "name": "Food Manufacture ผ่าน Google News",
+          "url": "https://news.google.com/rss/search?q=site%3Afoodmanufacture.co.uk%20(recall%20OR%20contamination%20OR%20shutdown%20OR%20shortage%20OR%20disruption%20OR%20safety)%20when%3A1d&hl=en-US&gl=US&ceid=US:en",
+          "status": "ok",
+          "error": null
+        },
+        {
+          "id": "foodnavigator",
+          "name": "FoodNavigator Asia ผ่าน Google News",
+          "url": "https://news.google.com/rss/search?q=site%3Afoodnavigator-asia.com%20(ban%20OR%20recall%20OR%20regulation%20OR%20tariff%20OR%20shortage)%20when%3A1d&hl=en-US&gl=US&ceid=US:en",
+          "status": "empty",
+          "error": null
+        },
+        {
+          "id": "foodprocessing",
+          "name": "Food Processing ผ่าน Google News",
+          "url": "https://news.google.com/rss/search?q=site%3Afoodprocessing.com%20(recall%20OR%20shutdown%20OR%20safety%20OR%20shortage%20OR%20cybersecurity%20OR%20disruption)%20when%3A1d&hl=en-US&gl=US&ceid=US:en",
+          "status": "ok",
+          "error": null
+        },
+        {
+          "id": "packaging",
+          "name": "Packaging Europe ผ่าน Google News",
+          "url": "https://news.google.com/rss/search?q=site%3Apackagingeurope.com%20(food%20OR%20machinery)%20(regulation%20OR%20ban%20OR%20contamination%20OR%20shortage%20OR%20safety)%20when%3A1d&hl=en-US&gl=US&ceid=US:en",
+          "status": "ok",
+          "error": null
+        },
+        {
+          "id": "petfood",
+          "name": "Petfood Industry ผ่าน Google News",
+          "url": "https://news.google.com/rss/search?q=site%3Apetfoodindustry.com%20(recall%20OR%20plant%20closure%20OR%20contamination%20OR%20shortage%20OR%20tariff)%20when%3A1d&hl=en-US&gl=US&ceid=US:en",
+          "status": "ok",
+          "error": null
+        },
+        {
+          "id": "seafood",
+          "name": "SeafoodSource ผ่าน Google News",
+          "url": "https://news.google.com/rss/search?q=site%3Aseafoodsource.com%20(processing%20OR%20exports)%20(ban%20OR%20closure%20OR%20shortage%20OR%20tariff%20OR%20disruption)%20when%3A1d&hl=en-US&gl=US&ceid=US:en",
+          "status": "ok",
+          "error": null
+        },
+        {
+          "id": "bakery",
+          "name": "BakeryAndSnacks ผ่าน Google News",
+          "url": "https://news.google.com/rss/search?q=site%3Abakeryandsnacks.com%20(recall%20OR%20closure%20OR%20shortage%20OR%20contamination%20OR%20costs)%20when%3A1d&hl=en-US&gl=US&ceid=US:en",
+          "status": "empty",
+          "error": null
+        },
+        {
+          "id": "thai-factory",
+          "name": "โรงงานอาหารไทย",
+          "url": "https://news.google.com/rss/search?q=(%22%E0%B9%82%E0%B8%A3%E0%B8%87%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%AD%E0%B8%B2%E0%B8%AB%E0%B8%B2%E0%B8%A3%22%20OR%20%22%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%88%E0%B8%B1%E0%B8%81%E0%B8%A3%E0%B9%81%E0%B8%9B%E0%B8%A3%E0%B8%A3%E0%B8%B9%E0%B8%9B%E0%B8%AD%E0%B8%B2%E0%B8%AB%E0%B8%B2%E0%B8%A3%22%20OR%20%22%E0%B8%AD%E0%B8%B8%E0%B8%95%E0%B8%AA%E0%B8%B2%E0%B8%AB%E0%B8%81%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%AD%E0%B8%B2%E0%B8%AB%E0%B8%B2%E0%B8%A3%22)%20(%E0%B8%AB%E0%B8%A2%E0%B8%B8%E0%B8%94%E0%B8%9C%E0%B8%A5%E0%B8%B4%E0%B8%95%20OR%20%E0%B9%84%E0%B8%9F%E0%B9%84%E0%B8%AB%E0%B8%A1%E0%B9%89%20OR%20%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%97%E0%B9%88%E0%B8%A7%E0%B8%A1%20OR%20%E0%B8%82%E0%B8%B2%E0%B8%94%E0%B9%81%E0%B8%84%E0%B8%A5%E0%B8%99%20OR%20%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%81%E0%B8%84%E0%B8%B7%E0%B8%99%20OR%20%E0%B8%AA%E0%B9%88%E0%B8%87%E0%B8%AD%E0%B8%AD%E0%B8%81)%20when%3A1d&hl=th&gl=TH&ceid=TH:th",
+          "status": "ok",
+          "error": null
+        },
+        {
+          "id": "thai-machinery",
+          "name": "เครื่องจักรและบรรจุภัณฑ์ไทย",
+          "url": "https://news.google.com/rss/search?q=(%22%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%88%E0%B8%B1%E0%B8%81%E0%B8%A3%E0%B8%AD%E0%B8%B2%E0%B8%AB%E0%B8%B2%E0%B8%A3%22%20OR%20%22%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%9A%E0%B8%A3%E0%B8%A3%E0%B8%88%E0%B8%B8%22%20OR%20%22%E0%B8%AD%E0%B8%B0%E0%B9%84%E0%B8%AB%E0%B8%A5%E0%B9%88%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%88%E0%B8%B1%E0%B8%81%E0%B8%A3%22)%20(%E0%B8%AD%E0%B8%B8%E0%B8%9A%E0%B8%B1%E0%B8%95%E0%B8%B4%E0%B9%80%E0%B8%AB%E0%B8%95%E0%B8%B8%20OR%20%E0%B8%82%E0%B8%B1%E0%B8%94%E0%B8%82%E0%B9%89%E0%B8%AD%E0%B8%87%20OR%20%E0%B8%82%E0%B8%B2%E0%B8%94%E0%B9%81%E0%B8%84%E0%B8%A5%E0%B8%99%20OR%20%E0%B8%A5%E0%B9%88%E0%B8%B2%E0%B8%8A%E0%B9%89%E0%B8%B2%20OR%20%E0%B8%A1%E0%B8%B2%E0%B8%95%E0%B8%A3%E0%B8%90%E0%B8%B2%E0%B8%99%20OR%20%E0%B8%95%E0%B9%89%E0%B8%99%E0%B8%97%E0%B8%B8%E0%B8%99)%20when%3A1d&hl=th&gl=TH&ceid=TH:th",
+          "status": "empty",
+          "error": null
+        },
+        {
+          "id": "thai-authority",
+          "name": "หน่วยงานไทย ผ่าน Google News",
+          "url": "https://news.google.com/rss/search?q=(site%3Afda.moph.go.th%20OR%20site%3Adiw.go.th%20OR%20site%3Acustoms.go.th)%20(%E0%B8%AD%E0%B8%B2%E0%B8%AB%E0%B8%B2%E0%B8%A3%20OR%20%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%88%E0%B8%B1%E0%B8%81%E0%B8%A3)%20(%E0%B8%AB%E0%B9%89%E0%B8%B2%E0%B8%A1%20OR%20%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%81%E0%B8%84%E0%B8%B7%E0%B8%99%20OR%20%E0%B8%9A%E0%B8%B1%E0%B8%87%E0%B8%84%E0%B8%B1%E0%B8%9A%20OR%20%E0%B8%99%E0%B8%B3%E0%B9%80%E0%B8%82%E0%B9%89%E0%B8%B2%20OR%20%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B8%9B%E0%B8%A5%E0%B8%AD%E0%B8%94%E0%B8%A0%E0%B8%B1%E0%B8%A2)%20when%3A1d&hl=th&gl=TH&ceid=TH:th",
+          "status": "ok",
+          "error": null
+        },
+        {
+          "id": "meat-rte",
+          "name": "เนื้อสัตว์และอาหารพร้อมรับประทาน",
+          "url": "https://news.google.com/rss/search?q=(%22meat%20processing%22%20OR%20%22ready-to-eat%22%20OR%20%22poultry%20processing%22)%20(recall%20OR%20closure%20OR%20contamination%20OR%20disruption%20OR%20shortage)%20when%3A1d&hl=en-US&gl=US&ceid=US:en",
+          "status": "ok",
+          "error": null
+        },
+        {
+          "id": "automation",
+          "name": "ระบบอัตโนมัติและอะไหล่",
+          "url": "https://news.google.com/rss/search?q=(%22food%20machinery%22%20OR%20%22food%20factory%20automation%22%20OR%20%22food%20equipment%22%20OR%20%22spare%20parts%22)%20(failure%20OR%20shortage%20OR%20recall%20OR%20safety%20OR%20cyberattack)%20when%3A1d&hl=en-US&gl=US&ceid=US:en",
+          "status": "ok",
+          "error": null
+        },
+        {
+          "id": "logistics",
+          "name": "ความเสี่ยงนำเข้าและโลจิสติกส์",
+          "url": "https://news.google.com/rss/search?q=(%22%E0%B8%99%E0%B8%B3%E0%B9%80%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%88%E0%B8%B1%E0%B8%81%E0%B8%A3%22%20OR%20%22%E0%B8%84%E0%B9%88%E0%B8%B2%E0%B8%A3%E0%B8%B0%E0%B8%A7%E0%B8%B2%E0%B8%87%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B8%AD%22%20OR%20%22%E0%B8%84%E0%B9%88%E0%B8%B2%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%80%E0%B8%A2%E0%B8%99%22%20OR%20%22%E0%B8%84%E0%B9%88%E0%B8%B2%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B8%A2%E0%B8%B9%E0%B9%82%E0%B8%A3%22)%20(%E0%B8%9E%E0%B8%B8%E0%B9%88%E0%B8%87%20OR%20%E0%B8%9C%E0%B8%B1%E0%B8%99%E0%B8%9C%E0%B8%A7%E0%B8%99%20OR%20%E0%B8%82%E0%B8%B2%E0%B8%94%E0%B9%81%E0%B8%84%E0%B8%A5%E0%B8%99%20OR%20%E0%B8%A5%E0%B9%88%E0%B8%B2%E0%B8%8A%E0%B9%89%E0%B8%B2%20OR%20%E0%B8%A0%E0%B8%B2%E0%B8%A9%E0%B8%B5%20OR%20%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B9%80%E0%B8%AA%E0%B9%89%E0%B8%99%E0%B8%97%E0%B8%B2%E0%B8%87)%20when%3A1d&hl=th&gl=TH&ceid=TH:th",
+          "status": "ok",
+          "error": null
+        },
+        {
+          "id": "standards",
+          "name": "มาตรฐานเครื่องจักรอาหาร",
+          "url": "https://news.google.com/rss/search?q=(%22food%20contact%20materials%22%20OR%20%22hygienic%20design%22%20OR%20%22food%20machinery%20safety%22)%20(regulation%20OR%20ban%20OR%20recall%20OR%20compliance%20OR%20deadline)%20when%3A1d&hl=en-US&gl=US&ceid=US:en",
+          "status": "ok",
+          "error": null
+        },
+        {
+          "id": "hitec-market",
+          "name": "HITEC และงานแสดงเทคโนโลยี",
+          "url": "https://news.google.com/rss/search?q=(%22HITEC%20FOOD%20EQUIPMENT%22%20OR%20%22HITEC%20food%20machinery%22%20OR%20%22TOSEI%22)%20(recall%20OR%20disruption%20OR%20safety%20OR%20shortage%20OR%20closure)%20when%3A1d&hl=en-US&gl=US&ceid=US:en",
+          "status": "empty",
+          "error": null
+        }
+      ],
+      "articles": [
+        {
+          "id": "news-53",
+          "title": "From PPWR preparation to implementation - Packaging Europe",
+          "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQUk1QMGs4M1FCWHBVcUVRX3RQaGRqdVI3RzNQT21EZVhya2VyWjBTUWF2V2lHeVJ5ZUZoeDNPQ3pRMUo0Y0MtSG5Vb2FEZXhKTGRZNkthNGhfVC1LU1hyWkJyS0NEWUk5LW5QTERUaGlCUjFkR0lUSUU1djhQYWFFQkFISGdHaFdkRmNBMGk4QVk4RG9l?oc=5",
+          "published_at": "2026-09-23T09:58:42.000Z",
+          "source": "Packaging Europe ผ่าน Google News",
+          "content": "From PPWR preparation to implementation Packaging Europe",
+          "evidence_scope": "RSS headline / excerpt; full article not fetched",
+          "link_check": {
+            "state": "verified",
+            "status_code": 200,
+            "checked_at": "2026-09-23T18:00:42.918+07:00"
+          },
+          "status": "relevant",
+          "news_type": "risk",
+          "news_title": "จากขั้นเตรียมการสู่การบังคับใช้กฎระเบียบ PPWR ของยุโรป",
+          "news_title_en": "From PPWR Preparation to Implementation - Packaging Europe",
+          "summary": "รายงานข่าวระบุถึงความเคลื่อนไหวในอุตสาหกรรมบรรจุภัณฑ์ยุโรปเกี่ยวกับการเปลี่ยนผ่านจากการเตรียมการไปสู่ขั้นตอนการบังคับใช้กฎระเบียบว่าด้วยบรรจุภัณฑ์และขยะบรรจุภัณฑ์ (PPWR)",
+          "summary_en": "News reports highlight the European packaging industry's transition from the preparation phase to the active implementation of the Packaging and Packaging Waste Regulation (PPWR).",
+          "business_area": "บรรจุภัณฑ์และการตรวจสอบ",
+          "relevance_reason": "กฎระเบียบ PPWR ของสหภาพยุโรปกำหนดมาตรฐานบรรจุภัณฑ์ที่ยั่งยืนและรีไซเคิลได้ ซึ่งส่งผลต่อลูกค้าผู้ผลิตอาหารเพื่อการส่งออกของ HITEC (เช่น อาหารทะเล ไก่แปรรูป อาหารพร้อมรับประทาน และอาหารสัตว์เลี้ยง) รวมถึงเครื่องจักรบรรจุภัณฑ์ (Thermoforming, Tray Sealer) และวัสดุสิ้นเปลืองที่นำเข้ามาจากยุโรป",
+          "relevance_reason_en": "The EU PPWR mandates packaging sustainability and recyclability, directly impacting HITEC's food exporting clients (seafood, poultry, RTE, pet food) as well as packaging machinery (Thermoforming, Tray Sealer) and consumables imported from Europe.",
+          "risk_cause": "การก้าวเข้าสู่ขั้นตอนการบังคับใช้กฎระเบียบ PPWR ของสหภาพยุโรป ซึ่งกำหนดเกณฑ์การลดขยะบรรจุภัณฑ์และการใช้วัสดุที่รีไซเคิลได้จริงอย่างเข้มงวด",
+          "risk_cause_en": "The transition to enforcement of the EU PPWR, introducing strict criteria for packaging waste reduction and recyclable packaging materials.",
+          "consequence": "ลูกค้ากลุ่มส่งออกอาจชะลอการตัดสินใจลงทุนในเครื่องจักรบรรจุภัณฑ์เดิมเพื่อรอความชัดเจนของสเปกวัสดุ หรือต้องปรับเปลี่ยนสายการบรรจุและทดสอบวัสดุใหม่ ซึ่งอาจส่งผลให้ HITEC ต้องปรับแก้สเปกเครื่องจักรและใช้วิศวกรสนับสนุนงานทดสอบเพิ่มขึ้น",
+          "consequence_en": "Food exporting clients may delay packaging equipment investments pending material clarity or require line modifications, creating additional testing and engineering support demands for HITEC.",
+          "impact_area": "operations",
+          "impact_name": "10. ผลกระทบต่อกระบวนการดำเนินงาน",
+          "likelihood_score": 2,
+          "impact_score": 2,
+          "score": 4,
+          "likelihood_reason": "ประเมินเบื้องต้นจากสัญญาณข่าว: ภายใต้สมมติฐานว่าผลกระทบจากการปรับเปลี่ยนกฎระเบียบบรรจุภัณฑ์ส่งออกระหว่างประเทศที่ทำให้ลูกค้าชะลอโครงการหรือขอปรับแก้สเปกเครื่องจักรกับ HITEC มีโอกาสเกิดขึ้นอย่างน้อย 1 ครั้งในช่วง 1 ถึง 3 ปี (Score 2) โดยมีข้อจำกัดคือเนื้อหาข่าวไม่ได้ระบุรายละเอียดวันบังคับใช้รายผลิตภัณฑ์",
+          "likelihood_reason_en": "Preliminary signal-based assessment: Assumes that international export packaging regulatory shifts prompting client project postponements or machine re-specification requests to HITEC occur at least once in 1 to 3 years (Score 2). Limitation: The excerpt does not detail product-specific statutory effective dates.",
+          "impact_reason": "ประเมินเบื้องต้นจากสัญญาณข่าว: ภายใต้สมมติฐานว่ากระทบต่อกระบวนการดำเนินงานที่ไม่ใช่งานวิกฤต เช่น การปรับขั้นตอนการให้คำปรึกษาและตารางงานทดสอบเครื่องจักรใน Demo Lab โดยตั้งสมมติฐานว่าบริษัทน่าจะสามารถบริหารจัดการและปรับตัวได้ตามกรอบเวลาปกติ (Score 2) ข้อจำกัดคือยังไม่มีรายละเอียดทางเทคนิคของวัสดุในข่าว",
+          "impact_reason_en": "Preliminary signal-based assessment: Assumes impact on non-critical operations such as consultation workflows and Demo Lab testing schedules, with the assumption that the organization can manage and adapt within standard timeframes (Score 2). Limitation: Technical material parameters are absent from the excerpt.",
+          "likelihood_definition": "เกิดขึ้น หรือมีโอกาสเกิดขึ้นอย่างน้อย 1 ครั้งในช่วงระหว่าง 1 ปี จนถึง 3 ปี",
+          "impact_definition": "เกิดความเสียหายต่อกระบวนการดำเนินงาน หรือระบบที่ไม่มีนัยสำคัญ แต่สามารถกลับมาดำเนินงาน หรือกู้คืนได้ภายในระยะเวลาที่กำหนดขององค์กร",
+          "risk_level": "Low",
+          "assessment_status": "AI preliminary assessment",
+          "proposed_action": "ประสานงานกับพันธมิตรผู้ผลิตเครื่องจักรบรรจุภัณฑ์ในยุโรปเพื่อตรวจสอบความพร้อมของเทคโนโลยีในการรองรับวัสดุโมโนแมทีเรียล (Mono-materials) หรือฟิล์มรีไซเคิลตามมาตรฐาน PPWR และเตรียมความพร้อมทีมงานใน Demo Lab เพื่อรองรับการทดสอบของลูกค้า",
+          "proposed_action_en": "Coordinate with European packaging machinery principals to ensure readiness for mono-materials and recyclable films under PPWR, and prepare the Demo Lab team to assist clients with material testing.",
+          "known_controls": "บริบทตาม Profile บริษัทมีโชว์รูมและห้องปฏิบัติการ (Demo Lab) สำหรับทดสอบเครื่องจักรกับวัตถุดิบและบรรจุภัณฑ์จริงก่อนส่งมอบ และมีพันธมิตรผู้ผลิตเครื่องจักรในยุโรป แต่ไม่ยืนยันประสิทธิผลต่อข้อกำหนด PPWR ในปัจจุบัน",
+          "known_controls_en": "Context per Profile: The company operates a showroom and Demo Lab for testing machinery with actual materials and maintains partnerships with European machine makers, though current effectiveness against specific PPWR rules is unverified.",
+          "assumptions": "สมมติฐานคือลูกค้าของ HITEC ในกลุ่มเนื้อสัตว์ อาหารทะเล RTE และอาหารสัตว์เลี้ยง มีการส่งออกสินค้าไปยังตลาดสหภาพยุโรป และจำเป็นต้องปรับเปลี่ยนบรรจุภัณฑ์ให้สอดคล้องกับ PPWR",
+          "assumptions_en": "Assumes that HITEC's clients in meat, seafood, RTE, and pet food sectors export products to the EU and must modify their packaging to comply with PPWR.",
+          "opportunity": "โอกาสในการนำเสนอเครื่องจักรบรรจุภัณฑ์รุ่นใหม่ที่รองรับวัสดุรักษ์โลกและบริการปรับแต่งระบบ (Retrofitting) สำหรับไลน์บรรจุภัณฑ์เดิมของโรงงานส่งออก",
+          "opportunity_en": "Opportunity to supply new eco-compatible packaging machinery and offer line retrofitting services for existing export-oriented food processing plants.",
+          "review_passed": true,
+          "review_reason": "ยอมรับร่างโดยแก้ไขข้อบกพร่อง: แก้ไข likelihood_reason เพื่อไม่ให้อิงระยะเวลาการเปลี่ยนผ่านของนโยบายกฎหมายเป็นความถี่ความเสี่ยง และแก้ไข impact_reason โดยระบุให้ชัดเจนว่าเป็นสมมติฐานเกี่ยวกับการปรับตัวของกระบวนการดำเนินงานที่ไม่ใช่งานวิกฤต ไม่สรุปว่ากู้คืนได้โดยไร้หลักฐานตามข้อกำหนด",
+          "review_reason_en": "Accepted draft with corrections: Revised likelihood_reason to avoid equating statutory policy transition periods with risk frequency, and updated impact_reason to explicitly qualify adaptation of non-critical operational processes as an assumption rather than an unverified fact, in accordance with the guidelines."
+        },
+        {
+          "id": "news-66",
+          "title": "พายุเศรษฐกิจถล่มไทย ดอกเบี้ย-น้ำมันซ้ำเติม รัฐแจก 1,000 บาท ยื้อวิกฤต - thansettakij.com",
+          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9OMzZIV0lGcWVXZzB1ejg5UmZobWpXRC1MZHVrS0xKLXVIcm5FMWd4dFZCTUhaQlFUNkhLRVNqTl9oamsxNFVIeTIwLTZQVk5NVDI4dGZFdzlISEdseUZxcFF0ZW13YnZwRFE?oc=5",
+          "published_at": "2026-09-23T07:08:00.000Z",
+          "source": "ความเสี่ยงนำเข้าและโลจิสติกส์",
+          "content": "พายุเศรษฐกิจถล่มไทย ดอกเบี้ย-น้ำมันซ้ำเติม รัฐแจก 1,000 บาท ยื้อวิกฤต thansettakij.com",
+          "evidence_scope": "RSS headline / excerpt; full article not fetched",
+          "link_check": {
+            "state": "verified",
+            "status_code": 200,
+            "checked_at": "2026-09-23T18:10:25.923+07:00"
+          },
+          "status": "relevant",
+          "news_type": "risk",
+          "news_title": "พายุเศรษฐกิจถล่มไทย ดอกเบี้ย-น้ำมันซ้ำเติม รัฐแจก 1,000 บาท ยื้อวิกฤต",
+          "news_title_en": "Economic Storm Hits Thailand with Compounding Interest Rates and Fuel Prices as Government Issues 1,000-Baht Relief",
+          "summary": "รายงานข่าวระบุถึงภาวะเศรษฐกิจไทยที่เผชิญแรงกดดันจากอัตราดอกเบี้ยและราคาน้ำมันที่เพิ่มขึ้น ขณะที่ภาครัฐมีมาตรการแจกเงิน 1,000 บาทเพื่อบรรเทาวิกฤตเศรษฐกิจ",
+          "summary_en": "News reports highlight economic pressure in Thailand exacerbated by high interest rates and rising oil prices, with the government rolling out a 1,000-baht relief measure.",
+          "business_area": "นำเข้าและเศรษฐกิจ",
+          "relevance_reason": "แรงกดดันด้านอัตราดอกเบี้ยและต้นทุนราคาน้ำมันส่งผลต่อต้นทุนทางการเงินและต้นทุนการผลิตของกลุ่มลูกค้าโรงงานแปรรูปอาหาร ซึ่งอาจส่งผลทางอ้อมให้ลูกค้าชะลอการตัดสินใจลงทุนซื้อเครื่องจักรแปรรูปอาหารใหม่หรือชะลอโครงการ Turnkey ขนาดใหญ่ รวมถึงกระทบต้นทุนค่าขนส่งเครื่องจักรและบริการเดินทางหน้างานของ HITEC",
+          "relevance_reason_en": "Rising interest rates and fuel costs increase financial and operating expenses for food manufacturing clients, potentially leading to delayed investments in new machinery or Turnkey projects, as well as increasing transport and field service logistics costs for HITEC.",
+          "risk_cause": "สภาวะเศรษฐกิจชะลอตัว แรงกดดันจากอัตราดอกเบี้ย และต้นทุนราคาน้ำมันที่ปรับตัวสูงขึ้น",
+          "risk_cause_en": "Economic slowdown coupled with high interest rates and escalating fuel costs.",
+          "consequence": "การตัดสินใจลงทุนในเครื่องจักรใหม่และระบบอัตโนมัติของกลุ่มลูกค้าอุตสาหกรรมอาหารอาจล่าช้าออกไป ทำให้รอบการขายโครงการยาวนานขึ้น และต้นทุนการเดินทาง/ขนส่งของงานบริการอาจปรับตัวสูงขึ้น",
+          "consequence_en": "Capital expenditure decisions for new food machinery and turnkey systems among food clients may face delays, lengthening sales cycles and potentially increasing logistics and field service transport costs.",
+          "impact_area": "operations",
+          "impact_name": "10. ผลกระทบต่อกระบวนการดำเนินงาน",
+          "likelihood_score": 2,
+          "impact_score": 1,
+          "score": 2,
+          "likelihood_reason": "ประเมินเบื้องต้นจากสัญญาณข่าว: ภายใต้สมมติฐานว่าวัฏจักรเศรษฐกิจชะลอตัวและการปรับอัตราดอกเบี้ยระดับมหภาคเกิดขึ้นหรือส่งผลกระทบชัดเจนอย่างน้อย 1 ครั้งในช่วง 1 ปี จนถึง 3 ปี ข้อจำกัดคือข้อมูลข่าวเป็นเพียงพาดหัวภาพรวมเศรษฐกิจทั่วไป",
+          "likelihood_reason_en": "Preliminary signal-based assessment: Assumes macroeconomic slowdown cycles and interest rate adjustments impact investment sentiment at least once every 1 to 3 years; limited by headline-level reporting without specific industry metrics.",
+          "impact_reason": "ประเมินเบื้องต้นจากสัญญาณข่าว: แรงกดดันทางเศรษฐกิจอาจกระทบเชิงลบเล็กน้อยต่อขั้นตอนการเจรจาขายหรือการวางแผนกำหนดเวลาโครงการของฝ่ายขายและบริการ ซึ่งเป็นผลกระทบเล็กน้อยต่อบางขั้นตอนของกระบวนการดำเนินงานตามเกณฑ์ระดับ 1 โดยไม่มีผลต่อความต่อเนื่องของระบบหลัก",
+          "impact_reason_en": "Preliminary signal-based assessment: Macroeconomic headwinds may cause minor negative delays in quotation negotiations and project scheduling within sales and service workflows, representing a level 1 minor impact on operational processes without disrupting core continuity.",
+          "likelihood_definition": "เกิดขึ้น หรือมีโอกาสเกิดขึ้นอย่างน้อย 1 ครั้งในช่วงระหว่าง 1 ปี จนถึง 3 ปี",
+          "impact_definition": "ผลกระทบเชิงลบเล็กน้อยต่อบางขั้นตอนของกระบวนการดำเนินงาน หรือบางฟังก์ชั่นของระบบที่ไม่มีนัยสำคัญ",
+          "risk_level": "Low",
+          "assessment_status": "AI preliminary assessment",
+          "proposed_action": "ติดตามแนวโน้มการลงทุนของลูกค้าใน 7 กลุ่มอุตสาหกรรม เสนอทางเลือกโซลูชันที่ยืดหยุ่น เช่น เครื่องจักรตัวทดลองสภาพดี (HITEC Demo) หรือระบบอัตโนมัติที่ช่วยลดต้นทุนแรงงานและพลังงาน พร้อมบริหารจัดการเส้นทางการเดินทางของทีมบริการหลังการขายเพื่อควบคุมค่าน้ำมัน",
+          "proposed_action_en": "Monitor CAPEX plans across the 7 customer segments, offer flexible solutions such as HITEC Demo units or energy- and labor-saving automation, and optimize service routing to manage fuel expenses.",
+          "known_controls": "บริบทตาม Profile: บริษัทมีบทบาทเป็น Solution Provider ที่สามารถให้คำปรึกษาและปรับแต่งการออกแบบไลน์ผลิตให้ตรงงบประมาณลูกค้า มีเครื่องจักรตัวทดลองสภาพดี (HITEC Demo) และบริการสัญญาบำรุงรักษาเชิงป้องกัน (PM) เพื่อช่วยดูแลเครื่องจักรเดิม ทั้งนี้ไม่ยืนยันประสิทธิผลปัจจุบันในการป้องกันผลกระทบจากความผันผวนทางเศรษฐกิจ",
+          "known_controls_en": "Profile context: The company acts as a Solution Provider tailoring line designs to customer constraints, offers HITEC Demo units, and provides Preventive Maintenance (PM) contracts to prolong equipment lifespan; current effectiveness against macro headwinds is unverified.",
+          "assumptions": "สมมติฐาน: สภาวะอัตราดอกเบี้ยสูงและราคาน้ำมันส่งผลให้ลูกค้าโรงงานอาหารชะลอการกู้ยืมเพื่อซื้อเครื่องจักรใหม่ และส่งผลกระทบต่อต้นทุนการขนส่ง/เดินทางของงานบริการของ HITEC เล็กน้อย ไม่ใช่ข้อเท็จจริงที่ได้รับการยืนยันภายใน",
+          "assumptions_en": "Assumption: High interest rates and fuel prices cause food manufacturers to defer CAPEX borrowing and slightly increase HITEC's transport and travel costs; this is an analytical assumption rather than verified internal data.",
+          "opportunity": "ลูกค้าอาจต้องการเครื่องจักรระบบอัตโนมัติเพื่อลดต้นทุนแรงงานและเพิ่มประสิทธิภาพ หรือหันมาสนใจเครื่องจักรตัวทดลองสภาพดี (HITEC Demo) รวมถึงเพิ่มการทำสัญญา PM เพื่อยืดอายุเครื่องจักรเดิมแทนการซื้อเครื่องใหม่",
+          "opportunity_en": "Clients may seek automation to curb labor costs and boost efficiency, consider cost-effective HITEC Demo units, or increase PM service contracts to extend existing machine life instead of large new capital investments.",
+          "review_passed": true,
+          "review_reason": "ร่างเดิมวิเคราะห์เส้นทางผลกระทบ ความเสี่ยง และเกณฑ์ L/I ได้สมเหตุสมผล โดยแยกความเสี่ยงมหภาคกับการดำเนินงานของ HITEC ระบุสมมติฐานและข้อจำกัดชัดเจน ไม่แต่งตัวเลขทางการเงิน และประเมินผลกระทบที่ระดับ 1 ตามเกณฑ์ operations อย่างเหมาะสม",
+          "review_reason_en": "The draft reasonably articulates the impact pathway and assesses L/I based on criteria without fabricating financial metrics, clearly stating assumptions and limitations with appropriate score 1 on operations."
+        }
+      ],
+      "criteria": {
+        "source": "เกณฑ์การประเมินผลกระทบของความเสี่ยง.xlsx",
+        "sheet": "Compare Risk",
+        "likelihood": [
+          {
+            "score": 1,
+            "definition": "เกิดขึ้น หรือมีโอกาสเกิดขึ้นอย่างน้อย 1 ครั้งในช่วงมากกว่า 3 ปีขึ้นไป",
+            "cell": "B4"
+          },
+          {
+            "score": 2,
+            "definition": "เกิดขึ้น หรือมีโอกาสเกิดขึ้นอย่างน้อย 1 ครั้งในช่วงระหว่าง 1 ปี จนถึง 3 ปี",
+            "cell": "C4"
+          },
+          {
+            "score": 3,
+            "definition": "เกิดขึ้น หรือมีโอกาสเกิดขึ้นอย่างน้อย 1 ครั้งในช่วงระหว่าง 6 เดือน จนถึง 1 ปี",
+            "cell": "D4"
+          },
+          {
+            "score": 4,
+            "definition": "เกิดขึ้น หรือมีโอกาสเกิดขึ้นอย่างน้อย 1 ครั้งในช่วงระหว่าง 1 เดือน จนถึง 6 เดือน",
+            "cell": "E4"
+          },
+          {
+            "score": 5,
+            "definition": "เกิดขึ้น หรือมีโอกาสเกิดขึ้นได้เป็นรายเดือน หรือถี่กว่า",
+            "cell": "F4"
+          }
+        ],
+        "impacts": [
+          {
+            "id": "ebitda",
+            "name": "1. ความสูญเสียทางการเงินที่ส่งผลต่อกำไรจากการดำเนินงานของบริษัทก่อนหักดอกเบี้ยภาษีค่าเสื่อมราคาและค่าตัดจำหน่าย (EBITDA)",
+            "levels": [
+              {
+                "score": 1,
+                "definition": "< 1%",
+                "cell": "B9"
+              },
+              {
+                "score": 2,
+                "definition": "1% - 2%",
+                "cell": "C9"
+              },
+              {
+                "score": 3,
+                "definition": "> 2% - 4%",
+                "cell": "D9"
+              },
+              {
+                "score": 4,
+                "definition": "> 4% - 5%",
+                "cell": "E9"
+              },
+              {
+                "score": 5,
+                "definition": "> 5%",
+                "cell": "F9"
+              }
+            ]
+          },
+          {
+            "id": "cash_flow",
+            "name": "2. ผลกระทบด้านกระแสเงินสด",
+            "levels": [
+              {
+                "score": 1,
+                "definition": "ไม่มีผลกระทบ",
+                "cell": "B14"
+              },
+              {
+                "score": 2,
+                "definition": "ผลกระทบเล็กน้อย",
+                "cell": "C14"
+              },
+              {
+                "score": 3,
+                "definition": "เริ่มมีปัญหาขาดสภาพคล่อง",
+                "cell": "D14"
+              },
+              {
+                "score": 4,
+                "definition": "ต้องจัดหาแหล่งเงินสด ใหม่เพิ่มเติมอย่างเร่งด่วน",
+                "cell": "E14"
+              },
+              {
+                "score": 5,
+                "definition": "มีปัญหากระทบ ต่อการดำเนินงานที่ต่อเนื่อง",
+                "cell": "F14"
+              }
+            ]
+          },
+          {
+            "id": "revenue",
+            "name": "3. ความสูญเสียทางการเงิน ที่ส่งผลต่อรายได้​",
+            "levels": [
+              {
+                "score": 1,
+                "definition": "< 0.5%",
+                "cell": "B19"
+              },
+              {
+                "score": 2,
+                "definition": "0.5% - 1%",
+                "cell": "C19"
+              },
+              {
+                "score": 3,
+                "definition": "> 1% - 2%",
+                "cell": "D19"
+              },
+              {
+                "score": 4,
+                "definition": "> 2% - 2.5%",
+                "cell": "E19"
+              },
+              {
+                "score": 5,
+                "definition": "> 2.5%",
+                "cell": "F19"
+              }
+            ]
+          },
+          {
+            "id": "media_reach",
+            "name": "4. ขอบเขตการกระจายข่าวเชิงลบของสื่อ",
+            "levels": [
+              {
+                "score": 1,
+                "definition": "ไม่ถูกรายงานในสื่อ",
+                "cell": "B24",
+                "additional": "จำนวนผู้ติดตาม < 10,000 คน",
+                "additional_cell": "B25"
+              },
+              {
+                "score": 2,
+                "definition": "ถูกรายงานในสื่อในวงจำกัด หรือ สามารถชี้แจงได้​",
+                "cell": "C24",
+                "additional": "จำนวนผู้ติดตาม 10,000 - 50,000 คน",
+                "additional_cell": "C25"
+              },
+              {
+                "score": 3,
+                "definition": "ถูกรายงานในสื่อระดับจังหวัดหรือภูมิภาค",
+                "cell": "D24",
+                "additional": "จำนวนผู้ติดตาม > 50,000 - 500,000 คน",
+                "additional_cell": "D25"
+              },
+              {
+                "score": 4,
+                "definition": "ถูกรายงานในสื่อระดับประเทศ",
+                "cell": "E24",
+                "additional": "จำนวนผู้ติดตาม > 500,000 - 1,000,000 คน",
+                "additional_cell": "E25"
+              },
+              {
+                "score": 5,
+                "definition": "ถูกรายงานในสื่อทั้งในและต่างประเทศ",
+                "cell": "F24",
+                "additional": "จำนวนผู้ติดตาม > 1,000,000 คน",
+                "additional_cell": "F25"
+              }
+            ]
+          },
+          {
+            "id": "media_duration",
+            "name": "5. ระยะเวลาข่าวเชิงลบที่ออกสื่อ",
+            "levels": [
+              {
+                "score": 1,
+                "definition": "1-2 วัน",
+                "cell": "B29"
+              },
+              {
+                "score": 2,
+                "definition": "3-5 วัน",
+                "cell": "C29"
+              },
+              {
+                "score": 3,
+                "definition": "6-10 วัน",
+                "cell": "D29"
+              },
+              {
+                "score": 4,
+                "definition": "11-30 วัน",
+                "cell": "E29"
+              },
+              {
+                "score": 5,
+                "definition": ">30 วัน",
+                "cell": "F29"
+              }
+            ]
+          },
+          {
+            "id": "legal",
+            "name": "6. ความรับผิดชอบ ตามกฎหมาย",
+            "levels": [
+              {
+                "score": 1,
+                "definition": "ไม่มีการดำเนินทางกฎหมาย",
+                "cell": "B33"
+              },
+              {
+                "score": 2,
+                "definition": "รายงานเหตุการณ์ที่อาจมีความรับผิดทางกฎหมายต่อผู้บริหาร",
+                "cell": "C33"
+              },
+              {
+                "score": 3,
+                "definition": "มีการรายงานต่อหน่วยงานรัฐ",
+                "cell": "D33"
+              },
+              {
+                "score": 4,
+                "definition": "มีความรับผิดทางกฎหมาย หรือ ถูกหน่วยงานของรัฐตรวจสอบ",
+                "cell": "E33"
+              },
+              {
+                "score": 5,
+                "definition": "มีความรับผิดทางกฎหมายอาจส่งผลให้ต้องหยุดประกอบธุรกิจทั้งหมดหรือบางส่วน",
+                "cell": "F33"
+              }
+            ]
+          },
+          {
+            "id": "environment",
+            "name": "7. ผลกระทบด้านสิ่งแวดล้อม Environmental Impact",
+            "levels": [
+              {
+                "score": 1,
+                "definition": "แทบไม่มีผลกระทบต่อสิ่งแวดล้อม",
+                "cell": "B37"
+              },
+              {
+                "score": 2,
+                "definition": "ผลกระทบน้อยในระยะเวลาสั้น",
+                "cell": "C37"
+              },
+              {
+                "score": 3,
+                "definition": "ผลกระทบในพื้นที่จำกัดภายในและควบคุมได้",
+                "cell": "D37"
+              },
+              {
+                "score": 4,
+                "definition": "ผลกระทบออกสู่ภายนอกที่เป็นแหล่งชุมชน",
+                "cell": "E37"
+              },
+              {
+                "score": 5,
+                "definition": "ผลกระทบรุนแรง มีผู้ได้รับผลกระทบหลายกลุ่ม",
+                "cell": "F37"
+              }
+            ]
+          },
+          {
+            "id": "discipline",
+            "name": "8. บทลงโทษภายในองค์กร",
+            "levels": [
+              {
+                "score": 1,
+                "definition": "มีคำเตือนด้วยวาจา",
+                "cell": "B41"
+              },
+              {
+                "score": 2,
+                "definition": "มีการตักเตือนเป็นลายลักษณ์อักษร",
+                "cell": "C41"
+              },
+              {
+                "score": 3,
+                "definition": "ถูกลงโทษไม่จ่ายเงินรางวัลจูงใจ หรือไม่ปรับค่าจ้าง",
+                "cell": "D41"
+              },
+              {
+                "score": 4,
+                "definition": "ลงโทษให้พักงานหรือไม่จ่ายค่าจ้าง",
+                "cell": "E41"
+              },
+              {
+                "score": 5,
+                "definition": "เลิกจ้าง หรือให้ออก",
+                "cell": "F41"
+              }
+            ]
+          },
+          {
+            "id": "safety",
+            "name": "9. อาชีวอนามัยและ ความปลอดภัย",
+            "levels": [
+              {
+                "score": 1,
+                "definition": "การรักษาปฐมพยาบาล",
+                "cell": "B45"
+              },
+              {
+                "score": 2,
+                "definition": "บาดเจ็บที่ต้องเข้ารักษาในโรงพยาบาล",
+                "cell": "C45"
+              },
+              {
+                "score": 3,
+                "definition": "บาดเจ็บขั้นหยุดงานคนเดียว",
+                "cell": "D45"
+              },
+              {
+                "score": 4,
+                "definition": "บาดเจ็บขั้นหยุดงาน 2 คนขึ้นไป",
+                "cell": "E45"
+              },
+              {
+                "score": 5,
+                "definition": "บาดเจ็บขั้นพิการหรือเสียชีวิต",
+                "cell": "F45"
+              }
+            ]
+          },
+          {
+            "id": "operations",
+            "name": "10. ผลกระทบต่อกระบวนการดำเนินงาน",
+            "levels": [
+              {
+                "score": 1,
+                "definition": "ผลกระทบเชิงลบเล็กน้อยต่อบางขั้นตอนของกระบวนการดำเนินงาน หรือบางฟังก์ชั่นของระบบที่ไม่มีนัยสำคัญ",
+                "cell": "B49"
+              },
+              {
+                "score": 2,
+                "definition": "เกิดความเสียหายต่อกระบวนการดำเนินงาน หรือระบบที่ไม่มีนัยสำคัญ แต่สามารถกลับมาดำเนินงาน หรือกู้คืนได้ภายในระยะเวลาที่กำหนดขององค์กร",
+                "cell": "C49"
+              },
+              {
+                "score": 3,
+                "definition": "กระบวนการดำเนินงานหรือระบบ อาจล่าช้าหรือมีคุณภาพลดลงในบางส่วน เนื่องจาก 1. เกิดความเสียหายต่อการดำเนินงาน หรือระบบที่ไม่มีนัยสำคัญ ซึ่งไม่สามารถกลับมาดำเนินงาน หรือกู้คืนได้ภายในระยะเวลาที่กำหนดขององค์กร หรือ 2. เกิดความเสียหายต่อการดำเนินงาน หรือระบบที่สำคัญแต่สามารถกลับมาดำเนินงาน หรือกู้คืนได้ภายในระยะเวลาที่กำหนดขององค์กร",
+                "cell": "D49"
+              },
+              {
+                "score": 4,
+                "definition": "เกิดผลกระทบเชิงลบต่อกระบวนการดำเนินงาน หรือระบบที่สำคัญในวงกว้าง ซึ่งไม่สามารถกลับมาดำเนินงาน หรือกู้คืนได้ภายในระยะเวลาที่กำหนดขององค์กร",
+                "cell": "E49"
+              },
+              {
+                "score": 5,
+                "definition": "1. เกิดผลกระทบเชิงลบต่อกระบวนการดำเนินงาน หรือระบบที่สำคัญทั้งหมด ซึ่งไม่สามารถกลับมาดำเนินงาน หรือกู้คืนได้ภายในระยะเวลาที่กำหนด หรือ 2. สูญเสียความสามารถในการดำเนินการตามกลยุทธ์ และวัตถุประสงค์ในการดำเนินธุรกิจขององค์กร หรือ 3. สูญเสียความสามารถในการดำเนินธุรกิจของหน่วยงานที่จัดเป็นโครงสร้างพื้นฐานทีสำคัญ (Critical Infrastructure Sector)",
+                "cell": "F49"
+              }
+            ]
+          }
+        ],
+        "matrix": {
+          "source": "Weekly Risk Management_Final (1).json / CT_Risk_Criteria_2026",
+          "rows_likelihood_1_to_5": [
+            [
+              "Low",
+              "Low",
+              "Low",
+              "Medium",
+              "Medium"
+            ],
+            [
+              "Low",
+              "Low",
+              "Medium",
+              "Medium",
+              "High"
+            ],
+            [
+              "Low",
+              "Medium",
+              "Medium",
+              "High",
+              "High"
+            ],
+            [
+              "Medium",
+              "Medium",
+              "High",
+              "High",
+              "Critical"
+            ],
+            [
+              "Medium",
+              "High",
+              "High",
+              "Critical",
+              "Critical"
+            ]
+          ]
+        },
+        "note": "คำนิยาม L/I ใช้ Excel ที่ให้มา; ตารางระดับสีใช้ Flow เดิมตามผู้ใช้ยืนยัน โดย 2×2 = Low แต่ 1×4 และ 4×1 = Medium"
+      },
+      "coverage_note": "เฉพาะข่าวเผยแพร่วันนี้ตามเวลาไทยและก่อนเวลารัน; วิเคราะห์จาก RSS headline/excerpt; ไม่ครอบคลุมข่าวหลังเวลารัน",
+      "matrix_note": "คำนิยาม L/I ใช้ Excel ที่ให้มา; ตารางระดับสีใช้ Flow เดิมตามผู้ใช้ยืนยัน โดย 2×2 = Low แต่ 1×4 และ 4×1 = Medium"
+    },
     {
       "schema_version": 1,
       "date": "2026-09-22",
