@@ -1,7 +1,1123 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-14T20:39:38.838Z",
+  "updated_at": "2026-10-15T11:24:20.857Z",
   "reports": [
+    {
+      "schema_version": 1,
+      "workflow_revision": "2026-09-23-coverage-v2",
+      "date": "2026-10-15",
+      "generated_at": "2026-10-15T18:00:00.198+07:00",
+      "company": "บริษัท ไฮเทค ฟู๊ด อีควิปเมนท์ จำกัด",
+      "timezone": "Asia/Bangkok",
+      "status": "complete",
+      "summary": "1. เยนดิ่งแตะ 158.95 ต่อดอลลาร์ ญี่ปุ่นเตือนแทรกแซงตลาดเงิน ส่งผลผันผวนต่อต้นทุนนำเข้าเครื่องจักร — ค่าเงินเยนอ่อนค่าแตะ 158.95 เยนต่อดอลลาร์สหรัฐ หลังตัวเลขเงินเฟ้อสหรัฐฯ พุ่งสูงขึ้น โดยทางการญี่ปุ่นส่งสัญญาณพร้อมเข้าแทรกแซงตลาดการเงินทันที ส่งผลให้เกิดความผันผวนอย่างหนักในอัตราแลกเปลี่ยนระหว่างประเทศ\n2. ส.อ.ท. ขอสินเชื่อหมื่นล้าน เร่งฟื้น SMEs โดนน้ำท่วม - ประชาชาติธุรกิจ — สภาอุตสาหกรรมแห่งประเทศไทย (ส.อ.ท.) เร่งผลักดันขอวงเงินสินเชื่อดอกเบี้ยต่ำหมื่นล้านบาท เพื่อช่วยเหลือและฟื้นฟูกิจการของผู้ประกอบการขนาดกลางและขนาดย่อม (SMEs) ที่ได้รับผลกระทบจากสถานการณ์น้ำท่วม\n3. คณะกรรมาธิการยุโรปออกแนวทาง EPR สำหรับธุรกิจขนาดเล็กภายใต้กฎระเบียบ PPWR — คณะกรรมาธิการยุโรปได้เผยแพร่แนวทางปฏิบัติด้านความรับผิดชอบที่เพิ่มขึ้นของผู้ผลิต (EPR) สำหรับธุรกิจขนาดเล็กภายใต้กฎระเบียบว่าด้วยบรรจุภัณฑ์และขยะบรรจุภัณฑ์ (PPWR) เพื่อเตรียมความพร้อมในการปฏิบัติตามเกณฑ์สิ่งแวดล้อม\n4. กรอ. ชงร่าง พ.ร.บ. จัดการกากอุตสาหกรรมและแก้ พ.ร.บ. โรงงาน เพิ่มโทษปรับด้านสิ่งแวดล้อม — กรมโรงงานอุตสาหกรรม (กรอ.) เสนอร่าง พ.ร.บ. จัดการกากอุตสาหกรรม และปรับปรุง พ.ร.บ. โรงงาน เพื่อยกระดับบทลงโทษ ปรับอัตราสูงขึ้น พร้อมเพิ่มความเข้มงวดของมาตรการด้านสิ่งแวดล้อมและการจัดการกากของเสียจากโรงงานอุตสาหกรรม\n5. ข้อกำหนด Positive List วัสดุสัมผัสอาหารของญี่ปุ่นเริ่มมีผล บังคับตรวจมาตรฐานต้นน้ำ — ข้อกำหนด Positive List สำหรับวัสดุสัมผัสอาหารของญี่ปุ่นเริ่มมีผลบังคับใช้ ส่งผลให้ภาระการตรวจสอบมาตรฐานและการปฏิบัติตามกฎเกณฑ์ถูกผลักดันไปยังผู้ผลิตต้นน้ำในห่วงโซ่อุปทาน",
+      "stats": {
+        "fetched": 213,
+        "excludedDate": 159,
+        "invalidDate": 0,
+        "invalidLink": 0,
+        "duplicates": 0,
+        "eligible": 54,
+        "analyzed": 54,
+        "omittedByLimit": 0,
+        "relevant": 10,
+        "analysisFailed": 0,
+        "irrelevant": 44,
+        "linkChecked": 54,
+        "linkUnavailable": 0,
+        "linkUnverified": 0
+      },
+      "sources": [
+        {
+          "id": "fsn",
+          "name": "Food Safety News",
+          "url": "https://www.foodsafetynews.com/feed/",
+          "status": "ok",
+          "error": null,
+          "fetched": 15,
+          "eligible": 4,
+          "selected": 4
+        },
+        {
+          "id": "prachachat",
+          "name": "ประชาชาติธุรกิจ",
+          "url": "https://news.google.com/rss/search?q=site%3Aprachachat.net%20(%E0%B9%82%E0%B8%A3%E0%B8%87%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%AD%E0%B8%B2%E0%B8%AB%E0%B8%B2%E0%B8%A3%20OR%20%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%88%E0%B8%B1%E0%B8%81%E0%B8%A3%20OR%20%E0%B8%AD%E0%B8%B8%E0%B8%95%E0%B8%AA%E0%B8%B2%E0%B8%AB%E0%B8%81%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%AD%E0%B8%B2%E0%B8%AB%E0%B8%B2%E0%B8%A3%20OR%20%E0%B8%AA%E0%B9%88%E0%B8%87%E0%B8%AD%E0%B8%AD%E0%B8%81%E0%B8%AD%E0%B8%B2%E0%B8%AB%E0%B8%B2%E0%B8%A3%20OR%20%E0%B8%99%E0%B8%B3%E0%B9%80%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%88%E0%B8%B1%E0%B8%81%E0%B8%A3)%20when%3A1d&hl=th&gl=TH&ceid=TH:th",
+          "status": "ok",
+          "error": null,
+          "fetched": 10,
+          "eligible": 4,
+          "selected": 4
+        },
+        {
+          "id": "bbc",
+          "name": "BBC Business",
+          "url": "https://news.google.com/rss/search?q=site%3Abbc.com%20(shipping%20OR%20freight%20OR%20food%20manufacturing%20OR%20machinery%20OR%20ports)%20(costs%20OR%20trade%20OR%20technology%20OR%20investment%20OR%20disruption)%20when%3A1d&hl=en-US&gl=US&ceid=US:en",
+          "status": "ok",
+          "error": null,
+          "fetched": 8,
+          "eligible": 4,
+          "selected": 4
+        },
+        {
+          "id": "foodmanufacture",
+          "name": "Food Manufacture ผ่าน Google News",
+          "url": "https://news.google.com/rss/search?q=site%3Afoodmanufacture.co.uk%20when%3A1d&hl=en-US&gl=US&ceid=US:en",
+          "status": "ok",
+          "error": null,
+          "fetched": 7,
+          "eligible": 3,
+          "selected": 3
+        },
+        {
+          "id": "foodnavigator",
+          "name": "FoodNavigator Asia ผ่าน Google News",
+          "url": "https://news.google.com/rss/search?q=site%3Afoodnavigator-asia.com%20when%3A1d&hl=en-US&gl=US&ceid=US:en",
+          "status": "empty",
+          "error": null,
+          "fetched": 0,
+          "eligible": 0,
+          "selected": 0
+        },
+        {
+          "id": "foodprocessing",
+          "name": "Food Processing ผ่าน Google News",
+          "url": "https://news.google.com/rss/search?q=site%3Afoodprocessing.com%20(manufacturing%20OR%20equipment%20OR%20automation%20OR%20plant%20OR%20safety%20OR%20investment)%20when%3A1d&hl=en-US&gl=US&ceid=US:en",
+          "status": "ok",
+          "error": null,
+          "fetched": 3,
+          "eligible": 3,
+          "selected": 3
+        },
+        {
+          "id": "packaging",
+          "name": "Packaging Europe ผ่าน Google News",
+          "url": "https://news.google.com/rss/search?q=site%3Apackagingeurope.com%20(food%20OR%20machinery%20OR%20automation%20OR%20materials)%20when%3A1d&hl=en-US&gl=US&ceid=US:en",
+          "status": "ok",
+          "error": null,
+          "fetched": 33,
+          "eligible": 6,
+          "selected": 6
+        },
+        {
+          "id": "petfood",
+          "name": "Petfood Industry ผ่าน Google News",
+          "url": "https://news.google.com/rss/search?q=site%3Apetfoodindustry.com%20(manufacturing%20OR%20processing%20OR%20factory%20OR%20capacity%20OR%20investment%20OR%20technology%20OR%20recall)%20when%3A1d&hl=en-US&gl=US&ceid=US:en",
+          "status": "ok",
+          "error": null,
+          "fetched": 9,
+          "eligible": 2,
+          "selected": 2
+        },
+        {
+          "id": "seafood",
+          "name": "SeafoodSource ผ่าน Google News",
+          "url": "https://news.google.com/rss/search?q=site%3Aseafoodsource.com%20(processing%20OR%20exports%20OR%20factory%20OR%20investment%20OR%20equipment)%20when%3A1d&hl=en-US&gl=US&ceid=US:en",
+          "status": "ok",
+          "error": null,
+          "fetched": 89,
+          "eligible": 5,
+          "selected": 5
+        },
+        {
+          "id": "bakery",
+          "name": "BakeryAndSnacks ผ่าน Google News",
+          "url": "https://news.google.com/rss/search?q=site%3Abakeryandsnacks.com%20when%3A1d&hl=en-US&gl=US&ceid=US:en",
+          "status": "ok",
+          "error": null,
+          "fetched": 1,
+          "eligible": 1,
+          "selected": 1
+        },
+        {
+          "id": "thai-factory",
+          "name": "โรงงานอาหารไทย",
+          "url": "https://news.google.com/rss/search?q=%22%E0%B9%82%E0%B8%A3%E0%B8%87%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%AD%E0%B8%B2%E0%B8%AB%E0%B8%B2%E0%B8%A3%22%20OR%20%22%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%88%E0%B8%B1%E0%B8%81%E0%B8%A3%E0%B9%81%E0%B8%9B%E0%B8%A3%E0%B8%A3%E0%B8%B9%E0%B8%9B%E0%B8%AD%E0%B8%B2%E0%B8%AB%E0%B8%B2%E0%B8%A3%22%20OR%20%22%E0%B8%AD%E0%B8%B8%E0%B8%95%E0%B8%AA%E0%B8%B2%E0%B8%AB%E0%B8%81%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%AD%E0%B8%B2%E0%B8%AB%E0%B8%B2%E0%B8%A3%22%20OR%20%22%E0%B8%A5%E0%B8%87%E0%B8%97%E0%B8%B8%E0%B8%99%E0%B9%82%E0%B8%A3%E0%B8%87%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%AD%E0%B8%B2%E0%B8%AB%E0%B8%B2%E0%B8%A3%22%20when%3A1d&hl=th&gl=TH&ceid=TH:th",
+          "status": "ok",
+          "error": null,
+          "fetched": 4,
+          "eligible": 3,
+          "selected": 3
+        },
+        {
+          "id": "thai-machinery",
+          "name": "เครื่องจักรและบรรจุภัณฑ์ไทย",
+          "url": "https://news.google.com/rss/search?q=%22%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%88%E0%B8%B1%E0%B8%81%E0%B8%A3%E0%B8%AD%E0%B8%B2%E0%B8%AB%E0%B8%B2%E0%B8%A3%22%20OR%20%22%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%9A%E0%B8%A3%E0%B8%A3%E0%B8%88%E0%B8%B8%22%20OR%20%22%E0%B8%AD%E0%B8%B0%E0%B9%84%E0%B8%AB%E0%B8%A5%E0%B9%88%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%88%E0%B8%B1%E0%B8%81%E0%B8%A3%22%20OR%20%22%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%9A%E0%B8%AD%E0%B8%B1%E0%B8%95%E0%B9%82%E0%B8%99%E0%B8%A1%E0%B8%B1%E0%B8%95%E0%B8%B4%E0%B8%AD%E0%B8%B2%E0%B8%AB%E0%B8%B2%E0%B8%A3%22%20when%3A1d&hl=th&gl=TH&ceid=TH:th",
+          "status": "empty",
+          "error": null,
+          "fetched": 0,
+          "eligible": 0,
+          "selected": 0
+        },
+        {
+          "id": "thai-authority",
+          "name": "หน่วยงานไทย ผ่าน Google News",
+          "url": "https://news.google.com/rss/search?q=(site%3Afda.moph.go.th%20OR%20site%3Adiw.go.th%20OR%20site%3Acustoms.go.th%20OR%20site%3Aboi.go.th)%20(%E0%B8%AD%E0%B8%B2%E0%B8%AB%E0%B8%B2%E0%B8%A3%20OR%20%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%88%E0%B8%B1%E0%B8%81%E0%B8%A3)%20when%3A1d&hl=th&gl=TH&ceid=TH:th",
+          "status": "ok",
+          "error": null,
+          "fetched": 10,
+          "eligible": 4,
+          "selected": 4
+        },
+        {
+          "id": "meat-rte",
+          "name": "เนื้อสัตว์และอาหารพร้อมรับประทาน",
+          "url": "https://news.google.com/rss/search?q=(%22meat%20processing%22%20OR%20%22poultry%20processing%22%20OR%20%22ready-to-eat%22)%20(equipment%20OR%20factory%20OR%20investment%20OR%20production%20OR%20safety)%20when%3A1d&hl=en-US&gl=US&ceid=US:en",
+          "status": "ok",
+          "error": null,
+          "fetched": 18,
+          "eligible": 11,
+          "selected": 11
+        },
+        {
+          "id": "automation",
+          "name": "ระบบอัตโนมัติและอะไหล่",
+          "url": "https://news.google.com/rss/search?q=%22food%20machinery%22%20OR%20%22food%20factory%20automation%22%20OR%20%22food%20equipment%20maintenance%22%20OR%20%22food%20processing%20technology%22%20when%3A1d&hl=en-US&gl=US&ceid=US:en",
+          "status": "empty",
+          "error": null,
+          "fetched": 0,
+          "eligible": 0,
+          "selected": 0
+        },
+        {
+          "id": "logistics",
+          "name": "ความเสี่ยงนำเข้าและโลจิสติกส์",
+          "url": "https://news.google.com/rss/search?q=%22%E0%B8%99%E0%B8%B3%E0%B9%80%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%88%E0%B8%B1%E0%B8%81%E0%B8%A3%22%20OR%20%22%E0%B8%84%E0%B9%88%E0%B8%B2%E0%B8%A3%E0%B8%B0%E0%B8%A7%E0%B8%B2%E0%B8%87%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B8%AD%22%20OR%20%22%E0%B8%84%E0%B9%88%E0%B8%B2%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B9%80%E0%B8%A2%E0%B8%99%22%20OR%20%22%E0%B8%84%E0%B9%88%E0%B8%B2%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B8%A2%E0%B8%B9%E0%B9%82%E0%B8%A3%22%20when%3A1d&hl=th&gl=TH&ceid=TH:th",
+          "status": "ok",
+          "error": null,
+          "fetched": 4,
+          "eligible": 3,
+          "selected": 3
+        },
+        {
+          "id": "standards",
+          "name": "มาตรฐานเครื่องจักรอาหาร",
+          "url": "https://news.google.com/rss/search?q=%22food%20contact%20materials%22%20OR%20%22hygienic%20design%22%20OR%20%22food%20machinery%20safety%22%20when%3A1d&hl=en-US&gl=US&ceid=US:en",
+          "status": "ok",
+          "error": null,
+          "fetched": 2,
+          "eligible": 1,
+          "selected": 1
+        },
+        {
+          "id": "hitec-market",
+          "name": "HITEC และงานแสดงเทคโนโลยี",
+          "url": "https://news.google.com/rss/search?q=%22HITEC%20FOOD%20EQUIPMENT%22%20OR%20%22HITEC%20food%20machinery%22%20OR%20%22FOOMA%22%20OR%20%22IFFA%22%20OR%20%22ProPak%20Asia%22%20when%3A1d&hl=en-US&gl=US&ceid=US:en",
+          "status": "empty",
+          "error": null,
+          "fetched": 0,
+          "eligible": 0,
+          "selected": 0
+        }
+      ],
+      "articles": [
+        {
+          "id": "news-53",
+          "title": "เยนดิ่งแตะ 158.95 ต่อดอลลาร์ ญี่ปุ่นขู่แทรกแซงทันที หลังเงินเฟ้อสหรัฐฯ พุ่ง | การเงินธนาคาร - LINE TODAY",
+          "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1oTTFHeXhOcnpFdS00aHNTWlpqNGkwQUdQcXVCMTd3R3dqM011cnhBQmROUTRkRGdXRDdHZ09LRmV0bFVMY2FSc0Ixb2tOVFZDODZQQ2d3?oc=5",
+          "published_at": "2026-10-15T07:04:02.000Z",
+          "source": "ความเสี่ยงนำเข้าและโลจิสติกส์",
+          "content": "เยนดิ่งแตะ 158.95 ต่อดอลลาร์ ญี่ปุ่นขู่แทรกแซงทันที หลังเงินเฟ้อสหรัฐฯ พุ่ง | การเงินธนาคาร LINE TODAY",
+          "evidence_scope": "RSS headline / excerpt; full article not fetched",
+          "link_check": {
+            "state": "verified",
+            "status_code": 200,
+            "checked_at": "2026-10-15T18:03:43.415+07:00"
+          },
+          "status": "relevant",
+          "news_type": "risk",
+          "news_title": "เยนดิ่งแตะ 158.95 ต่อดอลลาร์ ญี่ปุ่นเตือนแทรกแซงตลาดเงิน ส่งผลผันผวนต่อต้นทุนนำเข้าเครื่องจักร",
+          "news_title_en": "Yen Plunges to 158.95 per Dollar, Japan Warns Intervention, Impacting Machinery Import Cost Volatility",
+          "summary": "ค่าเงินเยนอ่อนค่าแตะ 158.95 เยนต่อดอลลาร์สหรัฐ หลังตัวเลขเงินเฟ้อสหรัฐฯ พุ่งสูงขึ้น โดยทางการญี่ปุ่นส่งสัญญาณพร้อมเข้าแทรกแซงตลาดการเงินทันที ส่งผลให้เกิดความผันผวนอย่างหนักในอัตราแลกเปลี่ยนระหว่างประเทศ",
+          "summary_en": "The Japanese yen dropped to 158.95 per USD following higher US inflation data, prompting Japanese authorities to warn of immediate currency intervention, causing high volatility in foreign exchange markets.",
+          "business_area": "นำเข้าและเศรษฐกิจ",
+          "relevance_reason": "HITEC นำเข้าเครื่องจักรแปรรูปอาหารและอะไหล่จากประเทศญี่ปุ่น รวมถึงมีบริษัทแม่ตั้งอยู่ที่ญี่ปุ่น ความผันผวนอย่างรุนแรงของค่าเงินเยนและการขู่แทรกแซงตลาดส่งผลกระทบต่อการกำหนดราคาขาย ต้นทุนนำเข้า และความเสี่ยงจากอัตราแลกเปลี่ยนในสัญญาซื้อขาย",
+          "relevance_reason_en": "HITEC imports food processing machinery and spare parts from Japan and has its parent company in Japan. High yen volatility and potential government intervention directly impact machine import costs, pricing strategy, and FX risk in sales contracts.",
+          "risk_cause": "ความผันผวนรวดเร็วของค่าเงินเยนและแนวโน้มการเข้าแทรกแซงตลาดเงินของทางการญี่ปุ่น ทำให้คาดการณ์ต้นทุนการนำเข้าเครื่องจักรและอะไหล่จากญี่ปุ่นได้ยาก",
+          "risk_cause_en": "Rapid yen depreciation and potential currency intervention by Japanese authorities create high unpredictability in import costs for Japanese machinery and parts.",
+          "consequence": "ความเสี่ยงจากการตั้งราคาเสนอขายโครงการ Turnkey หรือเครื่องจักรล่วงหน้า หากเงินเยนพลิกกลับมาแข็งค่าหลังการแทรกแซงอาจกระทบส่วนต่างกำไร หรือหากเงินเยนผันผวน ลูกค้าอาจชะลอการตัดสินใจเพื่อรอดูความชัดเจนของอัตราแลกเปลี่ยน ทำให้กระบวนการเสนอราคาและการปิดการขายล่าช้า",
+          "consequence_en": "Quoting Turnkey projects or machinery in advance risks margin erosion if the yen rebounds post-intervention, or customers may delay procurement decisions awaiting FX stability, causing delays in quotation and sales processes.",
+          "impact_area": "operations",
+          "impact_name": "10. ผลกระทบต่อกระบวนการดำเนินงาน",
+          "likelihood_score": 4,
+          "impact_score": 3,
+          "score": 12,
+          "likelihood_reason": "ประเมินเบื้องต้นจากสัญญาณข่าว: ความผันผวนของค่าเงินเยนและแนวโน้มการแทรกแซงเป็นสถานการณ์ที่กำลังดำเนินอยู่และอาจส่งผลกระทบซ้ำต่อรอบการสั่งซื้อและชำระเงินนำเข้าของบริษัทในช่วง 1-6 เดือน",
+          "likelihood_reason_en": "Preliminary signal-based assessment: FX volatility and intervention risks are actively developing and likely to recurrently impact import order and payment cycles over 1-6 months.",
+          "impact_reason": "ประเมินเบื้องต้นจากสัญญาณข่าว: ความผันผวนของค่าเงินและการปรับเงื่อนไขราคาอาจทำให้กระบวนการจัดทำใบเสนอราคา การจัดซื้อ และการส่งมอบโครงการล่าช้าในบางส่วนตามเกณฑ์ระดับ 3 โดยไม่สมมติว่ามีเครื่องมือบริหารความเสี่ยงที่แก้ปัญหาได้ทันทีโดยไม่มีหลักฐาน",
+          "impact_reason_en": "Preliminary signal-based assessment: FX volatility and price repricing can delay quotation, procurement, and project delivery workflows partially under Level 3 criteria, avoiding unverified assumptions that existing hedging fully mitigates impact.",
+          "likelihood_definition": "เกิดขึ้น หรือมีโอกาสเกิดขึ้นอย่างน้อย 1 ครั้งในช่วงระหว่าง 1 เดือน จนถึง 6 เดือน",
+          "impact_definition": "กระบวนการดำเนินงานหรือระบบ อาจล่าช้าหรือมีคุณภาพลดลงในบางส่วน เนื่องจาก 1. เกิดความเสียหายต่อการดำเนินงาน หรือระบบที่ไม่มีนัยสำคัญ ซึ่งไม่สามารถกลับมาดำเนินงาน หรือกู้คืนได้ภายในระยะเวลาที่กำหนดขององค์กร หรือ 2. เกิดความเสียหายต่อการดำเนินงาน หรือระบบที่สำคัญแต่สามารถกลับมาดำเนินงาน หรือกู้คืนได้ภายในระยะเวลาที่กำหนดขององค์กร",
+          "risk_level": "High",
+          "assessment_status": "AI preliminary assessment",
+          "proposed_action": "ทบทวนอายุใบเสนอราคาเครื่องจักรนำเข้าจากญี่ปุ่นให้สั้นลง และพิจารณาใช้สัญญา Forward หรือการกำหนดเงื่อนไขปรับราคาตามอัตราแลกเปลี่ยน (FX Clause) ในสัญญาซื้อขายโครงการ",
+          "proposed_action_en": "Shorten quotation validity periods for Japanese equipment and implement FX hedging instruments or FX adjustment clauses in project contracts.",
+          "known_controls": "บริษัทมีโครงสร้างการนำเข้าเครื่องจักรจากญี่ปุ่นและสำนักงานใหญ่ในญี่ปุ่นตาม Profile แต่ไม่มีการระบุนโยบายบริหารความเสี่ยงอัตราแลกเปลี่ยนอย่างเป็นทางการในเอกสาร",
+          "known_controls_en": "Company maintains regular machine import channels and parent connections in Japan as per Profile, though formal FX hedging controls are not detailed in the document.",
+          "assumptions": "สมมติฐานคือ HITEC มีสัดส่วนการนำเข้าเครื่องจักรและอะไหล่จากญี่ปุ่นเป็นหลัก และยังไม่ได้ทำสัญญาล็อกอัตราแลกเปลี่ยนล่วงหน้าครอบคลุม 100% ของมูลค่าโครงการ",
+          "assumptions_en": "Assumes HITEC procures a significant volume of machines and parts in JPY and does not maintain 100% FX hedging on all project quotations.",
+          "opportunity": "ค่าเงินเยนที่อ่อนค่าในระยะสั้นช่วยให้ต้นทุนเครื่องจักรญี่ปุ่นแข่งขันได้ดีขึ้น เป็นโอกาสจูงใจให้ลูกค้าตัดสินใจลงทุนซื้อเครื่องจักรตัวโชว์หรือสั่งซื้อไลน์ผลิตใหม่เร็วขึ้น",
+          "opportunity_en": "A temporarily weaker yen lowers machine acquisition costs, presenting an opportunity to incentivize food clients to accelerate capex for new lines or demo machines.",
+          "review_passed": true,
+          "review_reason": "ปรับคะแนนผลกระทบ (impact_score) จาก 2 เป็น 3 ให้สอดคล้องกับเกณฑ์ operations เนื่องจากความผันผวนของค่าเงินเยนและการขู่แทรกแซงส่งผลให้กระบวนการเสนอราคาและจัดซื้อเครื่องจักรล่าช้าในบางส่วน และตัดข้อความที่ด่วนสรุปว่าเครื่องมือบริหารความเสี่ยงกู้คืนได้ตามเกณฑ์ข้อห้าม",
+          "review_reason_en": "Adjusted impact_score from 2 to 3 to match the operations criteria, as FX volatility and intervention threats cause partial operational delays in quotation and procurement, while removing unverified assumptions regarding internal hedging effectiveness."
+        },
+        {
+          "id": "news-5",
+          "title": "ส.อ.ท. ขอสินเชื่อหมื่นล้าน เร่งฟื้น SMEs โดนน้ำท่วม - ประชาชาติธุรกิจ",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE0zazBKTjlyelh5RnE0THUtT09HNzVVSm9COGRDNmFkemNJLWNBTHVCeW9jeDYyb3pPR1hscjRlZVFxVXBWYWNycmJJVlNRMURZVzZQWkJCNTgxQzNZ?oc=5",
+          "published_at": "2026-10-15T01:06:00.000Z",
+          "source": "ประชาชาติธุรกิจ",
+          "content": "ส.อ.ท. ขอสินเชื่อหมื่นล้าน เร่งฟื้น SMEs โดนน้ำท่วม ประชาชาติธุรกิจ",
+          "evidence_scope": "RSS headline / excerpt; full article not fetched",
+          "link_check": {
+            "state": "verified",
+            "status_code": 200,
+            "checked_at": "2026-10-15T18:06:01.932+07:00"
+          },
+          "status": "relevant",
+          "news_type": "risk",
+          "news_title": "ส.อ.ท. ขอสินเชื่อหมื่นล้าน เร่งฟื้น SMEs โดนน้ำท่วม - ประชาชาติธุรกิจ",
+          "news_title_en": "FTI Seeks 10-Billion-Baht Soft Loan Package to Rapidly Revive Flood-Hit SMEs - Prachachat",
+          "summary": "สภาอุตสาหกรรมแห่งประเทศไทย (ส.อ.ท.) เร่งผลักดันขอวงเงินสินเชื่อดอกเบี้ยต่ำหมื่นล้านบาท เพื่อช่วยเหลือและฟื้นฟูกิจการของผู้ประกอบการขนาดกลางและขนาดย่อม (SMEs) ที่ได้รับผลกระทบจากสถานการณ์น้ำท่วม",
+          "summary_en": "The Federation of Thai Industries (FTI) is pushing for a 10-billion-baht low-interest loan package to urgently assist and rehabilitate small and medium-sized enterprises (SMEs) affected by floods.",
+          "business_area": "ตลาดอุตสาหกรรมอาหาร",
+          "relevance_reason": "HITEC ให้บริการลูกค้าครอบคลุมระดับ SME ใน 7 กลุ่มอุตสาหกรรมอาหาร หากโรงงานแปรรูปอาหารของลูกค้า SME ประสบอุทกภัย จะส่งผลกระทบต่อกำหนดการส่งมอบเครื่องจักร การติดตั้งหน้างาน (Commissioning) และการชำระเงินตามสัญญาโครงการ",
+          "relevance_reason_en": "HITEC serves SME clients across 7 food industries; flood damage to SME food processing facilities can disrupt machinery delivery schedules, on-site commissioning, and milestone contract payments.",
+          "risk_cause": "สถานการณ์อุทกภัยสร้างความเสียหายต่อสถานประกอบการและก่อให้เกิดปัญหาสภาพคล่องทางการเงินแก่กลุ่มผู้ประกอบการ SME จนต้องขอรับการสนับสนุนสินเชื่อฟื้นฟู",
+          "risk_cause_en": "Floods causing physical site damage and severe liquidity constraints for SME operators, requiring emergency rehabilitation loan packages.",
+          "consequence": "ลูกค้ากลุ่ม SME อาจชะลอหรือระงับการสั่งซื้อเครื่องจักรใหม่ ขอเลื่อนกำหนดการส่งมอบและติดตั้งระบบ Turnkey รวมถึงขอขยายระยะเวลาชำระค่างวด และการเดินทางเข้าหน้างานของทีมวิศวกรอาจล่าช้า",
+          "consequence_en": "SME customers may delay new machinery investments, postpone Turnkey delivery and commissioning schedules, or extend payment terms, while engineering field access may face logistical delays.",
+          "impact_area": "operations",
+          "impact_name": "10. ผลกระทบต่อกระบวนการดำเนินงาน",
+          "likelihood_score": 4,
+          "impact_score": 3,
+          "score": 12,
+          "likelihood_reason": "ประเมินเบื้องต้นจากสัญญาณข่าว: ผลกระทบจากอุทกภัยต่อ SME กำลังเกิดขึ้นในปัจจุบันและมีแนวโน้มส่งผลกระทบต่อกำหนดการส่งมอบงานและการบริการหน้างานต่อเนื่องในช่วง 1 ถึง 6 เดือน ทั้งนี้ยังไม่มีข้อมูลยืนยันสัดส่วนลูกค้า HITEC ที่ได้รับความเสียหายโดยตรง",
+          "likelihood_reason_en": "Preliminary signal-based assessment: Flood impacts on SMEs are actively ongoing and likely to affect deliveries and field services within 1 to 6 months; specific data on affected HITEC client accounts remains pending internal verification.",
+          "impact_reason": "ประเมินเบื้องต้นจากสัญญาณข่าว: โครงการติดตั้งและงานบริการบางส่วนอาจล่าช้าหรือต้องปรับตารางใหม่ตามความพร้อมของหน้างานลูกค้า เข้าเกณฑ์กระบวนการดำเนินงานอาจล่าช้าในบางส่วนแต่สามารถบริหารจัดการฟื้นฟูได้ในกรอบเวลาขององค์กร (ระดับ 3)",
+          "impact_reason_en": "Preliminary signal-based assessment: Certain Turnkey installations and service schedules may experience operational delays depending on client site recovery, aligning with operational impact score 3 (manageable delays within organizational capacity).",
+          "likelihood_definition": "เกิดขึ้น หรือมีโอกาสเกิดขึ้นอย่างน้อย 1 ครั้งในช่วงระหว่าง 1 เดือน จนถึง 6 เดือน",
+          "impact_definition": "กระบวนการดำเนินงานหรือระบบ อาจล่าช้าหรือมีคุณภาพลดลงในบางส่วน เนื่องจาก 1. เกิดความเสียหายต่อการดำเนินงาน หรือระบบที่ไม่มีนัยสำคัญ ซึ่งไม่สามารถกลับมาดำเนินงาน หรือกู้คืนได้ภายในระยะเวลาที่กำหนดขององค์กร หรือ 2. เกิดความเสียหายต่อการดำเนินงาน หรือระบบที่สำคัญแต่สามารถกลับมาดำเนินงาน หรือกู้คืนได้ภายในระยะเวลาที่กำหนดขององค์กร",
+          "risk_level": "High",
+          "assessment_status": "AI preliminary assessment",
+          "proposed_action": "ประสานงานเชิงรุกกับลูกค้ากลุ่ม SME ในพื้นที่ประสบอุทกภัยเพื่อประเมินความพร้อมของโรงงาน ปรับแผนการส่งมอบและติดตั้งเครื่องจักร พร้อมจัดเตรียมทีมวิศวกรและอะไหล่สำหรับบริการฟื้นฟูระบบหลังน้ำลด",
+          "proposed_action_en": "Proactively liaise with SME clients in flood-affected regions to evaluate site readiness, adjust delivery and commissioning timelines, and mobilize service engineers with spare parts for post-flood equipment restoration.",
+          "known_controls": "บริษัทมีศูนย์บริการ HITEC Service Center ระบบแจ้งซ่อม Hotline/Service App คลังอะไหล่สำรองในประเทศ และบริการบำรุงรักษาเชิงป้องกัน (PM) ตาม Company Profile (เป็นบริบทตาม Profile ไม่ยืนยันประสิทธิผลต่อภัยน้ำท่วม)",
+          "known_controls_en": "Company Profile notes HITEC maintains a local Spare Parts Center, dedicated Service Center with Hotline/Service App, and Preventive Maintenance (PM) capabilities (context per Profile; specific flood-mitigation efficacy unverified).",
+          "assumptions": "สมมติฐานว่ามีผู้ประกอบการโรงงานแปรรูปอาหารที่เป็นลูกค้า SME ของ HITEC ตั้งอยู่ในพื้นที่ประสบอุทกภัย และการฟื้นตัวของโรงงานรวมถึงการลงทุนขึ้นอยู่กับความรวดเร็วในการได้รับสินเชื่อช่วยเหลือ",
+          "assumptions_en": "Assumes HITEC has food processing SME clients located in flood-impacted regions whose factory recovery and capex readiness depend on loan disbursement timelines.",
+          "opportunity": "โอกาสในการนำเสนอบริการตรวจเช็ก ซ่อมบำรุง และฟื้นฟูเครื่องจักรหลังน้ำท่วม รวมถึงการเสนอเครื่องจักรทดแทนเร่งด่วนจากสต็อก HITEC Demo",
+          "opportunity_en": "Opportunity to offer post-flood machinery inspection and refurbishment services, as well as rapid-replacement units from HITEC Demo stock.",
+          "review_passed": true,
+          "review_reason": "ร่างประเมินความเชื่อมโยงผ่านกลุ่มลูกค้า SME ภาคอาหารได้ถูกต้อง คะแนน L=4 สอดคล้องกับ calibration สำหรับผลกระทบที่กำลังดำเนินอยู่ในกรอบ 1-6 เดือน และ I=3 สอดคล้องกับเกณฑ์ operations ที่โครงการบางส่วนอาจล่าช้าแต่สามารถจัดการฟื้นฟูได้ตามกรอบเวลา",
+          "review_reason_en": "The draft accurately identifies the impact pathway via food-sector SME clients. Scores L=4 aligns with calibration for ongoing impacts within 1-6 months, and I=3 matches operations criteria where certain projects face manageable delays recoverable within standard capacity."
+        },
+        {
+          "id": "news-24",
+          "title": "EU Commission offers EPR guidance for small businesses under PPWR - Packaging Europe",
+          "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPMy1QTWNENTV2T2hEcWVnVFNLWC1kNjg3VnhrVGkwTGV2di1DcU1pWUo5TGpwUk5tRks5aG9kZDc1U0o1TUd6bVk3Rl9hdTJYSzNSR0lESnRZeC1DV1RseTZUdHo1VjNqeF9SMlBYR2JBZmJwcTQtUmF3MDRuRXpkU1g5SUIxbHA4MmdBV29BZ1VKOVpLUGxuVUtwMV9PMEU?oc=5",
+          "published_at": "2026-10-15T09:56:36.000Z",
+          "source": "Packaging Europe ผ่าน Google News",
+          "content": "EU Commission offers EPR guidance for small businesses under PPWR Packaging Europe",
+          "evidence_scope": "RSS headline / excerpt; full article not fetched",
+          "link_check": {
+            "state": "verified",
+            "status_code": 200,
+            "checked_at": "2026-10-15T18:01:17.988+07:00"
+          },
+          "status": "relevant",
+          "news_type": "risk",
+          "news_title": "คณะกรรมาธิการยุโรปออกแนวทาง EPR สำหรับธุรกิจขนาดเล็กภายใต้กฎระเบียบ PPWR",
+          "news_title_en": "EU Commission Offers EPR Guidance for Small Businesses Under PPWR",
+          "summary": "คณะกรรมาธิการยุโรปได้เผยแพร่แนวทางปฏิบัติด้านความรับผิดชอบที่เพิ่มขึ้นของผู้ผลิต (EPR) สำหรับธุรกิจขนาดเล็กภายใต้กฎระเบียบว่าด้วยบรรจุภัณฑ์และขยะบรรจุภัณฑ์ (PPWR) เพื่อเตรียมความพร้อมในการปฏิบัติตามเกณฑ์สิ่งแวดล้อม",
+          "summary_en": "The European Commission has issued Extended Producer Responsibility (EPR) guidance for small businesses under the Packaging and Packaging Waste Regulation (PPWR) to assist compliance with packaging waste rules.",
+          "business_area": "บรรจุภัณฑ์และการตรวจสอบ",
+          "relevance_reason": "กฎระเบียบ PPWR และแนวทาง EPR ของสหภาพยุโรปส่งผลต่อข้อกำหนดด้านวัสดุบรรจุภัณฑ์ (เช่น ฟิล์ม ถาด thermoforming) ของกลุ่มลูกค้าผู้ผลิตอาหารไทยที่ส่งออกไปยังตลาดยุโรป ซึ่งเชื่อมโยงกับโซลูชันเครื่องจักรบรรจุภัณฑ์และวัสดุสิ้นเปลืองที่ HITEC จัดจำหน่าย",
+          "relevance_reason_en": "EU PPWR and EPR guidelines impact packaging material specifications for Thai food exporters, affecting requirements for packaging machinery (e.g., thermoforming, tray sealers) and packaging consumables supplied by HITEC.",
+          "risk_cause": "กฎเกณฑ์และแนวทางด้านบรรจุภัณฑ์ที่เข้มงวดขึ้นในยุโรป ทำให้ลูกค้าผู้ส่งออกอาหารต้องปรับเปลี่ยนชนิดฟิล์มหรือรูปแบบบรรจุภัณฑ์ หากเครื่องจักรเดิมหรือวัสดุสิ้นเปลืองที่ HITEC จัดหาไม่รองรับ อาจเกิดความล่าช้าในการปรับตัว",
+          "risk_cause_en": "Stricter packaging and EPR requirements in the EU compel food exporters to transition to recyclable materials; if HITEC's packaging machinery or consumables cannot readily adapt, client operational delays may occur.",
+          "consequence": "ลูกค้ากลุ่มอาหารแปรรูปและ RTE ที่ส่งออกไปยัง EU อาจชะลอการสั่งซื้อเครื่องจักรบรรจุภัณฑ์รุ่นเดิม หรือต้องการการปรับแต่งระบบซีล/ทดสอบฟิล์มชนิดใหม่ใน Demo Lab เพิ่มขึ้น หากเตรียมการไม่ทันอาจกระทบกำหนดการส่งมอบงาน",
+          "consequence_en": "Food export clients may delay orders for standard packaging machinery or demand retrofits and testing for new sustainable films in the Demo Lab, potentially causing project delays for HITEC.",
+          "impact_area": "operations",
+          "impact_name": "10. ผลกระทบต่อกระบวนการดำเนินงาน",
+          "likelihood_score": 3,
+          "impact_score": 3,
+          "score": 9,
+          "likelihood_reason": "ประเมินเบื้องต้นจากสัญญาณข่าว: กฎระเบียบ PPWR อยู่ระหว่างการกำหนดแนวทางปฏิบัติและจะมีผลบังคับใช้ตามลำดับ คาดว่าจะส่งผลต่อข้อกำหนดเครื่องจักรและวัสดุบรรจุภัณฑ์ของลูกค้าส่งออกภายในช่วง 6 ถึง 12 เดือนข้างหน้า",
+          "likelihood_reason_en": "Preliminary signal-based assessment: PPWR guidelines are currently being established, likely impacting packaging machinery and consumable specifications for export clients within 6 to 12 months.",
+          "impact_reason": "ประเมินเบื้องต้นจากสัญญาณข่าว: กระบวนการส่งมอบเครื่องจักรบรรจุภัณฑ์หรือการปรับแต่งระบบอาจล่าช้าในบางโครงการเนื่องจากต้องทดสอบความเข้ากันได้กับฟิล์มหรือวัสดุรีไซเคิลใหม่ แต่เป็นระบบงานสำคัญที่สามารถจัดการแก้ไขได้",
+          "impact_reason_en": "Preliminary signal-based assessment: Packaging delivery processes or commissioning may experience minor delays due to testing compatibility with new recyclable materials, which can be recovered within normal operational timelines.",
+          "likelihood_definition": "เกิดขึ้น หรือมีโอกาสเกิดขึ้นอย่างน้อย 1 ครั้งในช่วงระหว่าง 6 เดือน จนถึง 1 ปี",
+          "impact_definition": "กระบวนการดำเนินงานหรือระบบ อาจล่าช้าหรือมีคุณภาพลดลงในบางส่วน เนื่องจาก 1. เกิดความเสียหายต่อการดำเนินงาน หรือระบบที่ไม่มีนัยสำคัญ ซึ่งไม่สามารถกลับมาดำเนินงาน หรือกู้คืนได้ภายในระยะเวลาที่กำหนดขององค์กร หรือ 2. เกิดความเสียหายต่อการดำเนินงาน หรือระบบที่สำคัญแต่สามารถกลับมาดำเนินงาน หรือกู้คืนได้ภายในระยะเวลาที่กำหนดขององค์กร",
+          "risk_level": "Medium",
+          "assessment_status": "AI preliminary assessment",
+          "proposed_action": "ประสานงานกับผู้ผลิตเครื่องจักรบรรจุภัณฑ์ในยุโรปและคู่ค้าด้านวัสดุสิ้นเปลืองเพื่อตรวจสอบความเข้ากันได้ของเครื่อง Thermoforming และ Tray Sealer กับฟิล์มรีไซเคิลตามมาตรฐาน PPWR พร้อมใช้ Demo Lab ทดสอบร่วมกับลูกค้า",
+          "proposed_action_en": "Coordinate with European packaging machinery partners and consumable suppliers to verify machine compatibility with PPWR-compliant films, utilizing the Demo Lab to conduct testing for export-oriented clients.",
+          "known_controls": "บริษัทมีห้องปฏิบัติการ (Demo Lab) สำหรับทดสอบเครื่องจักรกับวัตถุดิบและบรรจุภัณฑ์จริง รวมถึงความร่วมมือกับพันธมิตรผู้ผลิตเครื่องจักรในยุโรปตาม Company Profile",
+          "known_controls_en": "HITEC operates a Demo Lab for machine and packaging material testing and collaborates with European machinery partners as stated in the Company Profile.",
+          "assumptions": "สมมติฐาน: HITEC มีลูกค้ากลุ่มอาหารแปรรูปและ RTE ที่ส่งออกสินค้าไปยังตลาดสหภาพยุโรป และใช้วัสดุบรรจุภัณฑ์ที่อยู่ภายใต้เกณฑ์ PPWR/EPR",
+          "assumptions_en": "Assumption: HITEC serves food processing and RTE clients exporting to the EU market who must comply with PPWR/EPR requirements.",
+          "opportunity": "โอกาสในการนำเสนอเครื่องบรรจุภัณฑ์รุ่นใหม่ที่รองรับฟิล์มรีไซเคิล/ฟิล์มชีวภาพ และให้บริการทดสอบวัสดุบรรจุภัณฑ์ใหม่ใน Demo Lab แก่กลุ่มผู้ส่งออก",
+          "opportunity_en": "Opportunity to supply eco-compliant packaging machines supporting recyclable films and offer material validation services in the Demo Lab for food exporters.",
+          "review_passed": true,
+          "review_reason": "การเชื่อมโยงมีความสมเหตุสมผลผ่านข้อกำหนดบรรจุภัณฑ์ส่งออกไปยังตลาดยุโรปของกลุ่มลูกค้าอาหาร ซึ่งกระทบต่อการตั้งค่าเครื่องจักรบรรจุภัณฑ์ (Thermoforming / Tray Sealer) และวัสดุสิ้นเปลืองที่ HITEC จำหน่ายและให้บริการทดสอบใน Demo Lab การให้คะแนน L=3 (รอบ 6-12 เดือน) และ I=3 (ผลกระทบต่อกระบวนการดำเนินงาน/ส่งมอบบางส่วน) สอดคล้องตามเกณฑ์และ calibration อย่างถูกต้อง",
+          "review_reason_en": "The relevance pathway is reasonable via packaging export compliance for European markets, affecting HITEC's packaging machinery configurations (Thermoforming / Tray Sealer) and consumable testing in the Demo Lab. The scores L=3 (within 6-12 months) and I=3 (operations delays in certain projects) strictly follow the calibration criteria."
+        },
+        {
+          "id": "news-39",
+          "title": "กรอ. ชง “ร่าง พ.ร.บ.จัดการกากอุตสาหกรรม” และปรับปรุง พ.ร.บ.โรงงาน ยกระดับโทษหนักปรับสูง ครอบคลุมมาตรการสิ่งแวดล้อม🚨 - กรมโรงงานอุตสาหกรรม",
+          "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE01Y0toalh3Ykd1MXVPMnRDUElOV2x2T1NsQ3o0eTVsdUhBV09MOG9uVmVoYVUyek9rZF9YRVpuOHlkcm9iQXkxQmNDUzlhd3c?oc=5",
+          "published_at": "2026-10-15T09:56:24.000Z",
+          "source": "หน่วยงานไทย ผ่าน Google News",
+          "content": "กรอ. ชง “ร่าง พ.ร.บ.จัดการกากอุตสาหกรรม” และปรับปรุง พ.ร.บ.โรงงาน ยกระดับโทษหนักปรับสูง ครอบคลุมมาตรการสิ่งแวดล้อม🚨 กรมโรงงานอุตสาหกรรม",
+          "evidence_scope": "RSS headline / excerpt; full article not fetched",
+          "link_check": {
+            "state": "verified",
+            "status_code": 200,
+            "checked_at": "2026-10-15T18:09:38.642+07:00"
+          },
+          "status": "relevant",
+          "news_type": "risk",
+          "news_title": "กรอ. ชงร่าง พ.ร.บ. จัดการกากอุตสาหกรรมและแก้ พ.ร.บ. โรงงาน เพิ่มโทษปรับด้านสิ่งแวดล้อม",
+          "news_title_en": "DIW Proposes Industrial Waste Bill and Factory Act Amendments with Stricter Penalties and Environmental Measures",
+          "summary": "กรมโรงงานอุตสาหกรรม (กรอ.) เสนอร่าง พ.ร.บ. จัดการกากอุตสาหกรรม และปรับปรุง พ.ร.บ. โรงงาน เพื่อยกระดับบทลงโทษ ปรับอัตราสูงขึ้น พร้อมเพิ่มความเข้มงวดของมาตรการด้านสิ่งแวดล้อมและการจัดการกากของเสียจากโรงงานอุตสาหกรรม",
+          "summary_en": "The Department of Industrial Works (DIW) has proposed a Draft Industrial Waste Management Act and amendments to the Factory Act, significantly raising penalty fines and enforcing stricter environmental compliance for factories.",
+          "business_area": "โครงการ Turnkey",
+          "relevance_reason": "การยกระดับกฎหมายโรงงานและกากอุตสาหกรรมกระทบต่อโรงงานแปรรูปอาหาร 7 กลุ่มของลูกค้า ซึ่งเชื่อมโยงโดยตรงกับงานวิศวกรรม Turnkey ของ HITEC ที่ครอบคลุมการออกแบบผังโรงงาน ระบบสาธารณูปโภค และการจัดการเศษเหลือทิ้ง/วัสดุสิ้นเปลืองในสายการผลิต",
+          "relevance_reason_en": "Tightened factory and industrial waste laws impact food processing clients across 7 segments, directly linking to HITEC's Turnkey engineering services covering plant layout, utility integration, and production waste/consumable handling.",
+          "risk_cause": "การยกระดับเกณฑ์ข้อบังคับและบทลงโทษทางกฎหมายสิ่งแวดล้อมและโรงงานอุตสาหกรรมที่เข้มงวดขึ้น",
+          "risk_cause_en": "Stricter environmental regulations, factory compliance requirements, and increased statutory fines proposed by the DIW.",
+          "consequence": "ลูกค้าอาจชะลอการตัดสินใจลงทุนโครงการใหม่หรือขอปรับแก้แบบวิศวกรรมระบบสาธารณูปโภคและสายการผลิต Turnkey ของ HITEC เพื่อให้ผ่านเกณฑ์กฎหมายใหม่ ส่งผลให้กระบวนการส่งมอบและ Commissioning ล่าช้าหรือมีต้นทุนบริหารจัดการเพิ่มขึ้น",
+          "consequence_en": "Clients may postpone investment decisions or demand engineering revisions for utility layouts and turnkey lines handled by HITEC to comply with new standards, delaying delivery and commissioning or increasing operational costs.",
+          "impact_area": "operations",
+          "impact_name": "10. ผลกระทบต่อกระบวนการดำเนินงาน",
+          "likelihood_score": 3,
+          "impact_score": 3,
+          "score": 9,
+          "likelihood_reason": "ประเมินเบื้องต้นจากสัญญาณข่าว: การเสนอร่างกฎหมายและการปรับปรุง พ.ร.บ. ส่งผลให้เกิดความไม่แน่นอนต่อแผนลงทุนและเงื่อนไขการขออนุญาตโรงงานของลูกค้า ซึ่งอาจกระทบต่อโครงการของ HITEC ในกรอบ 6-12 เดือน จึงสอดคล้องกับ L=3 ตามเกณฑ์",
+          "likelihood_reason_en": "Preliminary signal-based assessment: Legislative drafting and amendments introduce uncertainty into client factory permitting and capex timelines, likely impacting HITEC's turnkey projects within 6 to 12 months (L=3).",
+          "impact_reason": "ประเมินเบื้องต้นจากสัญญาณข่าว: ข้อกำหนดใหม่อาจส่งผลให้กระบวนการออกแบบ แปลนระบบสาธารณูปโภค และงานส่งมอบโครงการ Turnkey ล่าช้าหรือต้องปรับปรุงคุณภาพการออกแบบบางส่วน แต่เป็นระบบที่สำคัญซึ่งยังสามารถปรับแก้และส่งมอบได้ตามกรอบเวลาดำเนินงาน จึงเข้าเกณฑ์ I=3",
+          "impact_reason_en": "Preliminary signal-based assessment: New compliance requirements could delay turnkey plant layout designs and commissioning, causing partial operational slowdowns for key projects, but can be recovered within project execution cycles (I=3).",
+          "likelihood_definition": "เกิดขึ้น หรือมีโอกาสเกิดขึ้นอย่างน้อย 1 ครั้งในช่วงระหว่าง 6 เดือน จนถึง 1 ปี",
+          "impact_definition": "กระบวนการดำเนินงานหรือระบบ อาจล่าช้าหรือมีคุณภาพลดลงในบางส่วน เนื่องจาก 1. เกิดความเสียหายต่อการดำเนินงาน หรือระบบที่ไม่มีนัยสำคัญ ซึ่งไม่สามารถกลับมาดำเนินงาน หรือกู้คืนได้ภายในระยะเวลาที่กำหนดขององค์กร หรือ 2. เกิดความเสียหายต่อการดำเนินงาน หรือระบบที่สำคัญแต่สามารถกลับมาดำเนินงาน หรือกู้คืนได้ภายในระยะเวลาที่กำหนดขององค์กร",
+          "risk_level": "Medium",
+          "assessment_status": "AI preliminary assessment",
+          "proposed_action": "ติดตามความคืบหน้าของร่างกฎหมายอย่างใกล้ชิด ประสานงานร่วมกับทีมวิศวกร Turnkey ในการทบทวนสเปกเครื่องจักรและระบบสาธารณูปโภคเพื่อเตรียมความพร้อมในการให้คำปรึกษาแก่ลูกค้า",
+          "proposed_action_en": "Closely monitor legislative progress and coordinate with the Turnkey engineering team to review machine specifications and utility integration, ensuring proactive consultation for clients.",
+          "known_controls": "มีทีมวิศวกรโครงการดูแลตั้งแต่ออกแบบไลน์ผลิตและระบบสาธารณูปโภคจนถึงการติดตั้ง และมีมาตรฐานบริหารคุณภาพ ISO 9001 ตาม Company Profile",
+          "known_controls_en": "HITEC maintains a project engineering team overseeing production line layouts and utility integration, backed by ISO 9001 certification as stated in the Company Profile.",
+          "assumptions": "สมมติฐานว่าโรงงานแปรรูปอาหารของลูกค้าอยู่ภายใต้การกำกับของ พ.ร.บ. โรงงาน และการแก้ไขกฎหมายจะมีผลต่อเงื่อนไขการอนุมัติแบบและการจัดการของเสียของสายการผลิตใหม่",
+          "assumptions_en": "Assumes food processing factories are governed by the Factory Act and that new waste rules will impact layout approvals and byproduct handling in new production lines.",
+          "opportunity": "โอกาสในการนำเสนอโซลูชัน Turnkey และเครื่องจักรแปรรูปอาหารที่มีประสิทธิภาพสูง ลดการเกิดของเสีย (Yield loss) และระบบบรรจุภัณฑ์ที่เป็นมิตรต่อสิ่งแวดล้อมให้แก่ลูกค้า",
+          "opportunity_en": "Opportunity to offer advanced turnkey solutions and high-yield processing machinery that minimize food waste alongside eco-compliant packaging systems.",
+          "review_passed": true,
+          "review_reason": "ร่างเดิมประเมินความเกี่ยวข้องได้ถูกต้อง โดยเชื่อมโยงข้อกฎหมายสิ่งแวดล้อม/กากอุตสาหกรรมเข้ากับงานออกแบบ Turnkey และระบบสาธารณูปโภคของ HITEC การให้คะแนน L=3 (กระทบในกรอบ 6-12 เดือนตามขั้นตอนร่างกฎหมาย) และ I=3 (ความล่าช้าในกระบวนการดำเนินงาน/โครงการสำคัญที่กู้คืนได้) สอดคล้องกับเกณฑ์และไม่มีการแต่งตัวเลขทางการเงิน จึงปรับปรุงสำนวนให้ชัดเจนและยืนยันผลการประเมิน",
+          "review_reason_en": "The draft accurately identified relevance connecting industrial waste/factory law reforms to HITEC's Turnkey and utility engineering services. Scoring L=3 (potential impact within 6-12 months during legislative process) and I=3 (operational delays in key turnkey projects recoverable within timeframe) strictly aligns with criteria without fabricating metrics. Minor refinements made and approved."
+        },
+        {
+          "id": "news-54",
+          "title": "Food contact material compliance shifts upstream as Japan's Positive List requirements take effect - FoodTechBiz",
+          "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOc29waE9qQzBTSDNnZ3N3X2tDYjNQWVZUa2pDci1SX2k0UDNvLVcycEVrbVhaa0k3N0MycGItVjFYLWF1M0JCYTh0Z2Y3dUlZNVV0VVBDcnFTT0MwcHdCcmVpeDJiTVMzdTRjaXlIaU12QUxUZ2ZINTBSSkFEX1czMHdtOU1SUndkMTZxYWNLYmtiMFdGVGJjbjdSYWhvb0pENjc4ZG9MSjMxNXZGenBKYmJ1TFcwVE8zTXA2T3g4aGthNXJXZHloY0dGSnRycnFNYUJjblBNRjhCNkJlbGp6eWJQWEQzN1E3SXfSAfcBQVVfeXFMTWlQeW1xTmlnTUdHTHlVblpoaW1PY0hhckc5bFJ1UnlVTTVkMzc1dGd1TWdiQlg5cHRwelZENnlfSXVZa0wxZURJa3FPY05wZUYtSzRsR0JxNjMzdEl4ZHk2SDBGUU13aWw5aG5hc2V6MTVsSExFd0JjN1dDZGtUUGxxTUlaNTNrOS00MzZvc0JqTERUQzRpQ2VtRkxPXzM5cFhCYkxhLTlIM0w3UlJwRW5MRDNyTDNBd3FaXy1kcTIzbFdOSlJXVWVMVHJPZGZaZ0cxVkRXZ2xhMk5XTkcwaHFlcWl5UFRSTmVoWnRpWnBQMWpyZ1pKaw?oc=5",
+          "published_at": "2026-10-15T04:10:00.000Z",
+          "source": "มาตรฐานเครื่องจักรอาหาร",
+          "content": "Food contact material compliance shifts upstream as Japan's Positive List requirements take effect FoodTechBiz",
+          "evidence_scope": "RSS headline / excerpt; full article not fetched",
+          "link_check": {
+            "state": "verified",
+            "status_code": 200,
+            "checked_at": "2026-10-15T18:12:36.702+07:00"
+          },
+          "status": "relevant",
+          "news_type": "risk",
+          "news_title": "ข้อกำหนด Positive List วัสดุสัมผัสอาหารของญี่ปุ่นเริ่มมีผล บังคับตรวจมาตรฐานต้นน้ำ",
+          "news_title_en": "Japan's Food Contact Material Positive List Takes Effect, Shifting Compliance Upstream",
+          "summary": "ข้อกำหนด Positive List สำหรับวัสดุสัมผัสอาหารของญี่ปุ่นเริ่มมีผลบังคับใช้ ส่งผลให้ภาระการตรวจสอบมาตรฐานและการปฏิบัติตามกฎเกณฑ์ถูกผลักดันไปยังผู้ผลิตต้นน้ำในห่วงโซ่อุปทาน",
+          "summary_en": "Japan's Positive List requirements for food contact materials have taken effect, shifting compliance obligations upstream across the supply chain.",
+          "business_area": "บรรจุภัณฑ์และการตรวจสอบ",
+          "relevance_reason": "HITEC นำเข้าเครื่องจักรแปรรูปและบรรจุภัณฑ์ รวมถึงวัสดุสิ้นเปลือง (ม้วนฟิล์ม ถาด เคสซิ่ง) และชิ้นส่วนที่สัมผัสอาหารจากญี่ปุ่นและซัพพลายเออร์สากล ข้อกำหนดใหม่นี้อาจกระทบต่อเอกสารรับรองมาตรฐานของชิ้นส่วนเครื่องจักรและวัสดุบรรจุภัณฑ์ที่นำเข้า รวมถึงกระทบลูกค้ากลุ่มส่งออกอาหารไปญี่ปุ่น",
+          "relevance_reason_en": "HITEC imports food processing/packaging machinery, spare parts, and consumables (films, trays, casings) from Japan and global suppliers. The new compliance requirements impact material certifications for machine contact parts and packaging materials, as well as food clients exporting to Japan.",
+          "risk_cause": "การบังคับใช้กฎระเบียบ Positive List ของญี่ปุ่น ทำให้ชิ้นส่วนสัมผัสอาหาร พลาสติก ซีลยาง และวัสดุบรรจุภัณฑ์ต้องมีใบรับรองความสอดคล้องตามมาตรฐานใหม่",
+          "risk_cause_en": "Enforcement of Japan's Positive List regulations requiring food-contact parts, plastics, rubber seals, and packaging consumables to possess updated compliance certifications.",
+          "consequence": "อะไหล่ ชิ้นส่วนสัมผัสอาหาร หรือวัสดุบรรจุภัณฑ์ที่นำเข้าอาจเผชิญความล่าช้าในการส่งมอบหรือต้องเปลี่ยนสเปก หากซัพพลายเออร์ต้นน้ำยังเตรียมเอกสารไม่ทัน ซึ่งอาจกระทบต่อกำหนดการติดตั้ง Commissioning หรือส่งมอบวัสดุสิ้นเปลืองให้ลูกค้า",
+          "consequence_en": "Imported food-contact spare parts or packaging materials may face delivery delays or require re-specification if upstream suppliers lag in certification, potentially delaying commissioning or consumables delivery to clients.",
+          "impact_area": "operations",
+          "impact_name": "10. ผลกระทบต่อกระบวนการดำเนินงาน",
+          "likelihood_score": 3,
+          "impact_score": 3,
+          "score": 9,
+          "likelihood_reason": "ประเมินเบื้องต้นจากสัญญาณข่าว: กฎระเบียบมีผลบังคับใช้แล้ว ความเสี่ยงด้านการขอเอกสารรับรองและการปรับสเปกวัสดุมีแนวโน้มส่งผลกระทบต่อรอบการนำเข้าและการตรวจสอบของ HITEC ในช่วง 6-12 เดือนนี้",
+          "likelihood_reason_en": "Preliminary signal-based assessment: The regulation is now in effect; compliance verification and material re-specifications are likely to impact HITEC's import and testing cycles within the next 6-12 months.",
+          "impact_reason": "ประเมินเบื้องต้นจากสัญญาณข่าว: อาจทำให้กระบวนการส่งมอบเครื่องจักร อะไหล่ หรือการทดสอบใน Demo Lab ล่าช้าบางส่วนเนื่องจากต้องรอเอกสารรับรอง แต่คาดว่าอยู่ในวิสัยที่สามารถจัดการประสานงานกับซัพพลายเออร์ญี่ปุ่นได้ตามเกณฑ์ข้อ 3",
+          "impact_reason_en": "Preliminary signal-based assessment: Could delay certain machinery handovers, spare parts dispatch, or Demo Lab testing due to pending compliance documents, but manageable through supplier coordination per Level 3 criteria.",
+          "likelihood_definition": "เกิดขึ้น หรือมีโอกาสเกิดขึ้นอย่างน้อย 1 ครั้งในช่วงระหว่าง 6 เดือน จนถึง 1 ปี",
+          "impact_definition": "กระบวนการดำเนินงานหรือระบบ อาจล่าช้าหรือมีคุณภาพลดลงในบางส่วน เนื่องจาก 1. เกิดความเสียหายต่อการดำเนินงาน หรือระบบที่ไม่มีนัยสำคัญ ซึ่งไม่สามารถกลับมาดำเนินงาน หรือกู้คืนได้ภายในระยะเวลาที่กำหนดขององค์กร หรือ 2. เกิดความเสียหายต่อการดำเนินงาน หรือระบบที่สำคัญแต่สามารถกลับมาดำเนินงาน หรือกู้คืนได้ภายในระยะเวลาที่กำหนดขององค์กร",
+          "risk_level": "Medium",
+          "assessment_status": "AI preliminary assessment",
+          "proposed_action": "ประสานงานกับพันธมิตรผู้ผลิตเครื่องจักรและวัสดุสิ้นเปลืองในญี่ปุ่นเพื่อขอเอกสารรับรอง Food Contact Material Positive List ล่วงหน้า พร้อมให้คำปรึกษาแก่ลูกค้ากลุ่มที่ผลิตอาหารส่งออกไปยังตลาดญี่ปุ่น",
+          "proposed_action_en": "Coordinate with Japanese machinery and consumable partners to secure Food Contact Material Positive List compliance certificates in advance, and provide guidance to clients exporting food products to Japan.",
+          "known_controls": "บริษัทมีสำนักงานใหญ่และเครือข่ายพันธมิตรในญี่ปุ่น รวมถึงระบบคลังอะไหล่สำรอง (Spare Parts Center) และบริการทดสอบใน Demo Lab ตาม Profile แต่ยังไม่มีการยืนยันประสิทธิผลในการรับมือเกณฑ์ใหม่นี้โดยตรง",
+          "known_controls_en": "HITEC has headquarters and partner networks in Japan, a Spare Parts Center, and Demo Lab testing facilities as per Profile, though specific readiness for this new regulation is unverified.",
+          "assumptions": "สมมติฐาน: HITEC มีการนำเข้าเครื่องจักร ชิ้นส่วน หรือวัสดุบรรจุภัณฑ์ที่มีส่วนประกอบพลาสติก/โพลีเมอร์จากญี่ปุ่น หรือมีลูกค้าในไทยที่ผลิตอาหารส่งออกไปญี่ปุ่นซึ่งต้องใช้เครื่องจักรและบรรจุภัณฑ์ที่ผ่านมาตรฐานนี้",
+          "assumptions_en": "Assumption: HITEC imports machines, parts, or packaging consumables containing plastics/polymers from Japan, or serves Thai food processors exporting to Japan that require compliance with these standards.",
+          "opportunity": "เป็นโอกาสในการชูจุดเด่นด้านโซลูชัน Turnkey และเครื่องจักร/วัสดุบรรจุภัณฑ์ที่ผ่านมาตรฐานความปลอดภัยระดับสากล เพื่อเจาะกลุ่มผู้ส่งออกอาหารไปยังตลาดญี่ปุ่น",
+          "opportunity_en": "Opportunity to promote turnkey solutions and packaging machinery/materials fully compliant with updated Japanese food safety standards to attract food exporters to Japan.",
+          "review_passed": true,
+          "review_reason": "ร่างประเมินความเชื่อมโยงผ่าน 3 ทางได้ถูกต้อง โดยเชื่อมโยงกับการนำเข้าเครื่องจักร/ชิ้นส่วนสัมผัสอาหารและวัสดุบรรจุภัณฑ์จากญี่ปุ่น การให้คะแนน L=3 (กระทบในรอบ 6-12 เดือน) และ I=3 (operations: กระบวนการส่งมอบหรือทดสอบอาจล่าช้าบางส่วนแต่กู้คืนได้) สอดคล้องกับเกณฑ์และ calibration",
+          "review_reason_en": "The draft properly establishes three-way relevance through food-contact machinery parts and packaging consumable imports from Japan. Likelihood score 3 (6-12 month horizon) and Impact score 3 (operations: delays in operational/testing processes recoverable within timeframe) adhere accurately to the calibration guidelines."
+        },
+        {
+          "id": "news-46",
+          "title": "From the Iran War to the World’s Dinner Table: Key Implications for the Global Food Supply Chain - Thailand Business News",
+          "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNclNGYnJvc2dBY1M4V1QyNXJ5cFdtSDZsRXo5MHcxclhfaVJSMVlaUnJqR1Z0WlhNTzRBNTlETTViMHpSQjlFNkFMZjN2MGZDT0hQN2NVM2VHeDc3SWlkMGJ5d19WSXNqWDVFSHB5NXpNdTFiTGxNeGdGdDdFZGcwM0hYZFVpcWJLd2J1MmtwOUtzalhUdGhBaUFyWTdlc3M2a1lBblVxNlYtMUFfV2gxSGlTSzZDaEMtUWM4NU1uS3lZcVgyN2xMQmhLOVJyX0FsajNjX2VrQ1JQU2NmR21uVXdzM0FPbTZ0UEU3dkNqam1OQQ?oc=5",
+          "published_at": "2026-10-15T02:33:00.000Z",
+          "source": "เนื้อสัตว์และอาหารพร้อมรับประทาน",
+          "content": "From the Iran War to the World’s Dinner Table: Key Implications for the Global Food Supply Chain Thailand Business News",
+          "evidence_scope": "RSS headline / excerpt; full article not fetched",
+          "link_check": {
+            "state": "verified",
+            "status_code": 200,
+            "checked_at": "2026-10-15T18:13:55.100+07:00"
+          },
+          "status": "relevant",
+          "news_type": "risk",
+          "news_title": "สงครามอิหร่านกระทบห่วงโซ่อุปทานอาหารโลก เสี่ยงดันต้นทุนพลังงานและโลจิสติกส์นำเข้าเครื่องจักร",
+          "news_title_en": "Iran War Impacts Global Food Supply Chain, Threatening Logistics and Energy Costs for Machinery Imports",
+          "summary": "พาดหัวข่าวระบุถึงผลพวงจากสงครามอิหร่านต่อห่วงโซ่อุปทานอาหารโลก (Global Food Supply Chain) โดยความขัดแย้งทางภูมิรัฐศาสตร์ในตะวันออกกลางมักส่งผลให้ราคาพลังงานโลก ค่าระวางเรือขนส่งสินค้า และเบี้ยประกันภัยการขนส่งระหว่างประเทศปรับตัวสูงขึ้น รวมถึงอาจเกิดความล่าช้าในเส้นทางเดินเรือหลัก ส่งผลต่อการนำเข้าสินค้าอุตสาหกรรม",
+          "summary_en": "Headline indicates geopolitical conflict in Iran impacting global food supply chains. Such tensions typically cause volatility in global energy prices, elevated maritime freight rates, higher shipping insurance premiums, and potential logistics route disruptions.",
+          "business_area": "นำเข้าและเศรษฐกิจ",
+          "relevance_reason": "HITEC นำเข้าเครื่องจักรและอะไหล่จากยุโรป สหรัฐอเมริกา และญี่ปุ่น เส้นทางขนส่งทางเรือจากยุโรปผ่านตะวันออกกลางมีความเสี่ยงด้านค่าระวางเรือ ค่าธรรมเนียมความเสี่ยงสงคราม และความล่าช้าในการส่งมอบเครื่องจักร/อะไหล่ นอกจากนี้ต้นทุนพลังงานที่พุ่งสูงอาจกดดันการตัดสินใจลงทุนขยายไลน์ผลิตของกลุ่มลูกค้าอาหารแปรรูปและ RTE ในไทย",
+          "relevance_reason_en": "HITEC relies heavily on importing food processing machinery and parts from Europe, the US, and Japan. Conflicts in the Middle East elevate sea freight rates, war risk surcharges, and transit lead times, while higher operating costs may cause food processors (e.g., meat, RTE) to delay capital expenditures.",
+          "risk_cause": "ความขัดแย้งทางภูมิรัฐศาสตร์และการสู้รบในภูมิภาคตะวันออกกลาง (สงครามอิหร่าน) ส่งผลกระทบต่อต้นทุนพลังงาน เส้นทางขนส่งทางเรือระหว่างประเทศ และห่วงโซ่อุปทานการผลิตอาหารระดับโลก",
+          "risk_cause_en": "Geopolitical conflict and warfare involving Iran causing disruptions and cost surges in international maritime shipping, energy prices, and global supply chains.",
+          "consequence": "ค่าระวางเรือและค่าประกันภัยขนส่งเครื่องจักร/อะไหล่จากยุโรปปรับตัวสูงขึ้น ระยะเวลาจัดส่ง (Lead time) นานขึ้น กระทบกำหนดการส่งมอบและติดตั้ง (Commissioning) ในโครงการ Turnkey รวมถึงลูกค้าอุตสาหกรรมอาหารอาจชะลอการจัดซื้อเครื่องจักรใหม่เนื่องจากต้นทุนการผลิตโดยรวมสูงขึ้น",
+          "consequence_en": "Elevated shipping freight and insurance costs for European machinery/parts, extended shipping lead times delaying turnkey project commissioning, and deferred client capex on new machinery due to broader operational cost pressures.",
+          "impact_area": "operations",
+          "impact_name": "10. ผลกระทบต่อกระบวนการดำเนินงาน",
+          "likelihood_score": 3,
+          "impact_score": 3,
+          "score": 9,
+          "likelihood_reason": "ประเมินเบื้องต้นจากสัญญาณข่าว: ความเสี่ยงด้านภูมิรัฐศาสตร์และวิกฤตเส้นทางเดินเรือมักมีผลกระทบยืดเยื้อและกระทบต่อรอบการสั่งซื้อ/นำเข้าสินค้าของ HITEC ในกรอบ 6-12 เดือน (L=3 ตามเกณฑ์) ข้อจำกัดคือเนื้อหาข่าวมีเพียงหัวข้อ/สรุปสั้น ยังไม่มีรายละเอียดการปิดเส้นทางเดินเรือสมบูรณ์",
+          "likelihood_reason_en": "Preliminary signal-based assessment: Geopolitical disruptions affecting global maritime logistics and supply chains typically persist over a 6 to 12-month horizon (L=3). Limitation: based on headline/excerpt without specifics on full channel closures.",
+          "impact_reason": "ประเมินเบื้องต้นจากสัญญาณข่าว: ความล่าช้าในการขนส่งและต้นทุนโลจิสติกส์ที่เพิ่มขึ้นอาจทำให้โครงการติดตั้ง Turnkey บางส่วนล่าช้าหรือส่งมอบอะไหล่ช้าลง แต่สามารถบริหารจัดการเส้นทางและกำหนดการได้ เข้าเกณฑ์ operations ระดับ 3 ข้อจำกัดคือไม่มีข้อมูลสถิติผลกระทบจริงภายใน HITEC",
+          "impact_reason_en": "Preliminary signal-based assessment: Shipping delays and rising logistics costs can cause schedule slippages in key turnkey projects or spare part replenishment, though operations remain recoverable within company adjustments (operations level 3). Limitation: lack of internal financial metrics.",
+          "likelihood_definition": "เกิดขึ้น หรือมีโอกาสเกิดขึ้นอย่างน้อย 1 ครั้งในช่วงระหว่าง 6 เดือน จนถึง 1 ปี",
+          "impact_definition": "กระบวนการดำเนินงานหรือระบบ อาจล่าช้าหรือมีคุณภาพลดลงในบางส่วน เนื่องจาก 1. เกิดความเสียหายต่อการดำเนินงาน หรือระบบที่ไม่มีนัยสำคัญ ซึ่งไม่สามารถกลับมาดำเนินงาน หรือกู้คืนได้ภายในระยะเวลาที่กำหนดขององค์กร หรือ 2. เกิดความเสียหายต่อการดำเนินงาน หรือระบบที่สำคัญแต่สามารถกลับมาดำเนินงาน หรือกู้คืนได้ภายในระยะเวลาที่กำหนดขององค์กร",
+          "risk_level": "Medium",
+          "assessment_status": "AI preliminary assessment",
+          "proposed_action": "ติดตามสถานการณ์ค่าระวางเรือและเส้นทางการขนส่งทางทะเลอย่างใกล้ชิด ประสานงานกับซัพพลายเออร์เครื่องจักรในยุโรปเพื่อวางแผนระยะเวลาสั่งซื้อล่วงหน้า (Lead time) เพิ่มการสำรองอะไหล่สำคัญใน Spare Parts Center และพิจารณาปรับเงื่อนไข Incoterms หรือราคาเสนอขายให้สอดคล้องกับความผันผวนของค่าขนส่ง",
+          "proposed_action_en": "Closely monitor maritime freight rates and shipping routes; coordinate with European machine manufacturers to adjust lead times; buffer critical spare parts in the local warehouse; and review project contracts/Incoterms regarding logistics cost fluctuations.",
+          "known_controls": "บริบทตาม Profile: บริษัทมีระบบคลังอะไหล่สำรอง (Spare Parts Center) ในประเทศเพื่อรองรับความต้องการใช้งาน และมีเครือข่ายพันธมิตรผู้ผลิตเครื่องจักรจากหลายภูมิภาค (ญี่ปุ่น สหรัฐอเมริกา ยุโรป) แต่ยังไม่ยืนยันประสิทธิผลในการรองรับวิกฤตค่าระวางเรือระดับโลก",
+          "known_controls_en": "Profile context: HITEC operates a local Spare Parts Center and partners with diversified suppliers across Japan, the US, and Europe; current effectiveness against global maritime shocks remains unverified.",
+          "assumptions": "สมมติว่าสงครามอิหร่านส่งผลกระทบต่อเส้นทางขนส่งทางเรือหลัก (เช่น ทะเลแดง/สุเอซ) และราคาน้ำมันโลก ทำให้ค่าขนส่งและระยะเวลานำเข้าเครื่องจักร/อะไหล่จากยุโรปเพิ่มขึ้นจริง",
+          "assumptions_en": "Assumes conflict affects major commercial maritime corridors (e.g., Red Sea/Suez) and global oil prices, realistically increasing freight costs and transit times from European partners.",
+          "opportunity": "โอกาสในการเสนอขายเครื่องจักรที่มีประสิทธิภาพการใช้พลังงานสูง (Energy-saving machinery) หรือระบบอัตโนมัติเพื่อช่วยลูกค้าโรงงานอาหารลดต้นทุนการผลิตด้านอื่นชดเชยต้นทุนพลังงานที่สูงขึ้น",
+          "opportunity_en": "Opportunity to market energy-efficient food processing machinery and automation systems to help food manufacturers offset surging operational and energy overheads.",
+          "review_passed": true,
+          "review_reason": "ร่างเดิมวิเคราะห์เส้นทางผลกระทบผ่านด้านนำเข้า โลจิสติกส์ และการลงทุนของลูกค้าได้ครบถ้วน คะแนน L=3 (กรอบ 6-12 เดือน) และ I=3 (operations: กระบวนการล่าช้าแต่ฟื้นฟูได้) สอดคล้องกับหลักฐานที่เป็นเพียง headline/excerpt และไม่ขัดกับเกณฑ์การให้คะแนน",
+          "review_reason_en": "The draft correctly establishes relevance via machinery import logistics and client capex dynamics. L=3 (6-12 month exposure) and I=3 (operational delays manageable/recoverable) are fully calibrated with headline-only evidence and criteria."
+        },
+        {
+          "id": "news-34",
+          "title": "การส่งออกอาหารทะเลมีมูลค่าเกิน 9 พันล้านดอลลาร์ โดยกุ้งและปลาปังกาเซียสยังคงครองตำแหน่งผู้นำอย่างมั่นคง - Vietnam.vn",
+          "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOVk9XNFhBc0FyMkpZZ2tTREpMUUlNOC10TGJULTFlODdJSDNNWm9BUDc2Q21maUtWMkdPTTFmNjBEWWhNU2g5SDZpSVppQWhIV1FydlRMeG5nYjJBSHFINWt6MlpTcjE3bzBBYl9ZaFhlS3dDWXJXXzl5aUlrc0NCQmtFbWc1cjU0VjdlWE5ZRTN1YVVRTFRfSg?oc=5",
+          "published_at": "2026-10-14T21:00:09.000Z",
+          "source": "โรงงานอาหารไทย",
+          "content": "การส่งออกอาหารทะเลมีมูลค่าเกิน 9 พันล้านดอลลาร์ โดยกุ้งและปลาปังกาเซียสยังคงครองตำแหน่งผู้นำอย่างมั่นคง Vietnam.vn",
+          "evidence_scope": "RSS headline / excerpt; full article not fetched",
+          "link_check": {
+            "state": "verified",
+            "status_code": 200,
+            "checked_at": "2026-10-15T18:15:13.039+07:00"
+          },
+          "status": "relevant",
+          "news_type": "risk",
+          "news_title": "เวียดนามส่งออกอาหารทะเลทะลุ 9 พันล้านดอลลาร์ นำโดยกุ้งและปลาปังกาเซียส",
+          "news_title_en": "Vietnam Seafood Exports Exceed $9 Billion, Led by Shrimp and Pangasius",
+          "summary": "มูลค่าการส่งออกอาหารทะเลของเวียดนามทะลุ 9 พันล้านดอลลาร์สหรัฐ โดยมีกุ้งและปลาปังกาเซียสเป็นสินค้าส่งออกหลักที่ครองส่วนแบ่งตลาดและเติบโตอย่างต่อเนื่อง",
+          "summary_en": "Vietnam's seafood export value has exceeded $9 billion USD, with shrimp and pangasius continuing to maintain strong leading market positions.",
+          "business_area": "ตลาดอุตสาหกรรมอาหาร",
+          "relevance_reason": "การเติบโตด้านการส่งออกอาหารทะเลของเวียดนามสะท้อนความสามารถในการแข่งขันและกำลังการผลิตที่เพิ่มขึ้นในภูมิภาค ซึ่งส่งผลกระทบต่อกลุ่มลูกค้าอุตสาหกรรมอาหารทะเลของ HITEC ในไทย อาจทำให้ลูกค้าชะลอการลงทุนในโครงการ Turnkey หรือเครื่องจักรตัดแต่ง/ฟิลเลต์ปลา หรือบีบให้ต้องเร่งปรับปรุงสายการผลิตเพื่อลดต้นทุน",
+          "relevance_reason_en": "The growth of Vietnamese seafood exports reflects rising regional capacity and price competition, directly affecting HITEC's seafood customer segment in Thailand, potentially delaying capex for filleting/cutting Turnkey lines or demanding rapid automation upgrades to reduce costs.",
+          "risk_cause": "การแข่งขันที่รุนแรงด้านต้นทุนและปริมาณผลผลิตอาหารทะเลจากคู่แข่งในภูมิภาค (เวียดนาม) กดดันส่วนแบ่งตลาดและกระแสเงินสดของผู้แปรรูปอาหารทะเลไทย",
+          "risk_cause_en": "Intense price and volume competition from regional seafood producers (Vietnam) exerting pressure on market share and capital expenditure budgets of Thai seafood processors.",
+          "consequence": "ลูกค้ากลุ่มอาหารทะเลในไทยอาจชะลอการสั่งซื้อเครื่องจักรใหม่ เช่น เครื่องฟิลเลต์ปลา เครื่องตัดแต่ง และระบบบรรจุภัณฑ์ หรือหากต้องปรับตัวเร่งด่วน อาจทำให้ HITEC เผชิญแรงกดดันในการจัดหาเครื่องจักรและวิศวกรส่งมอบระบบอัตโนมัติให้ทันความต้องการ",
+          "consequence_en": "Thai seafood clients may postpone investments in new filleting, cutting, or packaging machinery, or rapid demand shifts toward automation could strain HITEC's project engineering delivery timelines.",
+          "impact_area": "operations",
+          "impact_name": "10. ผลกระทบต่อกระบวนการดำเนินงาน",
+          "likelihood_score": 3,
+          "impact_score": 3,
+          "score": 9,
+          "likelihood_reason": "ประเมินเบื้องต้นจากสัญญาณข่าว: แรงกดดันจากการส่งออกของคู่แข่งในภูมิภาคมีผลต่อรอบการทบทวนงบลงทุนและคำสั่งซื้อเครื่องจักรของโรงงานอาหารทะเลไทยในกรอบ 6-12 เดือนอย่างมีนัยสำคัญ",
+          "likelihood_reason_en": "Preliminary signal-based assessment: Regional export competition directly influences capital budgeting and machinery purchase decisions among Thai seafood processors over a 6-12 month horizon.",
+          "impact_reason": "ประเมินเบื้องต้นจากสัญญาณข่าว: การชะลอโครงการหรือปรับเปลี่ยนสเปกเครื่องจักรของลูกค้ากลุ่มอาหารทะเลอาจทำให้โครงการ Turnkey หรือการส่งมอบล่าช้าในบางส่วน แต่ยังอยู่ในวิสัยที่กระบวนการดำเนินงานสามารถบริหารจัดการได้ตามเกณฑ์ระดับ 3",
+          "impact_reason_en": "Preliminary signal-based assessment: Potential delays or scope changes in seafood processing projects could temporarily slow turnkey deliveries and operational schedules, fitting operations impact score 3.",
+          "likelihood_definition": "เกิดขึ้น หรือมีโอกาสเกิดขึ้นอย่างน้อย 1 ครั้งในช่วงระหว่าง 6 เดือน จนถึง 1 ปี",
+          "impact_definition": "กระบวนการดำเนินงานหรือระบบ อาจล่าช้าหรือมีคุณภาพลดลงในบางส่วน เนื่องจาก 1. เกิดความเสียหายต่อการดำเนินงาน หรือระบบที่ไม่มีนัยสำคัญ ซึ่งไม่สามารถกลับมาดำเนินงาน หรือกู้คืนได้ภายในระยะเวลาที่กำหนดขององค์กร หรือ 2. เกิดความเสียหายต่อการดำเนินงาน หรือระบบที่สำคัญแต่สามารถกลับมาดำเนินงาน หรือกู้คืนได้ภายในระยะเวลาที่กำหนดขององค์กร",
+          "risk_level": "Medium",
+          "assessment_status": "AI preliminary assessment",
+          "proposed_action": "ประสานงานกับกลุ่มลูกค้าอาหารทะเลเพื่อนำเสนอโซลูชันเครื่องจักรความแม่นยำสูง (เช่น เครื่องตัดแต่ง ฟิลเลต์ปลา และระบบบรรจุอัตโนมัติ) ที่เน้นการประหยัดแรงงานและเพิ่มผลผลิต (Yield) รวมถึงจัดกิจกรรมทดสอบวัตถุดิบจริงใน Demo Lab เพื่อกระตุ้นการตัดสินใจลงทุน",
+          "proposed_action_en": "Engage seafood clients proactively to propose high-precision filleting, cutting, and packaging automation that increases yield and reduces labor costs, utilizing Demo Lab trials to support investment justification.",
+          "known_controls": "HITEC มีความเชี่ยวชาญและโซลูชันสำหรับกลุ่มอาหารทะเล (เครื่องตัดแต่ง ฟิลเลต์ สไลด์) รวมถึงห้องปฏิบัติการ Demo Lab สำหรับทดสอบวัตถุดิบจริง และบริการ Turnkey ครบวงจรตามบริบทของ Profile",
+          "known_controls_en": "HITEC possesses specialized solutions for meat and seafood processing (cutting, filleting, slicing), an in-house Demo Lab for testing, and turnkey engineering capabilities as outlined in the Profile.",
+          "assumptions": "สมมติฐานว่าการเติบโตของอาหารทะเลเวียดนามแย่งชิงส่วนแบ่งตลาดอาหารทะเลไทย ซึ่งส่งผลต่อการตัดสินใจลงทุนด้านเครื่องจักรของผู้ประกอบการไทยในกลุ่มลูกค้าหลักของ HITEC",
+          "assumptions_en": "Assumes that the export growth of Vietnamese seafood exerts competitive pressure on Thai processors, directly impacting machinery capex among HITEC's key seafood clientele.",
+          "opportunity": "โอกาสผลักดันยอดขายเครื่องจักรฟิลเลต์ปลาอัตโนมัติและระบบบรรจุภัณฑ์ความเร็วสูงที่ช่วยลดต้นทุนต่อหน่วยและเพิ่มประสิทธิภาพการผลิตให้ผู้ประกอบการไทยสามารถแข่งขันได้ในตลาดโลก",
+          "opportunity_en": "Opportunity to promote automated filleting and high-speed packaging machinery that lowers unit production costs and maximizes yield for Thai processors competing globally.",
+          "review_passed": true,
+          "review_reason": "เนื้อหาร่างสอดคล้องกับข่าวและเกณฑ์การวิเคราะห์ โดยระบุเส้นทางผลกระทบไปยังกลุ่มลูกค้าเนื้อสัตว์และอาหารทะเลของ HITEC ได้อย่างชัดเจน การกำหนด L=3 และ I=3 ในด้าน operations สมเหตุสมผลตามกรอบเวลา 6-12 เดือนและผลกระทบต่อรอบโครงการ Turnkey เฉพาะกลุ่ม",
+          "review_reason_en": "Draft accurately reflects the source news and criteria, establishing a valid risk transmission pathway to HITEC's seafood customer segment. The calibration of L=3 and I=3 for operations is well justified for a 6-12 month impact on specific turnkey project timelines."
+        },
+        {
+          "id": "news-31",
+          "title": "MSC report finds structural shifts in market as sustainability, supply constraints reshaping Nordic seafood sourcing - SeafoodSource",
+          "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQTktFcDl5Q1FIbHBEM3pCTXkzU21NSldVS3lfOEpUTUxlSjJqek5ReUdobGRqYjJWcjhRVmQ2XzQ4a2xLU3A0MS1SYTQ1cEk3UnVCZ25WRFZSdC1DanMxd2xFeVlxdXU0cWpyQ0F5V2ZhMWp6WVRNNUtOSWlUZzMxdHNuMFljTUY2U3pENlRlQW8xUHN0c0hCak5DTUhHV1plT3hZeUdVUUpZYUJxZGtMb3hhNHp1OWt1MVpySWhwMjdpc3l2YlhZalduaEVDak04NFpyaGJjcUdSZjBCdUlGRnJ0VF8?oc=5",
+          "published_at": "2026-10-15T09:00:00.000Z",
+          "source": "SeafoodSource ผ่าน Google News",
+          "content": "MSC report finds structural shifts in market as sustainability, supply constraints reshaping Nordic seafood sourcing SeafoodSource",
+          "evidence_scope": "RSS headline / excerpt; full article not fetched",
+          "link_check": {
+            "state": "verified",
+            "status_code": 200,
+            "checked_at": "2026-10-15T18:02:19.468+07:00"
+          },
+          "status": "relevant",
+          "news_type": "risk",
+          "news_title": "รายงาน MSC ชี้ตลาดปรับโครงสร้างจากประเด็นความยั่งยืนและข้อจำกัดอุปทานอาหารทะเลนอร์ดิก",
+          "news_title_en": "MSC Report Finds Structural Shifts Driven by Sustainability and Nordic Seafood Supply Constraints",
+          "summary": "รายงานจาก MSC ระบุว่าตลาดอาหารทะเลนอร์ดิกกำลังเกิดการเปลี่ยนแปลงเชิงโครงสร้าง โดยมีปัจจัยผลักดันจากข้อกำหนดด้านความยั่งยืนและข้อจำกัดด้านอุปทานวัตถุดิบ ซึ่งส่งผลกระทบต่อห่วงโซ่การจัดหาวัตถุดิบอาหารทะเลทั่วโลก",
+          "summary_en": "An MSC report reveals structural shifts in the Nordic seafood market driven by sustainability requirements and raw material supply constraints, impacting the broader seafood sourcing and supply chain.",
+          "business_area": "ตลาดอุตสาหกรรมอาหาร",
+          "relevance_reason": "เข้าข่ายทางที่ (2) กลุ่มลูกค้าอุตสาหกรรมแปรรูปเนื้อสัตว์และอาหารทะเลของ HITEC ที่ต้องนำเข้าหรือใช้วัตถุดิบอาหารทะเล เช่น แซลมอนหรือปลาเนื้อขาว อาจเผชิญความผันผวนของปริมาณวัตถุดิบและต้นทุน ส่งผลต่อความต้องการและสเปกของเครื่องจักรแปรรูปอาหารทะเล",
+          "relevance_reason_en": "Applies to pathway (2): HITEC's meat and seafood processing customer segment, which relies on seafood imports like Nordic salmon or whitefish, may face raw material constraints and cost pressures that influence processing machinery specifications and CapEx decisions.",
+          "risk_cause": "ข้อจำกัดด้านอุปทานวัตถุดิบและมาตรฐานความยั่งยืนที่เข้มงวดขึ้นในแถบนอร์ดิก ทำให้โรงงานแปรรูปอาหารทะเลอาจชะลอการขยายกำลังผลิต หรือต้องเปลี่ยนกระบวนการผลิตเพื่อเพิ่มผลผลิตสูงสุด (Yield Optimization)",
+          "risk_cause_en": "Raw material supply constraints and stricter sustainability standards in the Nordic region may lead seafood processors to delay expansion or adapt production processes to maximize yield efficiency.",
+          "consequence": "ลูกค้ากลุ่มแปรรูปอาหารทะเลอาจชะลอการตัดสินใจลงทุนเครื่องจักรตัดแต่ง ฟิลเลต์ หรือโครงการ Turnkey และ HITEC อาจเผชิญความเสี่ยงที่โซลูชันเดิมไม่ตอบโจทย์ความต้องการเรื่องการลดของเสียและการใช้พลังงานอย่างยั่งยืน",
+          "consequence_en": "Seafood processing clients may postpone investments in cutting, filleting, or turnkey lines, and HITEC faces the risk that existing solutions might not meet evolving demands for waste reduction and sustainability.",
+          "impact_area": "operations",
+          "impact_name": "10. ผลกระทบต่อกระบวนการดำเนินงาน",
+          "likelihood_score": 3,
+          "impact_score": 2,
+          "score": 6,
+          "likelihood_reason": "ประเมินเบื้องต้นจากสัญญาณข่าว: ปัญหาการปรับโครงสร้างอุปทานและข้อกำหนดด้านความยั่งยืนมีแนวโน้มส่งผลกระทบต่อรอบการวางแผนการผลิตและการลงทุนของลูกค้าในกรอบเวลา 6–12 เดือน แต่ยังไม่มีข้อมูลระบุการขาดแคลนเฉียบพลัน",
+          "likelihood_reason_en": "Preliminary signal-based assessment: Supply restructuring and sustainability constraints are likely to influence customer CapEx planning cycles over the next 6-12 months, though no immediate severe shortage is indicated.",
+          "impact_reason": "ประเมินเบื้องต้นจากสัญญาณข่าว: ผลกระทบจำกัดอยู่เฉพาะกลุ่มลูกค้าที่พึ่งพาวัตถุดิบอาหารทะเลจากแหล่งดังกล่าว อาจทำให้รอบการขายหรือการออกแบบระบบ Turnkey ล่าช้าบางส่วน แต่ยังอยู่ในวิสัยที่กระบวนการดำเนินงานสามารถปรับตัวและกู้คืนได้ตามเกณฑ์ระดับ 2",
+          "impact_reason_en": "Preliminary signal-based assessment: Impact is limited to clients dependent on specific seafood sourcing, potentially causing minor delays in sales cycles or line integration, which operational processes can absorb and recover from under level 2 criteria.",
+          "likelihood_definition": "เกิดขึ้น หรือมีโอกาสเกิดขึ้นอย่างน้อย 1 ครั้งในช่วงระหว่าง 6 เดือน จนถึง 1 ปี",
+          "impact_definition": "เกิดความเสียหายต่อกระบวนการดำเนินงาน หรือระบบที่ไม่มีนัยสำคัญ แต่สามารถกลับมาดำเนินงาน หรือกู้คืนได้ภายในระยะเวลาที่กำหนดขององค์กร",
+          "risk_level": "Medium",
+          "assessment_status": "AI preliminary assessment",
+          "proposed_action": "ประสานงานกับผู้ผลิตเครื่องจักรยุโรป/ญี่ปุ่นเพื่อจัดเตรียมโซลูชันการตัดแต่งและฟิลเลต์ที่ให้ผลผลิตสูง (High Yield) และลดการสูญเสียเนื้อปลา พร้อมนำเสนอการทดสอบใน Demo Lab เพื่อสนับสนุนลูกค้าในการปรับปรุงประสิทธิภาพวัตถุดิบ",
+          "proposed_action_en": "Coordinate with European and Japanese machinery partners to prepare high-yield, waste-minimizing filleting solutions, and leverage the Demo Lab to demonstrate raw material efficiency gains to seafood processors.",
+          "known_controls": "ตาม Profile บริษัทมีเครื่องตัดแต่ง เลาะกระดูก ฟิลเลต์ปลา และมีศูนย์ Demo Lab สำหรับนำวัตถุดิบจริงมาทดสอบประสิทธิภาพก่อนตัดสินใจลงทุน",
+          "known_controls_en": "According to the Profile, HITEC provides fish filleting and cutting equipment along with a Demo Lab allowing customers to test real raw materials prior to investment.",
+          "assumptions": "สมมติฐานคือโรงงานแปรรูปอาหารทะเลในไทยบางส่วนมีการนำเข้าหรือแปรรูปวัตถุดิบจากกลุ่มนอร์ดิก และภาวะตึงตัวของอุปทานส่งผลต่อความคุ้มทุนในการซื้อเครื่องจักรแปรรูป",
+          "assumptions_en": "Assumes certain seafood processors in Thailand import or process Nordic raw materials, and that supply tightening affects the ROI and readiness for new processing machinery.",
+          "opportunity": "โอกาสในการนำเสนอเครื่องจักรฟิลเลต์และสไลด์ความแม่นยำสูง รวมถึงระบบบรรจุภัณฑ์สุญญากาศที่ช่วยยืดอายุสินค้าและลดอัตราการสูญเสียของวัตถุดิบมูลค่าสูง",
+          "opportunity_en": "Opportunity to promote high-precision filleting and slicing machinery as well as advanced packaging systems that extend shelf life and minimize waste of high-value seafood.",
+          "review_passed": true,
+          "review_reason": "ร่างประเมินความเชื่อมโยงกับกลุ่มลูกค้าแปรรูปเนื้อสัตว์และอาหารทะเลได้สมเหตุสมผลตามเกณฑ์ทางที่ (2) การให้คะแนน L=3 และ I=2 สอดคล้องกับกรอบเวลา 6-12 เดือนของรายงานแนวโน้ม และมีผลกระทบจำกัดที่ระบบงานสามารถปรับตัวได้ ไม่มีการแต่งข้อมูลตัวเลขเกินจริง",
+          "review_reason_en": "The draft properly establishes relevance to the meat and seafood processing client segment via pathway (2). Scores L=3 and I=2 are well-calibrated to the 6-12 month outlook of structural market trends with manageable operational impact, without making unsupported assumptions."
+        },
+        {
+          "id": "news-13",
+          "title": "Shellfish harvesting shut down over Salmonella outbreak - Food Manufacture",
+          "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPUG9lUjcwSGVMTXppZWxNTjdzNmJJWjAyU0tEX0JTSm9ZMjN0SXZPTTNaZVQxUGFncm1qVnhSSnpNMFhxdGVrSEpXN1UzbUM3N1k5V3dUR2huTjY5ZmI5Q2ttcWhZRDJTUU1tbEFOUVVwNlZVTldRQWlJeFlaTEpzcHVfZVlFVTFuTG1vRHRqX2kxN1JXMVRMT2tQRml4Z2pCZHE0NlpXdkdNQm9KTjREejEwMk1FS2hMNUc3WE83VXZyU0IzQmc?oc=5",
+          "published_at": "2026-10-15T08:49:57.000Z",
+          "source": "Food Manufacture ผ่าน Google News",
+          "content": "Shellfish harvesting shut down over Salmonella outbreak Food Manufacture",
+          "evidence_scope": "RSS headline / excerpt; full article not fetched",
+          "link_check": {
+            "state": "verified",
+            "status_code": 200,
+            "checked_at": "2026-10-15T18:11:35.358+07:00"
+          },
+          "status": "relevant",
+          "news_type": "risk",
+          "news_title": "สั่งระงับการเก็บเกี่ยวสัตว์น้ำมีเปลือกหลังพบการระบาดของเชื้อ Salmonella",
+          "news_title_en": "Shellfish Harvesting Shut Down Over Salmonella Outbreak",
+          "summary": "มีการสั่งระงับการเก็บเกี่ยวสัตว์น้ำจำพวกหอยและสัตว์น้ำมีเปลือก หลังตรวจพบการระบาดของเชื้อ Salmonella ซึ่งอาจกระทบต่อห่วงโซ่อุปทานวัตถุดิบอาหารทะเลและความเข้มงวดด้านความปลอดภัยทางอาหาร",
+          "summary_en": "Shellfish harvesting has been suspended following a Salmonella outbreak, potentially impacting the seafood raw material supply chain and increasing food safety scrutiny.",
+          "business_area": "ตลาดอุตสาหกรรมอาหาร",
+          "relevance_reason": "กระทบต่อกลุ่มลูกค้าอุตสาหกรรมเนื้อสัตว์และอาหารทะเลของ HITEC ซึ่งอาจเผชิญภาวะวัตถุดิบสะดุด ส่งผลให้แผนการลงทุน การทดสอบเครื่องใน Demo Lab หรือการตรวจรับเครื่องจักรแปรรูปและบรรจุภัณฑ์อาหารทะเลอาจถูกเลื่อนออกไป",
+          "relevance_reason_en": "Impacts HITEC's meat and seafood customer segment, as processors may face supply disruptions, leading to potential delays in machinery investments, Demo Lab trials, or commissioning.",
+          "risk_cause": "การปนเปื้อนเชื้อ Salmonella ในแหล่งเก็บเกี่ยวสัตว์น้ำมีเปลือกส่งผลให้มีคำสั่งระงับการเก็บเกี่ยวและกระทบการส่งมอบวัตถุดิบเข้าสู่โรงงานแปรรูป",
+          "risk_cause_en": "Salmonella contamination in shellfish harvesting grounds led to harvesting bans and seafood raw material disruptions for processors.",
+          "consequence": "ลูกค้าโรงงานแปรรูปอาหารทะเลของ HITEC อาจชะลอการสั่งซื้อเครื่องจักร เลื่อนนัดหมายทดสอบใน Demo Lab หรือเลื่อนการตรวจรับงานติดตั้ง Turnkey จนกว่าสถานการณ์วัตถุดิบจะคลี่คลาย",
+          "consequence_en": "HITEC's seafood processing clients may defer equipment procurement, postpone Demo Lab trials, or delay turnkey acceptance until supply issues stabilize.",
+          "impact_area": "operations",
+          "impact_name": "10. ผลกระทบต่อกระบวนการดำเนินงาน",
+          "likelihood_score": 3,
+          "impact_score": 2,
+          "score": 6,
+          "likelihood_reason": "ประเมินเบื้องต้นจากสัญญาณข่าว: การระบาดและการสั่งระงับวัตถุดิบอาจสร้างความไม่แน่นอนต่อห่วงโซ่อุปทานของโรงงานแปรรูปในรอบ 6–12 เดือน แต่มีข้อจำกัดที่ข่าวมิได้ระบุขอบเขตพื้นที่ส่งผลต่อลูกค้าในไทยอย่างชัดเจน",
+          "likelihood_reason_en": "Preliminary signal-based assessment: Outbreak and harvesting shutdown could cause supply chain ripples impacting processors within 6–12 months, though headline lacks location specifics for Thai processors.",
+          "impact_reason": "ประเมินเบื้องต้นจากสัญญาณข่าว: อาจส่งผลให้กำหนดการติดตั้งหรือการส่งมอบเครื่องจักรของโครงการกลุ่มอาหารทะเลบางรายเกิดความล่าช้า แต่จัดเป็นผลกระทบต่อกระบวนการดำเนินงานที่ไม่ใช่วงกว้างทั้งหมดและสามารถปรับแผนการทำงานกู้คืนได้ตามกรอบเวลา",
+          "impact_reason_en": "Preliminary signal-based assessment: May cause minor delays in project delivery or commissioning schedules for specific seafood clients, recoverable within company operational timeframes without broad systemic disruption.",
+          "likelihood_definition": "เกิดขึ้น หรือมีโอกาสเกิดขึ้นอย่างน้อย 1 ครั้งในช่วงระหว่าง 6 เดือน จนถึง 1 ปี",
+          "impact_definition": "เกิดความเสียหายต่อกระบวนการดำเนินงาน หรือระบบที่ไม่มีนัยสำคัญ แต่สามารถกลับมาดำเนินงาน หรือกู้คืนได้ภายในระยะเวลาที่กำหนดขององค์กร",
+          "risk_level": "Medium",
+          "assessment_status": "AI preliminary assessment",
+          "proposed_action": "ติดตามผลกระทบด้านวัตถุดิบร่วมกับกลุ่มลูกค้าแปรรูปอาหารทะเล พร้อมนำเสนอโซลูชันเครื่องจักรปรุงสุก/พาสเจอไรซ์ (THERMICjet) และระบบบรรจุภัณฑ์ที่เน้นความปลอดภัยทางชีวอนามัยเพื่อตอบสนองมาตรการควบคุมเชื้อโรค",
+          "proposed_action_en": "Engage with seafood processing clients to assess raw material stability, while presenting thermal processing (THERMICjet) and hygienic packaging solutions to address microbiological safety.",
+          "known_controls": "มีโชว์รูมและห้องปฏิบัติการ (Lab) สำหรับทดสอบกระบวนการแปรรูป และมีทีมวิศวกร Turnkey ให้คำปรึกษาการออกแบบไลน์ผลิตตามบริบท Profile ไม่ยืนยันประสิทธิผลปัจจุบัน",
+          "known_controls_en": "Showroom and Demo Lab for processing trials, along with turnkey engineering teams advising on hygienic plant layout as per profile context; current effectiveness unverified.",
+          "assumptions": "สมมติฐานว่าโรงงานแปรรูปอาหารทะเลที่เป็นลูกค้าของ HITEC บางรายอาจพึ่งพาห่วงโซ่อุปทานจากพื้นที่เกิดเหตุ หรือเผชิญการตรวจสอบคุณภาพเข้มงวดจนกระทบแผนงานติดตั้ง",
+          "assumptions_en": "Assumes some seafood processing clients of HITEC source from affected areas or encounter stricter quality audits that alter operational schedules.",
+          "opportunity": "โอกาสนำเสนอเครื่องจักรแปรรูปด้วยความร้อน (Thermal Processing/Smoking) เช่น THERMICjet และเครื่องบรรจุภัณฑ์สุญญากาศเพื่อยกระดับความปลอดภัยทางจุลชีววิทยา",
+          "opportunity_en": "Opportunity to promote thermal processing systems (e.g., THERMICjet) and vacuum packaging to enhance microbiological food safety standards.",
+          "review_passed": true,
+          "review_reason": "ร่างเดิมวิเคราะห์เส้นทางผลกระทบสู่กลุ่มลูกค้าอุตสาหกรรมเนื้อสัตว์และอาหารทะเลได้สมเหตุสมผล การให้ L=3 (แนวโน้มกระทบในรอบ 6-12 เดือน) และ I=2 (ผลกระทบต่อกระบวนการดำเนินงานบางโครงการแต่สามารถปรับแผนกู้คืนได้) สอดคล้องตามเกณฑ์และ calibration สำหรับข่าวที่มีข้อมูลจำกัดระดับหัวข้อข่าว",
+          "review_reason_en": "The draft properly maps the impact pathway to the meat and seafood customer segment. The scores L=3 (potential 6-12 month effect) and I=2 (minor operational project delays recoverable within timeframe) match the criteria and calibration given headline-only data limitations."
+        },
+        {
+          "id": "news-51",
+          "title": "สหรัฐฯ เล็งผ่อนปรนคว่ำบาตร \"กองเรือเงา\" หวังฉุดค่าระวางเรือขนส่งน้ำมันหลังพุ่งทุบสถิติ : อินโฟเควสท์ - สำนักข่าวอินโฟเควสท์",
+          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5qNzBvV1FUd3RfX0R2Mll4TUVYdDlJYVVZd0F1MlNvNno5RHMxWV9yYWgtYlBFZ0l5eHJkV19jUEtmMi00SFVVNnE5dC1KNUdy?oc=5",
+          "published_at": "2026-10-15T04:10:24.000Z",
+          "source": "ความเสี่ยงนำเข้าและโลจิสติกส์",
+          "content": "สหรัฐฯ เล็งผ่อนปรนคว่ำบาตร \"กองเรือเงา\" หวังฉุดค่าระวางเรือขนส่งน้ำมันหลังพุ่งทุบสถิติ : อินโฟเควสท์ สำนักข่าวอินโฟเควสท์",
+          "evidence_scope": "RSS headline / excerpt; full article not fetched",
+          "link_check": {
+            "state": "verified",
+            "status_code": 200,
+            "checked_at": "2026-10-15T18:00:49.802+07:00"
+          },
+          "status": "relevant",
+          "news_type": "risk",
+          "news_title": "สหรัฐฯ เล็งผ่อนปรนคว่ำบาตรกองเรือเงาเพื่อสกัดค่าระวางเรือขนส่งน้ำมันที่พุ่งสูง",
+          "news_title_en": "US Considers Easing Sanctions on Shadow Tanker Fleet to Curb Record Freight Rates",
+          "summary": "สหรัฐฯ พิจารณาผ่อนปรนมาตรการคว่ำบาตรต่อกองเรือเงา เพื่อลดแรงกดดันจากค่าระวางเรือขนส่งน้ำมันที่พุ่งสูงทำสถิติ ซึ่งสะท้อนความผันผวนสูงในตลาดพลังงานและระบบโลจิสติกส์ทางทะเลทั่วโลก",
+          "summary_en": "The US is considering easing sanctions on shadow tanker fleets to cool record-high crude tanker freight rates, reflecting elevated volatility in global marine logistics and energy costs.",
+          "business_area": "นำเข้าและเศรษฐกิจ",
+          "relevance_reason": "ความผันผวนของค่าระวางเรือขนส่งพลังงานและต้นทุนน้ำมันเดินเรือส่งผลกระทบทางอ้อมต่อค่าธรรมเนียมเชื้อเพลิง (Bunker Adjustment Factor) และต้นทุนค่าขนส่งตู้คอนเทนเนอร์นำเข้าเครื่องจักรแปรรูปอาหารและอะไหล่จากคู่ค้าในสหรัฐฯ และยุโรป",
+          "relevance_reason_en": "Volatility in tanker freight rates and maritime fuel costs feeds into bunker adjustment surcharges and container shipping costs for importing food processing machinery and spare parts from suppliers in the US and Europe.",
+          "risk_cause": "ความตึงเครียดด้านโลจิสติกส์ทางทะเลระหว่างประเทศและต้นทุนค่าระวางเรือที่พุ่งสูงขึ้นเป็นประวัติการณ์",
+          "risk_cause_en": "International maritime logistics tension and record freight spikes driving uncertainty in global shipping routes.",
+          "consequence": "HITEC อาจเผชิญต้นทุนค่าขนส่งนำเข้าเครื่องจักรและอะไหล่ที่สูงขึ้น หรือการเจรจาค่าระวางตู้สินค้ามีความผันผวน ซึ่งอาจกระทบต่อต้นทุนโครงการ Turnkey และระยะเวลาการส่งมอบเครื่องจักร",
+          "consequence_en": "HITEC may face increased freight surcharges on imported machinery and spare parts, or unpredictability in container rate quotes, potentially squeezing turnkey project margins and delivery schedules.",
+          "impact_area": "operations",
+          "impact_name": "10. ผลกระทบต่อกระบวนการดำเนินงาน",
+          "likelihood_score": 3,
+          "impact_score": 2,
+          "score": 6,
+          "likelihood_reason": "ประเมินเบื้องต้นจากสัญญาณข่าว: ความผันผวนของค่าระวางเรือและต้นทุนน้ำมันขนส่งทางทะเลมีแนวโน้มส่งผลกระทบต่อรอบการนำเข้าเครื่องจักรและอะไหล่ของ HITEC ในกรอบ 6-12 เดือน",
+          "likelihood_reason_en": "Preliminary signal-based assessment: Maritime shipping rate fluctuations and fuel pressures are likely to impact equipment and spare parts import schedules within a 6 to 12-month window.",
+          "impact_reason": "ประเมินเบื้องต้นจากสัญญาณข่าว: ผลกระทบจำกัดอยู่เฉพาะต้นทุนโลจิสติกส์นำเข้าและขั้นตอนประสานงานขนส่ง ซึ่งสามารถบริหารจัดการและปรับแผนส่งมอบได้ตามกรอบเวลาปกติขององค์กร ไม่กระทบโครงสร้างระบบหลักในวงกว้าง",
+          "impact_reason_en": "Preliminary signal-based assessment: Impacts are limited to import logistics costs and shipping coordination, which can be managed and absorbed within standard operational timelines without disrupting core operations broadly.",
+          "likelihood_definition": "เกิดขึ้น หรือมีโอกาสเกิดขึ้นอย่างน้อย 1 ครั้งในช่วงระหว่าง 6 เดือน จนถึง 1 ปี",
+          "impact_definition": "เกิดความเสียหายต่อกระบวนการดำเนินงาน หรือระบบที่ไม่มีนัยสำคัญ แต่สามารถกลับมาดำเนินงาน หรือกู้คืนได้ภายในระยะเวลาที่กำหนดขององค์กร",
+          "risk_level": "Medium",
+          "assessment_status": "AI preliminary assessment",
+          "proposed_action": "ประสานงานกับตัวแทนผู้ให้บริการขนส่งสินค้า (Freight Forwarder) อย่างใกล้ชิดเพื่อติดตามอัตราค่าระวางและค่าธรรมเนียมน้ำมัน พร้อมพิจารณาล็อกอัตราค่าขนส่งล่วงหน้าสำหรับโครงการนำเข้าเครื่องจักรขนาดใหญ่",
+          "proposed_action_en": "Coordinate closely with freight forwarding partners to monitor freight rates and bunker surcharges, and consider rate-locking arrangements for major equipment import projects.",
+          "known_controls": "บริษัทมีการดำเนินงานนำเข้าเครื่องจักรและอะไหล่จากต่างประเทศ (ญี่ปุ่น ยุโรป สหรัฐฯ) อย่างต่อเนื่องตาม Company Profile แต่ไม่มีการระบุการใช้สัญญาป้องกันความเสี่ยงค่าระวางไว้",
+          "known_controls_en": "Profile confirms established import operations from Japan, Europe, and the US, but does not state specific freight hedging mechanisms or long-term freight rate agreements.",
+          "assumptions": "สมมติว่าค่าระวางเรือขนส่งน้ำมันที่พุ่งสูงเป็นสัญญาณสะท้อนแรงกดดันต้นทุนพลังงานและการเดินเรือพาณิชย์ ซึ่งอาจส่งผ่านเป็นค่าธรรมเนียมส่วนเพิ่ม (Surcharges) ในการขนส่งตู้สินค้าทางเรือ",
+          "assumptions_en": "Assumes record tanker freight rates signal broader maritime fuel and operational cost pressures that could translate into container shipping surcharges for machinery cargo.",
+          "opportunity": "ไม่พบโอกาสที่ชัดเจน",
+          "opportunity_en": "No clear opportunity identified",
+          "review_passed": true,
+          "review_reason": "ข่าวผ่านเกณฑ์ความเกี่ยวข้องด้านต้นทุนการนำเข้าและโลจิสติกส์ (ข้อ 3) เชื่อมโยงผ่านค่าระวางเรือและค่าธรรมเนียมน้ำมันนำเข้าเครื่องจักร การกำหนดคะแนน L=3 (รอบ 6-12 เดือน) และ I=2 (ผลกระทบต่อขั้นตอนนำเข้าที่บริหารจัดการได้ในเวลาปกติ) มีเหตุผลและสมมติฐานรองรับอย่างสมเหตุสมผลโดยไม่แต่งเติมตัวเลขการเงิน",
+          "review_reason_en": "Passed relevance check under logistics and import costs (Criteria 3) linking via bunker surcharges and container shipping of machinery. The scoring of L=3 (6-12 month impact window) and I=2 (manageable operational friction within standard timelines) is fully justified with stated assumptions without unverified financial claims."
+        }
+      ],
+      "criteria": {
+        "source": "เกณฑ์การประเมินผลกระทบของความเสี่ยง.xlsx",
+        "sheet": "Compare Risk",
+        "likelihood": [
+          {
+            "score": 1,
+            "definition": "เกิดขึ้น หรือมีโอกาสเกิดขึ้นอย่างน้อย 1 ครั้งในช่วงมากกว่า 3 ปีขึ้นไป",
+            "cell": "B4"
+          },
+          {
+            "score": 2,
+            "definition": "เกิดขึ้น หรือมีโอกาสเกิดขึ้นอย่างน้อย 1 ครั้งในช่วงระหว่าง 1 ปี จนถึง 3 ปี",
+            "cell": "C4"
+          },
+          {
+            "score": 3,
+            "definition": "เกิดขึ้น หรือมีโอกาสเกิดขึ้นอย่างน้อย 1 ครั้งในช่วงระหว่าง 6 เดือน จนถึง 1 ปี",
+            "cell": "D4"
+          },
+          {
+            "score": 4,
+            "definition": "เกิดขึ้น หรือมีโอกาสเกิดขึ้นอย่างน้อย 1 ครั้งในช่วงระหว่าง 1 เดือน จนถึง 6 เดือน",
+            "cell": "E4"
+          },
+          {
+            "score": 5,
+            "definition": "เกิดขึ้น หรือมีโอกาสเกิดขึ้นได้เป็นรายเดือน หรือถี่กว่า",
+            "cell": "F4"
+          }
+        ],
+        "impacts": [
+          {
+            "id": "ebitda",
+            "name": "1. ความสูญเสียทางการเงินที่ส่งผลต่อกำไรจากการดำเนินงานของบริษัทก่อนหักดอกเบี้ยภาษีค่าเสื่อมราคาและค่าตัดจำหน่าย (EBITDA)",
+            "levels": [
+              {
+                "score": 1,
+                "definition": "< 1%",
+                "cell": "B9"
+              },
+              {
+                "score": 2,
+                "definition": "1% - 2%",
+                "cell": "C9"
+              },
+              {
+                "score": 3,
+                "definition": "> 2% - 4%",
+                "cell": "D9"
+              },
+              {
+                "score": 4,
+                "definition": "> 4% - 5%",
+                "cell": "E9"
+              },
+              {
+                "score": 5,
+                "definition": "> 5%",
+                "cell": "F9"
+              }
+            ]
+          },
+          {
+            "id": "cash_flow",
+            "name": "2. ผลกระทบด้านกระแสเงินสด",
+            "levels": [
+              {
+                "score": 1,
+                "definition": "ไม่มีผลกระทบ",
+                "cell": "B14"
+              },
+              {
+                "score": 2,
+                "definition": "ผลกระทบเล็กน้อย",
+                "cell": "C14"
+              },
+              {
+                "score": 3,
+                "definition": "เริ่มมีปัญหาขาดสภาพคล่อง",
+                "cell": "D14"
+              },
+              {
+                "score": 4,
+                "definition": "ต้องจัดหาแหล่งเงินสด ใหม่เพิ่มเติมอย่างเร่งด่วน",
+                "cell": "E14"
+              },
+              {
+                "score": 5,
+                "definition": "มีปัญหากระทบ ต่อการดำเนินงานที่ต่อเนื่อง",
+                "cell": "F14"
+              }
+            ]
+          },
+          {
+            "id": "revenue",
+            "name": "3. ความสูญเสียทางการเงิน ที่ส่งผลต่อรายได้​",
+            "levels": [
+              {
+                "score": 1,
+                "definition": "< 0.5%",
+                "cell": "B19"
+              },
+              {
+                "score": 2,
+                "definition": "0.5% - 1%",
+                "cell": "C19"
+              },
+              {
+                "score": 3,
+                "definition": "> 1% - 2%",
+                "cell": "D19"
+              },
+              {
+                "score": 4,
+                "definition": "> 2% - 2.5%",
+                "cell": "E19"
+              },
+              {
+                "score": 5,
+                "definition": "> 2.5%",
+                "cell": "F19"
+              }
+            ]
+          },
+          {
+            "id": "media_reach",
+            "name": "4. ขอบเขตการกระจายข่าวเชิงลบของสื่อ",
+            "levels": [
+              {
+                "score": 1,
+                "definition": "ไม่ถูกรายงานในสื่อ",
+                "cell": "B24",
+                "additional": "จำนวนผู้ติดตาม < 10,000 คน",
+                "additional_cell": "B25"
+              },
+              {
+                "score": 2,
+                "definition": "ถูกรายงานในสื่อในวงจำกัด หรือ สามารถชี้แจงได้​",
+                "cell": "C24",
+                "additional": "จำนวนผู้ติดตาม 10,000 - 50,000 คน",
+                "additional_cell": "C25"
+              },
+              {
+                "score": 3,
+                "definition": "ถูกรายงานในสื่อระดับจังหวัดหรือภูมิภาค",
+                "cell": "D24",
+                "additional": "จำนวนผู้ติดตาม > 50,000 - 500,000 คน",
+                "additional_cell": "D25"
+              },
+              {
+                "score": 4,
+                "definition": "ถูกรายงานในสื่อระดับประเทศ",
+                "cell": "E24",
+                "additional": "จำนวนผู้ติดตาม > 500,000 - 1,000,000 คน",
+                "additional_cell": "E25"
+              },
+              {
+                "score": 5,
+                "definition": "ถูกรายงานในสื่อทั้งในและต่างประเทศ",
+                "cell": "F24",
+                "additional": "จำนวนผู้ติดตาม > 1,000,000 คน",
+                "additional_cell": "F25"
+              }
+            ]
+          },
+          {
+            "id": "media_duration",
+            "name": "5. ระยะเวลาข่าวเชิงลบที่ออกสื่อ",
+            "levels": [
+              {
+                "score": 1,
+                "definition": "1-2 วัน",
+                "cell": "B29"
+              },
+              {
+                "score": 2,
+                "definition": "3-5 วัน",
+                "cell": "C29"
+              },
+              {
+                "score": 3,
+                "definition": "6-10 วัน",
+                "cell": "D29"
+              },
+              {
+                "score": 4,
+                "definition": "11-30 วัน",
+                "cell": "E29"
+              },
+              {
+                "score": 5,
+                "definition": ">30 วัน",
+                "cell": "F29"
+              }
+            ]
+          },
+          {
+            "id": "legal",
+            "name": "6. ความรับผิดชอบ ตามกฎหมาย",
+            "levels": [
+              {
+                "score": 1,
+                "definition": "ไม่มีการดำเนินทางกฎหมาย",
+                "cell": "B33"
+              },
+              {
+                "score": 2,
+                "definition": "รายงานเหตุการณ์ที่อาจมีความรับผิดทางกฎหมายต่อผู้บริหาร",
+                "cell": "C33"
+              },
+              {
+                "score": 3,
+                "definition": "มีการรายงานต่อหน่วยงานรัฐ",
+                "cell": "D33"
+              },
+              {
+                "score": 4,
+                "definition": "มีความรับผิดทางกฎหมาย หรือ ถูกหน่วยงานของรัฐตรวจสอบ",
+                "cell": "E33"
+              },
+              {
+                "score": 5,
+                "definition": "มีความรับผิดทางกฎหมายอาจส่งผลให้ต้องหยุดประกอบธุรกิจทั้งหมดหรือบางส่วน",
+                "cell": "F33"
+              }
+            ]
+          },
+          {
+            "id": "environment",
+            "name": "7. ผลกระทบด้านสิ่งแวดล้อม Environmental Impact",
+            "levels": [
+              {
+                "score": 1,
+                "definition": "แทบไม่มีผลกระทบต่อสิ่งแวดล้อม",
+                "cell": "B37"
+              },
+              {
+                "score": 2,
+                "definition": "ผลกระทบน้อยในระยะเวลาสั้น",
+                "cell": "C37"
+              },
+              {
+                "score": 3,
+                "definition": "ผลกระทบในพื้นที่จำกัดภายในและควบคุมได้",
+                "cell": "D37"
+              },
+              {
+                "score": 4,
+                "definition": "ผลกระทบออกสู่ภายนอกที่เป็นแหล่งชุมชน",
+                "cell": "E37"
+              },
+              {
+                "score": 5,
+                "definition": "ผลกระทบรุนแรง มีผู้ได้รับผลกระทบหลายกลุ่ม",
+                "cell": "F37"
+              }
+            ]
+          },
+          {
+            "id": "discipline",
+            "name": "8. บทลงโทษภายในองค์กร",
+            "levels": [
+              {
+                "score": 1,
+                "definition": "มีคำเตือนด้วยวาจา",
+                "cell": "B41"
+              },
+              {
+                "score": 2,
+                "definition": "มีการตักเตือนเป็นลายลักษณ์อักษร",
+                "cell": "C41"
+              },
+              {
+                "score": 3,
+                "definition": "ถูกลงโทษไม่จ่ายเงินรางวัลจูงใจ หรือไม่ปรับค่าจ้าง",
+                "cell": "D41"
+              },
+              {
+                "score": 4,
+                "definition": "ลงโทษให้พักงานหรือไม่จ่ายค่าจ้าง",
+                "cell": "E41"
+              },
+              {
+                "score": 5,
+                "definition": "เลิกจ้าง หรือให้ออก",
+                "cell": "F41"
+              }
+            ]
+          },
+          {
+            "id": "safety",
+            "name": "9. อาชีวอนามัยและ ความปลอดภัย",
+            "levels": [
+              {
+                "score": 1,
+                "definition": "การรักษาปฐมพยาบาล",
+                "cell": "B45"
+              },
+              {
+                "score": 2,
+                "definition": "บาดเจ็บที่ต้องเข้ารักษาในโรงพยาบาล",
+                "cell": "C45"
+              },
+              {
+                "score": 3,
+                "definition": "บาดเจ็บขั้นหยุดงานคนเดียว",
+                "cell": "D45"
+              },
+              {
+                "score": 4,
+                "definition": "บาดเจ็บขั้นหยุดงาน 2 คนขึ้นไป",
+                "cell": "E45"
+              },
+              {
+                "score": 5,
+                "definition": "บาดเจ็บขั้นพิการหรือเสียชีวิต",
+                "cell": "F45"
+              }
+            ]
+          },
+          {
+            "id": "operations",
+            "name": "10. ผลกระทบต่อกระบวนการดำเนินงาน",
+            "levels": [
+              {
+                "score": 1,
+                "definition": "ผลกระทบเชิงลบเล็กน้อยต่อบางขั้นตอนของกระบวนการดำเนินงาน หรือบางฟังก์ชั่นของระบบที่ไม่มีนัยสำคัญ",
+                "cell": "B49"
+              },
+              {
+                "score": 2,
+                "definition": "เกิดความเสียหายต่อกระบวนการดำเนินงาน หรือระบบที่ไม่มีนัยสำคัญ แต่สามารถกลับมาดำเนินงาน หรือกู้คืนได้ภายในระยะเวลาที่กำหนดขององค์กร",
+                "cell": "C49"
+              },
+              {
+                "score": 3,
+                "definition": "กระบวนการดำเนินงานหรือระบบ อาจล่าช้าหรือมีคุณภาพลดลงในบางส่วน เนื่องจาก 1. เกิดความเสียหายต่อการดำเนินงาน หรือระบบที่ไม่มีนัยสำคัญ ซึ่งไม่สามารถกลับมาดำเนินงาน หรือกู้คืนได้ภายในระยะเวลาที่กำหนดขององค์กร หรือ 2. เกิดความเสียหายต่อการดำเนินงาน หรือระบบที่สำคัญแต่สามารถกลับมาดำเนินงาน หรือกู้คืนได้ภายในระยะเวลาที่กำหนดขององค์กร",
+                "cell": "D49"
+              },
+              {
+                "score": 4,
+                "definition": "เกิดผลกระทบเชิงลบต่อกระบวนการดำเนินงาน หรือระบบที่สำคัญในวงกว้าง ซึ่งไม่สามารถกลับมาดำเนินงาน หรือกู้คืนได้ภายในระยะเวลาที่กำหนดขององค์กร",
+                "cell": "E49"
+              },
+              {
+                "score": 5,
+                "definition": "1. เกิดผลกระทบเชิงลบต่อกระบวนการดำเนินงาน หรือระบบที่สำคัญทั้งหมด ซึ่งไม่สามารถกลับมาดำเนินงาน หรือกู้คืนได้ภายในระยะเวลาที่กำหนด หรือ 2. สูญเสียความสามารถในการดำเนินการตามกลยุทธ์ และวัตถุประสงค์ในการดำเนินธุรกิจขององค์กร หรือ 3. สูญเสียความสามารถในการดำเนินธุรกิจของหน่วยงานที่จัดเป็นโครงสร้างพื้นฐานทีสำคัญ (Critical Infrastructure Sector)",
+                "cell": "F49"
+              }
+            ]
+          }
+        ],
+        "matrix": {
+          "source": "Weekly Risk Management_Final (1).json / CT_Risk_Criteria_2026",
+          "rows_likelihood_1_to_5": [
+            [
+              "Low",
+              "Low",
+              "Low",
+              "Medium",
+              "Medium"
+            ],
+            [
+              "Low",
+              "Low",
+              "Medium",
+              "Medium",
+              "High"
+            ],
+            [
+              "Low",
+              "Medium",
+              "Medium",
+              "High",
+              "High"
+            ],
+            [
+              "Medium",
+              "Medium",
+              "High",
+              "High",
+              "Critical"
+            ],
+            [
+              "Medium",
+              "High",
+              "High",
+              "Critical",
+              "Critical"
+            ]
+          ]
+        },
+        "note": "คำนิยาม L/I ใช้ Excel ที่ให้มา; ตารางระดับสีใช้ Flow เดิมตามผู้ใช้ยืนยัน โดย 2×2 = Low แต่ 1×4 และ 4×1 = Medium"
+      },
+      "coverage_note": "เฉพาะข่าวเผยแพร่วันนี้ตามเวลาไทยและก่อนเวลารัน; วิเคราะห์จาก RSS headline/excerpt; ไม่ครอบคลุมข่าวหลังเวลารัน",
+      "matrix_note": "คำนิยาม L/I ใช้ Excel ที่ให้มา; ตารางระดับสีใช้ Flow เดิมตามผู้ใช้ยืนยัน โดย 2×2 = Low แต่ 1×4 และ 4×1 = Medium"
+    },
     {
       "schema_version": 1,
       "workflow_revision": "2026-09-23-coverage-v2",
